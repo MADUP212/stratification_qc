@@ -264,33 +264,6 @@
   "abstract": "Rendement de la connaissance et de l'usage de l'anglais au Québec (et du français hors Québec) à partir du recensement 2001/EDI 2006 : rendement du bilinguisme surtout lié à l'usage au travail."
  },
  {
-  "id": "pendakur2002",
-  "type": "article-journal",
-  "title": "Language as both human capital and ethnicity",
-  "author": [
-   {
-    "family": "Pendakur",
-    "given": "Krishna"
-   },
-   {
-    "family": "Pendakur",
-    "given": "Ravi"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2002
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 12 ; score 0.511 ; récurrence 6 ; citations 147.0",
-  "container-title": "International Migration Review, 36(1), 147-177",
-  "DOI": "10.1111/j.1747-7379.2002.tb00075.x",
-  "abstract": "Montréal, Toronto, Vancouver (1991) : la connaissance d'une langue minoritaire est associée à des gains inférieurs, conditionnellement à la langue majoritaire ; la langue opère comme capital humain et comme marqueur ethnique (enclaves, discrimination)."
- },
- {
   "id": "blishen1987",
   "type": "article-journal",
   "title": "The 1981 socioeconomic index for occupations in Canada",
@@ -316,10 +289,37 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 13 ; score 0.507 ; récurrence 10 ; citations 376.0",
+  "note": "Snowballing rang 12 ; score 0.51 ; récurrence 10 ; citations 376.0",
   "container-title": "Canadian Review of Sociology and Anthropology, 24(4), 465-488",
   "DOI": "10.1111/j.1755-618x.1987.tb00639.x",
   "abstract": "Indice socioéconomique 1981 (revenu + scolarité, calibré sur l'échelle de prestige Pineo-Porter) ; outil standard des études de statut professionnel au Canada dans les années 1980-1990."
+ },
+ {
+  "id": "pendakur2002",
+  "type": "article-journal",
+  "title": "Language as both human capital and ethnicity",
+  "author": [
+   {
+    "family": "Pendakur",
+    "given": "Krishna"
+   },
+   {
+    "family": "Pendakur",
+    "given": "Ravi"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2002
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 13 ; score 0.501 ; récurrence 6 ; citations 147.0",
+  "container-title": "International Migration Review, 36(1), 147-177",
+  "DOI": "10.1111/j.1747-7379.2002.tb00075.x",
+  "abstract": "Montréal, Toronto, Vancouver (1991) : la connaissance d'une langue minoritaire est associée à des gains inférieurs, conditionnellement à la langue majoritaire ; la langue opère comme capital humain et comme marqueur ethnique (enclaves, discrimination)."
  },
  {
   "id": "grenier1987",
@@ -474,7 +474,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 19 ; score 0.482 ; récurrence 0 ; citations ",
+  "note": "Snowballing rang 19 ; score 0.48 ; récurrence 0 ; citations ",
   "container-title": "Canadian Journal of Economics, 58(2), 548-579",
   "DOI": "10.1111/caje.70000",
   "abstract": "Contrôle synthétique : 1960 n'est pas une rupture pour le PIB par habitant, les salaires réels ou la scolarisation ; rupture modeste pour l'espérance de vie et la scolarité achevée par cohorte ; nuance le rôle causal de la Révolution tranquille dans la convergence."
@@ -497,7 +497,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 20 ; score 0.482 ; récurrence 2 ; citations ",
+  "note": "Snowballing rang 20 ; score 0.48 ; récurrence 2 ; citations ",
   "publisher": "Montréal : PERT",
   "URL": "https://pertquebec.ca/wp-content/uploads/2023/05/Census-Brief-Update.pdf",
   "abstract": "Recensement 2021 (première langue officielle parlée) : taux de chômage 10,9 % (anglophones) contre 6,9 % (francophones) ; revenu d'emploi médian 32 000 $ contre 37 200 $ ; taux de pauvreté 10 % contre 5,8 % ; l'écart de chômage a doublé depuis 2016."
@@ -520,7 +520,7 @@
    ]
   },
   "language": "en/fr",
-  "note": "Snowballing rang 21 ; score 0.48 ; récurrence 44 ; citations ",
+  "note": "Snowballing rang 21 ; score 0.478 ; récurrence 44 ; citations ",
   "publisher": "Ottawa : Conseil économique du Canada",
   "abstract": "Recensements 1961 et 1971 (RMR de Montréal) : les écarts de revenu de travail par langue se réduisent entre 1961 et 1971 ; rôle de la scolarité et du bilinguisme ; un des rares travaux exploitant 1961."
  },
@@ -542,7 +542,7 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 22 ; score 0.478 ; récurrence 2 ; citations ",
+  "note": "Snowballing rang 22 ; score 0.476 ; récurrence 2 ; citations ",
   "publisher": "Québec : OQLF (étude fondée sur le recensement de 2016)",
   "URL": "https://www.oqlf.gouv.qc.ca/ressources/sociolinguistique/2022/2022_etude_revenu-emploi-selon-langues-utilisees-travail.pdf",
   "abstract": "Recensement 2016 (revenus 2015) : revenu d'emploi moyen des anglophones 48 793 $ contre 44 029 $ pour les francophones, mais revenu médian inférieur (33 412 $ contre 35 566 $) ; dispersion plus grande chez les anglophones ; effet des langues utilisées au travail."
@@ -565,7 +565,7 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 23 ; score 0.478 ; récurrence 1 ; citations ",
+  "note": "Snowballing rang 23 ; score 0.476 ; récurrence 1 ; citations ",
   "publisher": "Mémoire présenté au Comité permanent des langues officielles de la Chambre des communes",
   "URL": "https://www.ourcommons.ca/Content/Committee/441/LANG/Brief/BR12960576/br-external/SerrePierre-f.pdf",
   "abstract": "Réplique au discours de PERT sur l'appauvrissement des anglophones (recensement 2021) : effets de composition (immigration récente, âge, région) ; illustre le débat public sur l'inversion de l'écart."
@@ -597,6 +597,37 @@
   "abstract": "Recensements 1971-2006 : statut socioéconomique des anglophones du Québec ; effet de sélection de l'émigration (les partants plus scolarisés/mieux rémunérés) ; les anglophones restés au Québec ont un revenu et une scolarité inférieurs aux francophones à partir des années 2000."
  },
  {
+  "id": "bousmah2021",
+  "type": "article-journal",
+  "title": "Linguistic distance, languages of work and wages of immigrants in Montreal",
+  "author": [
+   {
+    "family": "Bousmah",
+    "given": "Ibrahim"
+   },
+   {
+    "family": "Grenier",
+    "given": "Gilles"
+   },
+   {
+    "family": "Gray",
+    "given": "David M."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2021
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 25 ; score 0.472 ; récurrence 2 ; citations 13.0",
+  "container-title": "Journal of Labor Research, 42(1), 1-28",
+  "DOI": "10.1007/s12122-020-09316-1",
+  "abstract": "Recensements 2001-2006, ENM 2011 : l'usage du français et de l'anglais au travail est rémunéré positivement à Montréal, mais l'anglais davantage ; immigrants."
+ },
+ {
   "id": "raynauld1966",
   "type": "report",
   "title": "La répartition des revenus selon les groupes ethniques au Canada (3 vol.)",
@@ -622,32 +653,9 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 25 ; score 0.473 ; récurrence 56 ; citations ",
+  "note": "Snowballing rang 26 ; score 0.471 ; récurrence 56 ; citations ",
   "publisher": "Étude préparée pour la Commission royale d'enquête sur le bilinguisme et le biculturalisme (non publiée)",
   "abstract": "Analyse du recensement de 1961 pour la Commission B-B : revenus de travail par origine ethnique et langue, décomposition par scolarité, profession, industrie ; base empirique du Livre III."
- },
- {
-  "id": "vaillancourt2019",
-  "type": "article-journal",
-  "title": "Assessing Bill 101 after 40 years",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2019
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 26 ; score 0.471 ; récurrence 3 ; citations ",
-  "container-title": "Language Problems and Language Planning, 43(2) (introduction du numéro spécial)",
-  "DOI": "10.1075/lplp.00037.vai",
-  "abstract": "Introduction du numéro spécial sur 40 ans de Loi 101 (Grenier 2019, Bourhis 2019, Castonguay 2019) ; cadre d'évaluation des effets économiques et démographiques."
  },
  {
   "id": "bourhis2017",
@@ -677,37 +685,6 @@
   "abstract": "Vitalité ethnolinguistique (démographie, statut, soutien institutionnel) des deux communautés après 40 ans d'aménagement linguistique ; indicateurs de statut économique (revenu, scolarité) des anglophones restés au Québec."
  },
  {
-  "id": "bousmah2021",
-  "type": "article-journal",
-  "title": "Linguistic distance, languages of work and wages of immigrants in Montreal",
-  "author": [
-   {
-    "family": "Bousmah",
-    "given": "Ibrahim"
-   },
-   {
-    "family": "Grenier",
-    "given": "Gilles"
-   },
-   {
-    "family": "Gray",
-    "given": "David M."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2021
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 28 ; score 0.469 ; récurrence 2 ; citations 13.0",
-  "container-title": "Journal of Labor Research, 42(1), 1-28",
-  "DOI": "10.1007/s12122-020-09316-1",
-  "abstract": "Recensements 2001-2006, ENM 2011 : l'usage du français et de l'anglais au travail est rémunéré positivement à Montréal, mais l'anglais davantage ; immigrants."
- },
- {
   "id": "dean2022",
   "type": "article-journal",
   "title": "The linguistic wage gap in Quebec, 1901 to 1951",
@@ -729,7 +706,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 29 ; score 0.462 ; récurrence 4 ; citations 9.0",
+  "note": "Snowballing rang 28 ; score 0.462 ; récurrence 4 ; citations 9.0",
   "container-title": "Cliometrica",
   "DOI": "10.1007/s11698-021-00236-3",
   "abstract": "Recensements 1901-1921 (et 1951) : l'écart se réduit modestement au début du XXe siècle puis stagne jusqu'en 1970 ; l'essentiel de la convergence est postérieur à 1970. Situe le point de départ de 1961."
@@ -752,8 +729,34 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 30 ; score 0.459 ; récurrence 7 ; citations ",
+  "note": "Snowballing rang 29 ; score 0.456 ; récurrence 7 ; citations ",
   "publisher": "Ottawa : Patrimoine canadien / CIRLM, coll. Nouvelles perspectives canadiennes",
   "abstract": "Ouvrage collectif sur la vitalité des communautés anglophones du Québec (démographie, éducation, santé, statut socioéconomique — chap. Floch & Pocock)."
+ },
+ {
+  "id": "grenier2016",
+  "type": "chapter",
+  "title": "English as the lingua franca and the economic value of other languages: The case of the language of work in the Montreal labor market",
+  "author": [
+   {
+    "family": "Grenier",
+    "given": "Gilles"
+   },
+   {
+    "family": "Nadeau",
+    "given": "Serge"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2016
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 30 ; score 0.454 ; récurrence 4 ; citations ",
+  "container-title": "In M. Gazzola et B.-A. Wickström (dir.), The Economics of Language Policy, Cambridge (MA) : MIT Press, 267-312",
+  "abstract": "Recensements 2001-2006 : valeur de l'usage de l'anglais et du français au travail à Montréal par groupe linguistique ; l'anglais comme lingua franca conserve une valeur marchande supérieure malgré la francisation."
  }
 ]

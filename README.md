@@ -50,9 +50,9 @@ LaTeX disponibles) ; le rendu Word a été généré à partir du même texte po
 
 `score = (minmax(log(1 + citations)) + minmax(année) + minmax(récurrence)) / 3` (poids égaux)
 
-- citations : Google Scholar quand le compte a été relevé (`citations_google_scholar`, 28 publications au
+- citations : Google Scholar quand le compte a été relevé (`citations_google_scholar`, 61 publications au
   2026-09-03) ; sinon le compte Consensus / Semantic Scholar ramené à l'échelle Google Scholar par le ratio médian
-  observé sur les publications qui ont les deux (2,2) ; sinon médiane. Colonnes `citations_score` et
+  observé sur les publications qui ont les deux (2,4) ; sinon médiane. Colonnes `citations_score` et
   `citations_score_source` de la grille ;
 - année : 1 = plus récente, 0 = plus ancienne ;
 - récurrence : nombre de bibliographies du corpus citant la publication (101 bibliographies dépouillées).

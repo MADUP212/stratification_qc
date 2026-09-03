@@ -115,3 +115,7 @@ Docs/        état du savoir (Markdown, DOCX)
   pour le top 30 et deux autres textes (28 comptes ; introuvables ou mal appariés : Commission B-B 1969, PERT 2023,
   Boulet 1980, OQLF 2022, Raynauld et al. 1966). Le score utilise Google Scholar quand il existe, sinon le compte
   Consensus multiplié par le ratio médian Google Scholar / Consensus (2,23 sur 19 publications), sinon la médiane.
+- **Mise à jour Google Scholar** (2026-09-03, second passage) : 61 comptes relevés au total ; trois appariements
+  rejetés (Bourhis 2012 apparié à Bourhis 2019 ; McRoberts 1988 apparié à un compte rendu ; Coleman 1984 notice
+  en double à 0 citation) ; deux comptes douteux conservés (Commission B-B 1969 : 19 ; Breton 1978 : 2). Ratio
+  médian Google Scholar / Consensus recalculé : 2,41 (n = 34).
