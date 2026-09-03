@@ -18,7 +18,7 @@ from docx.oxml.ns import qn
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RMD = os.path.join(ROOT, "Gabarit", "gabarit_snowballing.Rmd")
 GRILLE = os.path.join(ROOT, "Data", "grille_snowballing.csv")
-PNG = os.path.join(ROOT, "Graphiques", "lectures_snowballing_top30.png")
+PNG = os.path.join(ROOT, "Graphiques", "lectures_snowballing_top30_court.png")
 PNG_RESEAU = os.path.join(ROOT, "Graphiques", "reseau_citations_top30.png")
 OUT = os.path.join(ROOT, "Gabarit", "gabarit_snowballing.docx")
 IDUL = "537380130 / MADUP212"
@@ -214,7 +214,7 @@ for kind, content in blocks:
     elif kind.startswith("figure"):
         nfig += 1
         img = PNG if kind.endswith("graphique") else PNG_RESEAU
-        doc.add_picture(img, width=Inches(6.3) if kind.endswith("graphique") else Inches(6.0))
+        doc.add_picture(img, width=Inches(5.0) if kind.endswith("graphique") else Inches(4.6))
         doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
         p = doc.add_paragraph(style="Caption"); r = p.add_run(f"Figure {nfig}. " + content); set_font(r)
         p.paragraph_format.line_spacing = 1.0

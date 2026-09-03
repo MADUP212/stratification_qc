@@ -131,5 +131,15 @@ for s in ["top", "right"]:
 plt.tight_layout()
 os.makedirs(os.path.join(ROOT, "Graphiques"), exist_ok=True)
 fig.savefig(os.path.join(ROOT, "Graphiques", "lectures_snowballing_top30.png"), dpi=200)
+
+# Variante à étiquettes courtes (auteur, année) pour le gabarit
+fig2, ax2 = plt.subplots(figsize=(7, 5.4))
+lab_court = top_plot["citationAuteurAnnee"].str.strip("()").tolist()
+ax2.hlines(y=range(len(top_plot)), xmin=0, xmax=top_plot["score"], color="#9e9e9e", linewidth=0.8)
+ax2.plot(top_plot["score"], range(len(top_plot)), "o", color="#1f1f1f", markersize=5)
+ax2.set_yticks(range(len(top_plot))); ax2.set_yticklabels(lab_court, fontsize=8.5)
+ax2.set_xlabel("Indice de pertinence", fontsize=10, fontweight="bold"); ax2.set_xlim(0, 1)
+for sp in ["top", "right"]: ax2.spines[sp].set_visible(False)
+plt.tight_layout(); fig2.savefig(os.path.join(ROOT, "Graphiques", "lectures_snowballing_top30_court.png"), dpi=200)
 print(top[["rang", "id", "year", "citations_score", "citations_score_source", "recurrence", "score"]].to_string(index=False))
 print("\nratio Google Scholar / Consensus (médiane, n=%d) : %.2f | médiane imputée : %.0f | n imputés : %d" % (len(both), ratio, med, int(df["citations_imputees"].sum())))

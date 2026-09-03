@@ -21,7 +21,7 @@ snowballing*), la grille de pertinence, les graphiques et un gabarit R Markdown 
 | `Graphiques/lectures_snowballing_top30.png` | Graphique des 30 lectures ordonnées par indice de pertinence |
 | `Graphiques/reseau_citations_top30.png` | Réseau de citations (disposition par forces, taille = citations reçues dans le top 30) |
 | `CodeR/graphique_snowballing.R` | Script R (dplyr, ggplot2, igraph) : score, graphique des lectures, réseau |
-| `Gabarit/gabarit_snowballing.Rmd` | **Gabarit prêt à l'emploi** (méthode + graphiques + bibliographie), PDF via xelatex |
+| `Gabarit/gabarit_snowballing.Rmd` | **Gabarit prêt à l'emploi** : Titre, 1 Introduction (à rédiger), 2 Méthode (deux pages, avec les deux figures), 3 Revue de littérature (à rédiger), bibliographie des 30 lectures ; PDF via xelatex ou via `Scripts/imprimer_gabarit_pdf.sh` |
 | `Gabarit/gabarit_snowballing.docx` | Rendu Word du même gabarit (généré par `Scripts/render_gabarit_docx.py`) |
 | `Zotero/corpus_snowballing.{ris,bib,json}` | Import Zotero du corpus complet (DOI/URL inclus) ; `top30_snowballing.*` pour les 30 lectures |
 | `Scripts/` | Scripts Python : `grille.py` (gestion du corpus), `score_snowballing.py`, `reseau_citations.py`, `export_zotero.py`, `render_gabarit_docx.py` |

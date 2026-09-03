@@ -109,49 +109,32 @@ if (knitr::is_latex_output()) {
 }
 ```
 
-<!-- Insérer ici, au besoin, l'introduction et l'état du savoir. Les sections ci-dessous documentent la méthode de repérage des références et présentent le graphique de pertinence. -->
+<!-- Section 1 : à rédiger. -->
 
-# Méthode de repérage des références
+# Introduction
 
-## Principe : la revue par « boule de neige »
+[À rédiger.]
 
-Le repérage des sources repose sur la méthode du *snowballing* (perles de littérature) telle que décrite par Jalali et Wohlin (2012) et enseignée par la Chaire de leadership en enseignement des sciences sociales numériques (CLESSN). Plutôt que d'interroger plusieurs bases de données avec des mots-clés, on part d'un petit ensemble de publications récentes et centrales, puis on dépouille systématiquement leurs listes de références (*backward snowballing*) et les publications qui les citent (*forward snowballing*). Chaque publication retenue devient à son tour un point de départ, et l'on répète l'opération jusqu'à saturation, c'est-à-dire jusqu'à ce qu'une ronde n'apporte plus de référence pertinente. L'ensemble des publications repérées, ainsi que la bibliographie dépouillée de chacune, est consigné dans une grille (fichier `Data/grille_snowballing.csv` et `Data/grille_snowballing.xlsx` du dépôt).
+# Méthode
 
-## Ensemble de départ
+Le repérage des sources suit la méthode du *snowballing* (Jalali et Wohlin, 2012) enseignée par la CLESSN : à partir d'un ensemble de départ de onze publications récentes couvrant cinq communautés savantes (économie du langage, histoire économique, sociologie de la stratification, aménagement linguistique, littérature grise sur le recensement de 2021), on dépouille les listes de références (*backward*) et les publications citantes (*forward*), puis on répète l'opération avec chaque texte retenu jusqu'à saturation. Quatre rondes, dont une consacrée aux travaux citant l'échelle professionnelle de Blishen (1958) et *The Vertical Mosaic* de Porter (1965), ont produit un corpus de 103 publications et 101 bibliographies dépouillées. Une publication est retenue si elle compare explicitement francophones et anglophones au Québec (critère obligatoire) et si elle mesure le revenu d'emploi ou le statut socioprofessionnel, couvre un recensement de 1961 à 2021 ou propose une explication (au moins trois points sur six) ; les travaux de contexte sont conservés dans la grille sans être classés.
 
-L'ensemble de départ compte onze publications choisies pour couvrir les différentes communautés savantes qui s'intéressent à la question : l'économie du langage et du travail (Albouy, 2008 ; Nadeau, 2010 ; Christofides et Swidinsky, 2010 ; Vaillancourt et al., 2013 ; Vaillancourt et al., 2024), l'histoire économique (Dean et Geloso, 2022 ; Gagnon et al., 2023), la sociologie et la démographie (Béland et al., 2010), la psychologie sociale et l'aménagement linguistique (Bourhis, 2019 ; Grenier, 2019) et la littérature grise récente sur le recensement de 2021 (Donovan et Bell, 2024). Ces textes ont été repérés à partir des mots-clés de la question de recherche et de leurs synonymes (francophones, anglophones, langue maternelle, revenu de travail, écart salarial, statut socioprofessionnel, mobilité, propriété des entreprises, Québec, recensement, Loi 101) dans le moteur académique Consensus et par recherche web.
+Chaque publication reçoit un indice de pertinence de 0 à 1, moyenne à poids égaux de trois indicateurs normalisés (min-max) : le nombre de citations Google Scholar (en logarithme ; relevé avec un script Python fondé sur la bibliothèque *scholarly*, sinon compte Consensus ramené à l'échelle de Google Scholar), l'année de publication et la récurrence, soit le nombre de bibliographies du corpus qui citent la publication. La figure 1 classe les trente publications incluses les mieux notées ; la figure 2 montre comment elles se citent, la disposition par forces rapprochant les textes qui se citent mutuellement. Les fondateurs vers lesquels convergent les flèches (Commission royale d'enquête sur le bilinguisme et le biculturalisme, 1969 ; Raynauld, Marion et Béland, 1966 ; Vaillancourt, 1980) s'y distinguent des synthèses récentes qui citent sans être encore citées. La grille, les bibliographies, les scripts Python (grille, score, réseau, export Zotero) et le code R des figures sont dans le dépôt GitHub `stratification_qc` ; les bibliographies ayant été reconstituées sans les PDF, les récurrences sont des bornes inférieures.
 
-## Rondes de dépouillement
-
-Trois rondes ont été nécessaires. La première ronde a dépouillé les bibliographies des onze textes de départ et repéré leurs citants : elle a fait émerger le noyau de l'économie du langage au Québec (Vaillancourt, 1980 ; Carliner, 1981 ; Lacroix et Vaillancourt, 1981 ; Shapiro et Stelcner, 1987, 1997 ; Grenier, 1987 ; Bloom et Grenier, 1992), les documents fondateurs issus du recensement de 1961 (Commission royale d'enquête sur le bilinguisme et le biculturalisme, 1969 ; Raynauld, Marion et Béland, 1966 ; Raynauld, 1974) et les travaux sociologiques sur la stratification linguistique (Porter, 1965 ; Lieberson, 1970 ; Lanphier et Morris, 1974 ; Fenwick, 1982 ; Levine, 1990). La deuxième ronde a dépouillé ces nouvelles publications et ajouté les études de mobilité et d'attainment du statut (de Jocas et Rocher, 1957 ; McRoberts et al., 1976 ; Boyd et al., 1985 ; Béland, 1987 ; Laczko, 1995), les explications théoriques (Migué, 1970 ; Dofny et Rioux, 1962 ; Guindon, 1964 ; McRoberts, 1979) et la série de rapports sur la propriété des entreprises et les revenus de travail (Vaillancourt, 1988, 1991 ; Vaillancourt et Carpentier, 1989 ; Sales et Bélanger, 1985 ; Vaillancourt et Touchette, 2001 ; Vaillancourt et Vaillancourt, 2005 ; Vaillancourt, 2018, 2020). La troisième ronde a raffiné le repérage en examinant les publications qui citent l'échelle de classes professionnelles de Blishen (1958) et *The Vertical Mosaic* de Porter (1965), en ne retenant que celles qui traitent des francophones et des anglophones (Blishen, 1970 ; Cuneo et Curtis, 1975 ; Darroch, 1979 ; Ogmundson et McLaughlin, 1992 ; Nakhaie, 1997 ; Wanner, 1999, 2005). Au terme de ces rondes, le corpus compte 103 publications dont 101 bibliographies ont été dépouillées ; la dernière ronde n'a plus produit de référence nouvelle répondant aux critères, ce qui marque la saturation.
-
-## Critères d'inclusion
-
-Une publication est retenue si elle compare explicitement les francophones et les anglophones du Québec (critère obligatoire, 2 points), si elle mesure le revenu d'emploi ou le statut socioprofessionnel (2 points), si elle couvre au moins un recensement de la période 1961-2021 (1 point) et si elle propose une explication de l'écart ou de son évolution (1 point). Les publications qui obtiennent au moins trois points sont incluses ; celles qui ne remplissent pas le critère obligatoire mais qui sont indispensables à la compréhension du problème (outils de mesure du statut, travaux sur la mosaïque verticale canadienne, études d'immigrants) sont conservées dans la grille avec le statut « contexte » sans entrer dans le classement.
-
-## Indice de pertinence
-
-Suivant la méthode CLESSN, chaque publication reçoit un indice de pertinence compris entre 0 et 1 qui combine trois indicateurs normalisés par la méthode min-max : le nombre de citations (transformé en logarithme pour atténuer l'asymétrie entre les classiques et les articles récents), l'année de publication (1 pour la plus récente, 0 pour la plus ancienne) et la pertinence, mesurée par la récurrence de la publication dans les bibliographies dépouillées du corpus. Les trois indicateurs reçoivent un poids égal (un tiers chacun), comme dans le script de référence de la CLESSN. La figure 1 présente les trente publications incluses qui obtiennent l'indice le plus élevé ; le code qui la produit figure dans ce document et dans le script `CodeR/graphique_snowballing.R`.
-
-```{r graphique, fig.width=9, fig.height=10.5, out.width="100%", fig.pos="H", fig.cap="Liste des trente lectures les plus pertinentes selon l'indice de pertinence (moyenne à poids égaux des citations, de l'année et de la récurrence dans les bibliographies du corpus)."}
-ggplot(top30, aes(x = reorder(etiquette, indice), y = indice)) +
-  geom_segment(aes(xend = etiquette, y = 0, yend = indice), colour = "grey60", linewidth = 0.4) +
-  geom_point(size = 2.5) +
+```{r graphique, fig.width=7, fig.height=4.8, out.width="74%", fig.pos="H", fig.cap="Les trente lectures les plus pertinentes (indice = moyenne à poids égaux des citations, de l'année et de la récurrence dans les bibliographies du corpus)."}
+top30 <- top30 %>% mutate(etiquette_courte = make.unique(gsub("[()]", "", citationAuteurAnnee), sep = " "))
+ggplot(top30, aes(x = reorder(etiquette_courte, indice), y = indice)) +
+  geom_segment(aes(xend = etiquette_courte, y = 0, yend = indice), colour = "grey60", linewidth = 0.4) +
+  geom_point(size = 2.2) +
   coord_flip() +
   theme_bw(base_family = "serif") +
   scale_y_continuous(name = "Indice de pertinence", limits = c(0, 1)) +
-  theme(axis.text.y = element_text(size = 9), panel.grid = element_blank(),
-        axis.title.x = element_text(size = 11, face = "bold", vjust = -1),
-        axis.title.y = element_blank(), axis.text.x = element_text(size = 10, face = "bold"))
+  theme(axis.text.y = element_text(size = 8), panel.grid = element_blank(),
+        axis.title.x = element_text(size = 10, face = "bold", vjust = -0.5),
+        axis.title.y = element_blank(), axis.text.x = element_text(size = 9, face = "bold"))
 ```
 
-Les lectures de tête combinent les trois propriétés recherchées : des classiques très cités (Porter, 1965 ; Carliner, 1981 ; Lieberson, 1970), des textes que tout le corpus cite (Commission royale d'enquête sur le bilinguisme et le biculturalisme, 1969 ; Vaillancourt, 1980 ; Boulet, 1980) et des synthèses récentes (Albouy, 2008 ; Vaillancourt et al., 2007 ; Christofides et Swidinsky, 2010).
-
-## Réseau de citations
-
-Pour visualiser la structure du champ, on construit enfin le réseau de citations entre les trente lectures retenues : chaque publication est un nœud, chaque flèche relie une publication à celles qu'elle cite parmi les trente, la taille du point est proportionnelle au nombre de citations reçues des autres membres du groupe, et la disposition par forces (algorithme de Fruchterman et Reingold) rapproche les publications qui se citent mutuellement. Ce graphique permet de repérer d'un coup d'œil les textes fondateurs vers lesquels convergent les flèches (le Livre III de la Commission royale d'enquête sur le bilinguisme et le biculturalisme, l'étude de Raynauld, Marion et Béland, la thèse de Vaillancourt et le rapport de Boulet), les textes de synthèse qui citent beaucoup sans être encore cités (les rapports récents) et les lignées disciplinaires qui ne se citent guère entre elles (économie du langage et sociologie de la mobilité). La figure 2 présente ce réseau.
-
-```{r reseau, fig.width=10, fig.height=10, out.width="100%", fig.pos="H", fig.cap="Réseau de citations entre les trente lectures les plus pertinentes (disposition par forces : les publications qui se citent sont rapprochées ; flèche : « cite » ; taille du point et nombre entre parenthèses : citations reçues des autres lectures du groupe)."}
+```{r reseau, fig.width=8, fig.height=6, out.width="62%", fig.pos="H", fig.cap="Réseau de citations entre les trente lectures (flèche : « cite » ; taille du point : citations reçues des autres lectures ; disposition par forces)."}
 library(igraph)
 library(jsonlite)
 bib   <- fromJSON("../Data/bibliographies.json")           # bibliographies dépouillées (id citant -> ids cités)
@@ -164,33 +147,20 @@ g <- graph_from_data_frame(aretes, directed = TRUE, vertices = data.frame(name =
 etiq <- setNames(gsub("[()]", "", top30$citationAuteurAnnee), top30$id)
 deg_in <- degree(g, mode = "in")
 V(g)$label <- paste0(etiq[V(g)$name], " (", deg_in, ")")
-V(g)$size  <- 2.5 + 0.55 * deg_in                              # plus grand point = plus cité dans le top 30
+V(g)$size  <- 2.5 + 0.5 * deg_in                              # plus grand point = plus cité dans le top 30
 set.seed(7)
-lay <- layout_with_fr(g, niter = 5000)                      # disposition par forces (Fruchterman-Reingold)
+lay <- layout_with_kk(g)                                    # disposition par forces (Kamada-Kawai, plus aérée que Fruchterman-Reingold)
 par(mar = c(0, 0, 0, 0), family = "serif")
 plot(g, layout = lay, rescale = TRUE,
      edge.arrow.size = 0.25, edge.color = adjustcolor("grey50", 0.3), edge.curved = 0.15, edge.width = 0.4,
      vertex.color = "grey15", vertex.frame.color = NA,
-     vertex.label.color = "black", vertex.label.cex = 0.62, vertex.label.family = "serif",
-     vertex.label.dist = 0.5 + V(g)$size / 6, vertex.label.degree = -pi / 2)
+     vertex.label.color = "black", vertex.label.cex = 0.72, vertex.label.family = "serif",
+     vertex.label.dist = 0.6 + V(g)$size / 6, vertex.label.degree = -pi / 2)
 ```
 
-## Limites
+# Revue de littérature
 
-Les comptes de citations Google Scholar ont été relevés le 3 septembre 2026 pour `r sum(!is.na(grille$citations_google_scholar))` publications, dont l'essentiel du classement, à l'aide du script `Scripts/recuperer_citations_scholar.py` (bibliothèque *scholarly*). Pour les autres, le compte du moteur Consensus (données Semantic Scholar), systématiquement plus faible, a été ramené à l'échelle de Google Scholar par le ratio médian observé sur les publications qui disposent des deux comptes (`r round(ratio, 2)`) ; les rapports et ouvrages introuvables dans les deux sources se sont vu attribuer la médiane, ce qui est signalé dans la grille. Le rapport de la Commission royale d'enquête sur le bilinguisme et le biculturalisme est dispersé dans Google Scholar en de nombreuses notices, de sorte que son compte est sous-estimé. Les bibliographies ont été reconstituées à partir des références affichées par les moteurs bibliographiques et de la connaissance des textes plutôt qu'à partir des fichiers PDF, de sorte que les comptes de récurrence constituent des bornes inférieures à valider lors de la lecture. Enfin, la méthode par boule de neige tend à surreprésenter les auteurs les plus prolifiques d'un champ, ici l'économie du langage montréalaise, ce que la troisième ronde, ancrée dans la sociologie de la stratification, visait à corriger.
-
-# Les trente lectures retenues
-
-Le tableau 1 reprend, pour chacune des trente lectures de la figure 1, les trois composantes de l'indice de pertinence.
-
-
-```{r tableau}
-top30 %>%
-  transmute(Rang = row_number(), Publication = citationAuteurAnnee, Citations = citations_score,
-            Source = c("Google Scholar" = "GS", "Consensus calibr\u00e9" = "Cons. cal.", "imput\u00e9" = "imput\u00e9")[source_citations],
-            Recurrence = recurrence, Indice = indice) %>%
-  kable(col.names = c("Rang", "Publication", "Citations", "Source", "R\u00e9currence", "Indice"), caption = "Composantes de l'indice de pertinence des trente lectures (GS : Google Scholar ; Cons. cal. : compte Consensus ramené à l'échelle Google Scholar ; imputé : médiane).")
-```
+[À rédiger.]
 
 # Bibliographie {-}
 
