@@ -1,29 +1,29 @@
 ---
 # GABARIT PRÊT À L'EMPLOI — Times New Roman 12 pt, interligne double, texte justifié, pages numérotées,
 # identifiants en gras et en majuscules en haut à droite de chaque page, nombre de mots sur la page titre.
-# Tricoter avec : rmarkdown::render("Gabarit/gabarit_snowballing.Rmd")  (nécessite LaTeX : tinytex::install_tinytex()).
-# Si la police « Times New Roman » n'est pas installée (Linux), remplacer mainfont par "TeX Gyre Termes" ou "Liberation Serif".
+# Sortie principale (LaTeX) : rmarkdown::render("Gabarit/gabarit_snowballing.Rmd")   -> nécessite tinytex::install_tinytex()
+# Sortie de secours (sans LaTeX) : rmarkdown::render("Gabarit/gabarit_snowballing.Rmd", output_format = "html_document")
+#   puis impression du HTML en PDF avec Chrome/Chromium (voir Scripts/imprimer_gabarit_pdf.sh).
+# Si la police « Times New Roman » n'est pas installée (Linux), remplacer mainfont par "Liberation Serif" ou "TeX Gyre Termes".
 output:
   pdf_document:
     latex_engine: xelatex
+    number_sections: true
+    fig_caption: true
+    includes:
+      in_header: preambule.tex
+  html_document:
+    theme: null
+    highlight: null
+    mathjax: null
+    css: gabarit_snowballing.css
+    self_contained: true
     number_sections: true
     fig_caption: true
 fontsize: 12pt
 mainfont: "Times New Roman"
 geometry: margin=2.5cm
 lang: fr
-header-includes:
-  - \usepackage{setspace}
-  - \doublespacing
-  - \usepackage{float}
-  - \usepackage{fancyhdr}
-  - \pagestyle{fancy}
-  - \fancyhf{}
-  - \fancyhead[R]{\textbf{\MakeUppercase{537380130 / MADUP212}}}
-  - \fancyfoot[C]{\thepage}
-  - \renewcommand{\headrulewidth}{0pt}
-  - \fancypagestyle{titre}{\fancyhf{}\fancyhead[R]{\textbf{\MakeUppercase{537380130 / MADUP212}}}\renewcommand{\headrulewidth}{0pt}}
-  - \fancypagestyle{plain}{\fancyhf{}\fancyhead[R]{\textbf{\MakeUppercase{537380130 / MADUP212}}}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}}
 ---
 
 ```{r setup, include=FALSE}
@@ -38,9 +38,9 @@ chemin_grille <- "../Data/grille_snowballing.csv"   # le Rmd est dans Gabarit/ ;
 grille <- read_csv(chemin_grille, show_col_types = FALSE)
 
 # ---- 2. Indice de pertinence (méthode CLESSN, pondérée) ----
-w_cit  <- 0.35   # nombre de citations
-w_year <- 0.25   # année (1 = plus récente, 0 = plus ancienne)
-w_pert <- 0.40   # récurrence dans les bibliographies du corpus
+w_cit  <- 1/3    # nombre de citations
+w_year <- 1/3    # année (1 = plus récente, 0 = plus ancienne)
+w_pert <- 1/3    # récurrence dans les bibliographies du corpus (poids égaux)
 n_top  <- 30
 
 normalize0to1 <- function(x) (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
@@ -83,32 +83,22 @@ compter_mots <- function(fichier = knitr::current_input()) {
 nb_mots <- compter_mots()
 ```
 
-\begin{titlepage}
-\thispagestyle{titre}
-\begin{center}
-\vspace*{3cm}
-
-{\Large \textbf{TITRE}}
-
-\vspace{2cm}
-
-Question de recherche : entre 1961 et 2021, comment l'écart de revenu d'emploi et de statut socioprofessionnel entre francophones et anglophones de langue maternelle au Québec a-t-il évolué, et à partir de quel recensement cet écart s'est-il inversé, si tant est qu'il l'ait fait ?
-
-\vfill
-
-[Sigle et titre du cours]
-
-[Département et université]
-
-\vspace{1cm}
-
-`r format(Sys.Date(), "%d %B %Y")`
-
-\vspace{1cm}
-
-Nombre total de mots : `r nb_mots` (page titre et bibliographie exclues)
-\end{center}
-\end{titlepage}
+```{r page-titre, results='asis'}
+# Page titre (LaTeX ou HTML selon la sortie). Aucun nom : seuls les identifiants figurent en en-tête.
+question <- "Question de recherche : entre 1961 et 2021, comment l'écart de revenu d'emploi et de statut socioprofessionnel entre francophones et anglophones de langue maternelle au Québec a-t-il évolué, et à partir de quel recensement cet écart s'est-il inversé, si tant est qu'il l'ait fait ?"
+mois_fr  <- c("janvier", "f\u00e9vrier", "mars", "avril", "mai", "juin", "juillet", "ao\u00fbt", "septembre", "octobre", "novembre", "d\u00e9cembre")
+date_txt <- paste(as.integer(format(Sys.Date(), "%d")), mois_fr[as.integer(format(Sys.Date(), "%m"))], format(Sys.Date(), "%Y"))
+mots_txt <- paste0("Nombre total de mots : ", nb_mots, " (page titre et bibliographie exclues)")
+if (knitr::is_latex_output()) {
+  cat("\\begin{titlepage}\n\\thispagestyle{titre}\n\\begin{center}\n\\vspace*{3cm}\n\n{\\Large \\textbf{TITRE}}\n\n\\vspace{2cm}\n\n",
+      question, "\n\n\\vfill\n\n[Sigle et titre du cours]\n\n[Département et université]\n\n\\vspace{1cm}\n\n",
+      date_txt, "\n\n\\vspace{1cm}\n\n", mots_txt, "\n\\end{center}\n\\end{titlepage}\n", sep = "")
+} else {
+  cat('<div class="page-titre"><p class="titre">TITRE</p><p class="question">', question,
+      '</p><p class="bas">[Sigle et titre du cours]<br>[Département et université]<br><br>', date_txt,
+      '<br><br>', mots_txt, '</p></div>\n<div class="corps"></div>\n', sep = "")
+}
+```
 
 <!-- Insérer ici, au besoin, l'introduction et l'état du savoir. Les sections ci-dessous documentent la méthode de repérage des références et présentent le graphique de pertinence. -->
 
@@ -124,7 +114,7 @@ L'ensemble de départ compte onze publications choisies pour couvrir les différ
 
 ## Rondes de dépouillement
 
-Trois rondes ont été nécessaires. La première ronde a dépouillé les bibliographies des onze textes de départ et repéré leurs citants : elle a fait émerger le noyau de l'économie du langage au Québec (Vaillancourt, 1980 ; Carliner, 1981 ; Lacroix et Vaillancourt, 1981 ; Shapiro et Stelcner, 1987, 1997 ; Grenier, 1987 ; Bloom et Grenier, 1992), les documents fondateurs issus du recensement de 1961 (Commission royale d'enquête sur le bilinguisme et le biculturalisme, 1969 ; Raynauld, Marion et Béland, 1966 ; Raynauld, 1974) et les travaux sociologiques sur la stratification linguistique (Porter, 1965 ; Lieberson, 1970 ; Lanphier et Morris, 1974 ; Fenwick, 1982 ; Levine, 1990). La deuxième ronde a dépouillé ces nouvelles publications et ajouté les études de mobilité et d'attainment du statut (de Jocas et Rocher, 1957 ; McRoberts et al., 1976 ; Boyd et al., 1985 ; Béland, 1987 ; Laczko, 1995), les explications théoriques (Migué, 1970 ; Dofny et Rioux, 1962 ; Guindon, 1964 ; McRoberts, 1979) et la série de rapports sur la propriété des entreprises et les revenus de travail (Vaillancourt, 1988, 1991 ; Vaillancourt et Carpentier, 1989 ; Sales et Bélanger, 1985 ; Vaillancourt et Touchette, 2001 ; Vaillancourt et Vaillancourt, 2005 ; Vaillancourt, 2018, 2020). La troisième ronde a raffiné le repérage en examinant les publications qui citent l'échelle de classes professionnelles de Blishen (1958) et *The Vertical Mosaic* de Porter (1965), en ne retenant que celles qui traitent des francophones et des anglophones (Blishen, 1970 ; Cuneo et Curtis, 1975 ; Darroch, 1979 ; Ogmundson et McLaughlin, 1992 ; Nakhaie, 1997 ; Wanner, 1999, 2005). Au terme de ces rondes, le corpus compte 100 publications dont 98 bibliographies ont été dépouillées ; la dernière ronde n'a plus produit de référence nouvelle répondant aux critères, ce qui marque la saturation.
+Trois rondes ont été nécessaires. La première ronde a dépouillé les bibliographies des onze textes de départ et repéré leurs citants : elle a fait émerger le noyau de l'économie du langage au Québec (Vaillancourt, 1980 ; Carliner, 1981 ; Lacroix et Vaillancourt, 1981 ; Shapiro et Stelcner, 1987, 1997 ; Grenier, 1987 ; Bloom et Grenier, 1992), les documents fondateurs issus du recensement de 1961 (Commission royale d'enquête sur le bilinguisme et le biculturalisme, 1969 ; Raynauld, Marion et Béland, 1966 ; Raynauld, 1974) et les travaux sociologiques sur la stratification linguistique (Porter, 1965 ; Lieberson, 1970 ; Lanphier et Morris, 1974 ; Fenwick, 1982 ; Levine, 1990). La deuxième ronde a dépouillé ces nouvelles publications et ajouté les études de mobilité et d'attainment du statut (de Jocas et Rocher, 1957 ; McRoberts et al., 1976 ; Boyd et al., 1985 ; Béland, 1987 ; Laczko, 1995), les explications théoriques (Migué, 1970 ; Dofny et Rioux, 1962 ; Guindon, 1964 ; McRoberts, 1979) et la série de rapports sur la propriété des entreprises et les revenus de travail (Vaillancourt, 1988, 1991 ; Vaillancourt et Carpentier, 1989 ; Sales et Bélanger, 1985 ; Vaillancourt et Touchette, 2001 ; Vaillancourt et Vaillancourt, 2005 ; Vaillancourt, 2018, 2020). La troisième ronde a raffiné le repérage en examinant les publications qui citent l'échelle de classes professionnelles de Blishen (1958) et *The Vertical Mosaic* de Porter (1965), en ne retenant que celles qui traitent des francophones et des anglophones (Blishen, 1970 ; Cuneo et Curtis, 1975 ; Darroch, 1979 ; Ogmundson et McLaughlin, 1992 ; Nakhaie, 1997 ; Wanner, 1999, 2005). Au terme de ces rondes, le corpus compte 103 publications dont 101 bibliographies ont été dépouillées ; la dernière ronde n'a plus produit de référence nouvelle répondant aux critères, ce qui marque la saturation.
 
 ## Critères d'inclusion
 
@@ -132,11 +122,11 @@ Une publication est retenue si elle compare explicitement les francophones et le
 
 ## Indice de pertinence
 
-Suivant la méthode CLESSN, chaque publication reçoit un indice de pertinence compris entre 0 et 1 qui combine trois indicateurs normalisés par la méthode min-max : le nombre de citations (transformé en logarithme pour atténuer l'asymétrie entre les classiques et les articles récents), l'année de publication (1 pour la plus récente, 0 pour la plus ancienne) et la pertinence, mesurée par la récurrence de la publication dans les bibliographies dépouillées du corpus. La pondération retenue est de 0,35 pour les citations, 0,25 pour l'année et 0,40 pour la récurrence, le dernier indicateur étant le plus proche de la question de recherche. Le graphique de la section suivante présente les trente publications incluses qui obtiennent l'indice le plus élevé ; le code qui le produit figure dans ce document et dans le script `CodeR/graphique_snowballing.R`.
+Suivant la méthode CLESSN, chaque publication reçoit un indice de pertinence compris entre 0 et 1 qui combine trois indicateurs normalisés par la méthode min-max : le nombre de citations (transformé en logarithme pour atténuer l'asymétrie entre les classiques et les articles récents), l'année de publication (1 pour la plus récente, 0 pour la plus ancienne) et la pertinence, mesurée par la récurrence de la publication dans les bibliographies dépouillées du corpus. Les trois indicateurs reçoivent un poids égal (un tiers chacun), comme dans le script de référence de la CLESSN. Le graphique de la section suivante présente les trente publications incluses qui obtiennent l'indice le plus élevé ; le code qui le produit figure dans ce document et dans le script `CodeR/graphique_snowballing.R`.
 
 ## Réseau de citations
 
-Pour visualiser la structure du champ, on construit enfin le réseau de citations entre les trente lectures retenues : chaque publication est un nœud placé sur un cercle dans l'ordre chronologique, chaque flèche relie une publication à celles qu'elle cite parmi les trente, et la taille du point est proportionnelle au nombre de citations reçues des autres membres du groupe. Ce graphique permet de repérer d'un coup d'œil les textes fondateurs vers lesquels convergent les flèches (le Livre III de la Commission royale d'enquête sur le bilinguisme et le biculturalisme, l'étude de Raynauld, Marion et Béland, la thèse de Vaillancourt et le rapport de Boulet), les textes de synthèse qui citent beaucoup sans être encore cités (les rapports récents) et les lignées disciplinaires qui ne se citent guère entre elles (économie du langage et sociologie de la mobilité).
+Pour visualiser la structure du champ, on construit enfin le réseau de citations entre les trente lectures retenues : chaque publication est un nœud, chaque flèche relie une publication à celles qu'elle cite parmi les trente, la taille du point est proportionnelle au nombre de citations reçues des autres membres du groupe, et la disposition par forces (algorithme de Fruchterman et Reingold) rapproche les publications qui se citent mutuellement. Ce graphique permet de repérer d'un coup d'œil les textes fondateurs vers lesquels convergent les flèches (le Livre III de la Commission royale d'enquête sur le bilinguisme et le biculturalisme, l'étude de Raynauld, Marion et Béland, la thèse de Vaillancourt et le rapport de Boulet), les textes de synthèse qui citent beaucoup sans être encore cités (les rapports récents) et les lignées disciplinaires qui ne se citent guère entre elles (économie du langage et sociologie de la mobilité).
 
 ## Limites
 
@@ -144,7 +134,7 @@ Les comptes de citations proviennent du moteur Consensus (données Semantic Scho
 
 # Les trente lectures les plus pertinentes et leur réseau de citations
 
-```{r graphique, fig.width=9, fig.height=10.5, out.width="100%", fig.pos="H", fig.cap="Liste des trente lectures les plus pertinentes selon l'indice de pertinence pondéré (citations 0,35 ; année 0,25 ; récurrence dans les bibliographies du corpus 0,40)."}
+```{r graphique, fig.width=9, fig.height=10.5, out.width="100%", fig.pos="H", fig.cap="Liste des trente lectures les plus pertinentes selon l'indice de pertinence (moyenne à poids égaux des citations, de l'année et de la récurrence dans les bibliographies du corpus)."}
 ggplot(top30, aes(x = reorder(etiquette, indice), y = indice)) +
   geom_segment(aes(xend = etiquette, y = 0, yend = indice), colour = "grey60", linewidth = 0.4) +
   geom_point(size = 2.5) +
@@ -156,11 +146,11 @@ ggplot(top30, aes(x = reorder(etiquette, indice), y = indice)) +
         axis.title.y = element_blank(), axis.text.x = element_text(size = 10, face = "bold"))
 ```
 
-```{r reseau, fig.width=9, fig.height=9, out.width="100%", fig.pos="H", fig.cap="Réseau de citations entre les trente lectures les plus pertinentes (ordre chronologique sur le cercle ; flèche : « cite » ; taille du point et nombre entre parenthèses : citations reçues des autres lectures du groupe)."}
+```{r reseau, fig.width=10, fig.height=10, out.width="100%", fig.pos="H", fig.cap="Réseau de citations entre les trente lectures les plus pertinentes (disposition par forces : les publications qui se citent sont rapprochées ; flèche : « cite » ; taille du point et nombre entre parenthèses : citations reçues des autres lectures du groupe)."}
 library(igraph)
 library(jsonlite)
 bib   <- fromJSON("../Data/bibliographies.json")           # bibliographies dépouillées (id citant -> ids cités)
-ordre <- top30$id[order(top30$year, top30$id)]              # nœuds dans l'ordre chronologique
+ordre <- top30$id[order(top30$year, top30$id)]
 aretes <- do.call(rbind, lapply(ordre, function(citant) {
   cites <- intersect(unlist(bib[[citant]]), ordre)
   if (length(cites)) data.frame(citant = citant, cite = cites) else NULL
@@ -169,14 +159,15 @@ g <- graph_from_data_frame(aretes, directed = TRUE, vertices = data.frame(name =
 etiq <- setNames(gsub("[()]", "", top30$citationAuteurAnnee), top30$id)
 deg_in <- degree(g, mode = "in")
 V(g)$label <- paste0(etiq[V(g)$name], " (", deg_in, ")")
-V(g)$size  <- 4 + 1.1 * deg_in                              # plus grand point = plus cité dans le top 30
-lay <- layout_in_circle(g)
-par(mar = c(0, 6, 0, 6), family = "serif")
+V(g)$size  <- 2.5 + 0.55 * deg_in                              # plus grand point = plus cité dans le top 30
+set.seed(7)
+lay <- layout_with_fr(g, niter = 5000)                      # disposition par forces (Fruchterman-Reingold)
+par(mar = c(0, 0, 0, 0), family = "serif")
 plot(g, layout = lay, rescale = TRUE,
-     edge.arrow.size = 0.25, edge.color = adjustcolor("grey55", 0.5), edge.curved = 0.25, edge.width = 0.5,
+     edge.arrow.size = 0.25, edge.color = adjustcolor("grey50", 0.3), edge.curved = 0.15, edge.width = 0.4,
      vertex.color = "grey15", vertex.frame.color = NA,
-     vertex.label.color = "black", vertex.label.cex = 0.7, vertex.label.family = "serif",
-     vertex.label.dist = 1.2 + V(g)$size / 6, vertex.label.degree = -atan2(lay[, 2], lay[, 1]))
+     vertex.label.color = "black", vertex.label.cex = 0.62, vertex.label.family = "serif",
+     vertex.label.dist = 0.5 + V(g)$size / 6, vertex.label.degree = -pi / 2)
 ```
 
 Le tableau suivant reprend les trois composantes de l'indice pour chacune des trente lectures.
@@ -184,11 +175,13 @@ Le tableau suivant reprend les trois composantes de l'indice pour chacune des tr
 ```{r tableau}
 top30 %>%
   transmute(Rang = row_number(), Publication = citationAuteurAnnee, Citations = number_citations,
-            Récurrence = recurrence, Indice = indice) %>%
-  kable(caption = "Composantes de l'indice de pertinence des trente lectures (les citations manquantes sont imputées par la médiane du corpus).")
+            Recurrence = recurrence, Indice = indice) %>%
+  kable(col.names = c("Rang", "Publication", "Citations", "R\u00e9currence", "Indice"), caption = "Composantes de l'indice de pertinence des trente lectures (les citations manquantes sont imputées par la médiane du corpus).")
 ```
 
-# Bibliographie
+# Bibliographie {-}
+
+<div class="bibliographie">
 
 ```{r bibliographie, results='asis'}
 initiales <- function(prenom) {
@@ -212,3 +205,5 @@ refs <- top30 %>% arrange(author, year) %>%
                              ifelse(!is.na(url), paste0(" <", url, ">"), ""))))
 cat(paste(refs$ref, collapse = "\n\n"))
 ```
+
+</div>

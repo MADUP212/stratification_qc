@@ -1,0 +1,29 @@
+/* Feuille de style du gabarit (sortie html_document, imprimée en PDF avec Chromium) :
+   Times New Roman 12 pt, interligne double, texte justifié, identifiants en gras/majuscules en haut à droite,
+   numéro de page centré en bas (à partir de la page suivant la page titre). */
+@page {
+  size: Letter;
+  margin: 2.5cm;
+  @top-right { content: "537380130 / MADUP212"; font-family: "Times New Roman", "Liberation Serif", serif; font-size: 12pt; font-weight: bold; text-transform: uppercase; }
+  @bottom-center { content: counter(page); font-family: "Times New Roman", "Liberation Serif", serif; font-size: 12pt; }
+}
+@page :first { @bottom-center { content: none; } }
+html, body { font-family: "Times New Roman", "Liberation Serif", serif; font-size: 12pt; line-height: 2; color: #000; background: #fff; }
+body { max-width: none; margin: 0; padding: 0; text-align: justify; text-justify: inter-word; hyphens: auto; }
+p, li, td, th, h1, h2, h3, caption, figcaption { font-family: inherit; font-size: 12pt; line-height: 2; }
+h1, h2, h3 { font-weight: bold; margin: 0; text-align: left; page-break-after: avoid; }
+p { margin: 0; text-indent: 0; }
+.page-titre { text-align: center; page-break-after: always; break-after: page; padding-top: 4cm; }
+.page-titre .titre { font-size: 16pt; font-weight: bold; margin-bottom: 2cm; }
+.page-titre .question { margin-bottom: 4cm; }
+.corps { counter-reset: page 1; }
+img { max-width: 100%; height: auto; display: block; margin: 0 auto; page-break-inside: avoid; }
+.figure, figure { page-break-inside: avoid; margin: 0; }
+.caption, figcaption, caption { line-height: 1.2; text-align: left; font-size: 12pt; margin: 0.3em 0 1em 0; }
+table { border-collapse: collapse; width: 100%; page-break-inside: auto; font-size: 10pt; line-height: 1.3; }
+th, td { border: 0.5pt solid #000; padding: 2pt 4pt; font-size: 10pt; line-height: 1.3; text-align: left; vertical-align: top; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; }
+.bibliographie p { padding-left: 1.25cm; text-indent: -1.25cm; }
+a { color: #000; text-decoration: none; }
+code, pre { font-family: inherit; font-size: inherit; background: none; }

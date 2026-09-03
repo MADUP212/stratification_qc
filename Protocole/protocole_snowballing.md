@@ -74,9 +74,7 @@ Pour chaque publication *i* :
 
 `score = w_cit * cit_norm + w_year * year_norm + w_pert * pert_norm`
 
-Pondération par défaut : `w_cit = 0,35`, `w_year = 0,25`, `w_pert = 0,40` (la pertinence par
-récurrence est le critère le plus proche de la question de recherche ; les citations
-récompensent l'influence ; l'année évite d'écraser les travaux récents). Les poids sont des
+Pondération : poids égaux `w_cit = w_year = w_pert = 1/3` (demande de l'usager, conforme au script CLESSN). Les poids sont des
 paramètres des scripts `CodeR/graphique_snowballing.R` et `Scripts/score_snowballing.py`.
 
 ## 5. Structure du dépôt
@@ -107,7 +105,7 @@ Docs/        état du savoir (Markdown, DOCX)
   traitant des francophones et des anglophones (Blishen 1970 ; Cuneo et Curtis 1975 ; Darroch 1979 ;
   Ogmundson et McLaughlin 1992 ; Nakhaie 1997 ; Wanner 1999, 2005 ; Lautard et Guppy 1990 ; Herberg 1990).
 - **Réseau de citations** : `Scripts/reseau_citations.py` (Python) et section 6 de
-  `CodeR/graphique_snowballing.R` (igraph) ; nœuds = 30 lectures classées par année sur un cercle,
+  `CodeR/graphique_snowballing.R` (igraph) ; nœuds = 30 lectures, disposition par forces (Fruchterman-Reingold),
   flèche = « cite », taille = citations reçues des autres lectures du top 30.
 - **Gabarit** : `Gabarit/gabarit_snowballing.Rmd` (PDF via xelatex) et son rendu Word
   `Gabarit/gabarit_snowballing.docx` (produit par `Scripts/render_gabarit_docx.py`) : Times New Roman 12 pt,

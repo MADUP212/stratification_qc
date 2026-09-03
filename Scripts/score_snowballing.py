@@ -2,7 +2,7 @@
 """Calcule la récurrence, le score pondéré et exporte la grille (CSV/XLSX) + le graphique des 30 lectures.
 
 Score = w_cit * minmax(log1p(citations)) + w_year * minmax(année) + w_pert * minmax(récurrence)
-Pondération par défaut : w_cit = 0.35, w_year = 0.25, w_pert = 0.40 (voir Protocole/protocole_snowballing.md).
+Pondération : poids égaux w_cit = w_year = w_pert = 1/3 (voir Protocole/protocole_snowballing.md).
 Les citations manquantes (littérature grise non indexée) sont imputées par la médiane du corpus et signalées
 (colonne `citations_imputees`). À remplacer par les comptes Google Scholar avant publication.
 """
@@ -11,7 +11,7 @@ import pandas as pd
 import numpy as np
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-W_CIT, W_YEAR, W_PERT = 0.35, 0.25, 0.40
+W_CIT, W_YEAR, W_PERT = 1/3, 1/3, 1/3   # poids égaux (demande de l'usager)
 TOP_N = 30
 
 corpus = json.load(open(os.path.join(ROOT, "Data", "corpus.json"), encoding="utf-8"))
@@ -104,7 +104,7 @@ ax.hlines(y=range(len(top_plot)), xmin=0, xmax=top_plot["score"], color="#9e9e9e
 ax.plot(top_plot["score"], range(len(top_plot)), "o", color="#1f1f1f", markersize=7)
 ax.set_yticks(range(len(top_plot)))
 ax.set_yticklabels(top_plot["etiquette"], fontsize=10)
-ax.set_xlabel("Indice de pertinence\n(citations 0,35 ; année 0,25 ; récurrence 0,40)", fontsize=11, fontweight="bold")
+ax.set_xlabel("Indice de pertinence\n(moyenne à poids égaux : citations, année, récurrence)", fontsize=11, fontweight="bold")
 ax.set_xlim(0, 1)
 ax.set_title("Les 30 lectures les plus pertinentes\nÉcart de revenu et de statut francophones/anglophones au Québec, 1961-2021", fontsize=12, fontweight="bold", loc="right")
 ax.grid(False)

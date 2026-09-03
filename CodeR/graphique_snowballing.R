@@ -15,9 +15,9 @@ Data <- read_csv("Data/grille_snowballing.csv", show_col_types = FALSE)
 #***********************************************#
 #### ____ 1. Paramètres de la pondération ____ ####
 #***********************************************#
-w_cit  <- 0.35   # nombre de citations (Google Scholar ; ici Consensus/Semantic Scholar en attendant)
-w_year <- 0.25   # année de publication (1 = plus récente, 0 = plus ancienne)
-w_pert <- 0.40   # pertinence = récurrence de la publication dans les bibliographies du corpus
+w_cit  <- 1/3    # nombre de citations (Google Scholar ; ici Consensus/Semantic Scholar en attendant)
+w_year <- 1/3    # année de publication (1 = plus récente, 0 = plus ancienne)
+w_pert <- 1/3    # pertinence = récurrence de la publication dans les bibliographies du corpus (poids égaux)
 n_top  <- 30
 
 #********************************************************#
@@ -58,7 +58,7 @@ g <- ggplot(DataGraph, aes(x = reorder(etiquette, formula), y = formula)) +
   geom_point(size = 2.5) +
   coord_flip() +
   theme_bw() +
-  scale_y_continuous(name = "Indice de pertinence (citations 0,35 ; année 0,25 ; récurrence 0,40)", limits = c(0, 1)) +
+  scale_y_continuous(name = "Indice de pertinence (moyenne à poids égaux : citations, année, récurrence)", limits = c(0, 1)) +
   theme(axis.text.y = element_text(size = 20), panel.grid = element_blank(),
         panel.grid.major.x = element_blank(), axis.title.x = element_text(size = 23, face = "bold", vjust = -1),
         panel.grid.minor.x = element_blank(), axis.title.y = element_blank(),
@@ -89,16 +89,17 @@ g <- graph_from_data_frame(aretes, directed = TRUE, vertices = data.frame(name =
 etiq <- setNames(gsub("[()]", "", DataGraph$citationAuteurAnnee), DataGraph$id)
 deg_in <- degree(g, mode = "in")
 V(g)$label <- paste0(etiq[V(g)$name], " (", deg_in, ")")
-V(g)$size  <- 4 + 1.1 * deg_in                               # plus grand point = plus cité dans le top 30
-lay <- layout_in_circle(g)
+V(g)$size  <- 2.5 + 0.55 * deg_in                               # plus grand point = plus cité dans le top 30
+set.seed(7)
+lay <- layout_with_fr(g, niter = 5000)                       # disposition par forces (Fruchterman-Reingold)
 
-png("Graphiques/reseau_citations_top30_R.png", width = 2600, height = 2600, res = 220)
-par(mar = c(0, 6, 0, 6), family = "serif")
+png("Graphiques/reseau_citations_top30_R.png", width = 2800, height = 2400, res = 220)
+par(mar = c(0, 0, 0, 0), family = "serif")
 plot(g, layout = lay,
-     edge.arrow.size = 0.25, edge.color = adjustcolor("grey55", 0.5), edge.curved = 0.25, edge.width = 0.5,
+     edge.arrow.size = 0.25, edge.color = adjustcolor("grey50", 0.3), edge.curved = 0.15, edge.width = 0.4,
      vertex.color = "grey15", vertex.frame.color = NA,
-     vertex.label.color = "black", vertex.label.cex = 0.7, vertex.label.family = "serif",
-     vertex.label.dist = 1.2 + V(g)$size / 6, vertex.label.degree = -atan2(lay[, 2], lay[, 1]))
+     vertex.label.color = "black", vertex.label.cex = 0.62, vertex.label.family = "serif",
+     vertex.label.dist = 0.5 + V(g)$size / 6, vertex.label.degree = -pi / 2)
 dev.off()
 
 write_csv(aretes, "Data/reseau_citations_top30_aretes_R.csv")

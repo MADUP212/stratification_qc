@@ -98,6 +98,7 @@
   "carliner1981",
   "chiswick1988",
   "christofides1998",
+  "fortin2011",
   "grenier1987",
   "lacroix1981",
   "levine1990",
@@ -105,8 +106,10 @@
   "rcbb1969",
   "shapiro1987",
   "shapiro1997",
+  "vaillancourt1978",
   "vaillancourt1980",
   "vaillancourt1988",
+  "vaillancourt1989",
   "vaillancourt1996",
   "vaillancourt2001",
   "vaillancourt2007"
@@ -272,6 +275,7 @@
  ],
  "shapiro1987": [
   "boulet1980",
+  "boulet1981",
   "boulet1983",
   "carliner1981",
   "grenier1984",
@@ -331,7 +335,8 @@
   "rcbb1969",
   "taylor1961",
   "vaillancourt1978",
-  "vaillancourt1979"
+  "vaillancourt1979",
+  "veltman1976"
  ],
  "vaillancourt1978": [
   "beattie1971",
@@ -544,6 +549,7 @@
  "levine1990": [
   "beattie1972",
   "boulet1980",
+  "boulet1981",
   "boulet1983",
   "carliner1981",
   "coleman1984",
@@ -571,7 +577,8 @@
   "vaillancourt1980",
   "vaillancourt1985",
   "vaillancourt1988",
-  "vaillancourt1989"
+  "vaillancourt1989",
+  "veltman1979"
  ],
  "lieberson1970": [
   "blishen1958",
@@ -671,7 +678,9 @@
   "shapiro1981",
   "vaillancourt1978",
   "vaillancourt1979",
-  "vaillancourt1980"
+  "vaillancourt1980",
+  "veltman1976",
+  "veltman1979"
  ],
  "rcbb1969": [
   "beattie1972",
@@ -795,7 +804,9 @@
   "raynauld1975",
   "rcbb1969",
   "vaillancourt1978",
-  "vaillancourt1979"
+  "vaillancourt1979",
+  "veltman1976",
+  "veltman1979"
  ],
  "boulet1983": [
   "boulet1980",
@@ -1013,6 +1024,7 @@
   "blishen1967",
   "bloom1992",
   "boulet1980",
+  "boulet1981",
   "boulet1983",
   "boyd1985",
   "breton1978",
@@ -1051,7 +1063,8 @@
   "vaillancourt1985",
   "vaillancourt1988",
   "vaillancourt1989",
-  "vaillancourt1991"
+  "vaillancourt1991",
+  "veltman1979"
  ],
  "vaillancourt2017": [
   "albouy2008",
@@ -1262,6 +1275,7 @@
  ],
  "vaillancourt1985": [
   "boulet1980",
+  "boulet1981",
   "boulet1983",
   "breton1978",
   "carliner1981",
@@ -1278,7 +1292,8 @@
   "shapiro1982",
   "vaillancourt1978",
   "vaillancourt1979",
-  "vaillancourt1980"
+  "vaillancourt1980",
+  "veltman1979"
  ],
  "fortin2011": [
   "albouy2008",
@@ -1690,5 +1705,46 @@
   "vaillancourt2007",
   "vaillancourt2013",
   "vaillancourt2020"
+ ],
+ "veltman1979": [
+  "breton1978",
+  "lanphier1974",
+  "lieberson1970",
+  "marion1972",
+  "migue1970",
+  "porter1965",
+  "raynauld1966",
+  "rcbb1969",
+  "vaillancourt1978",
+  "veltman1976"
+ ],
+ "boulet1981": [
+  "blishen1958",
+  "blishen1967",
+  "boulet1980",
+  "breton1978",
+  "cuneo1975",
+  "dejocas1957",
+  "dofny1969",
+  "lanphier1974",
+  "lieberson1970",
+  "mcroberts1976",
+  "migue1970",
+  "porter1965",
+  "raynauld1966",
+  "rcbb1969",
+  "vaillancourt1978",
+  "vaillancourt1980",
+  "veltman1979"
+ ],
+ "veltman1976": [
+  "hughes1943",
+  "lanphier1974",
+  "lieberson1970",
+  "marion1972",
+  "migue1970",
+  "raynauld1966",
+  "raynauld1975",
+  "rcbb1969"
  ]
 }
