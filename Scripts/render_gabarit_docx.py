@@ -71,6 +71,8 @@ for l in body:
         flush(); blocks.append(("li", s[2:].strip()))
     elif s == "":
         flush()
+    elif s.startswith("\\"):
+        continue                                  # commande LaTeX (\newpage…) : ignorée dans le rendu Word
     else:
         para.append(s)
 flush()
@@ -244,7 +246,8 @@ for kind, content in blocks:
     elif kind.startswith("figure"):
         nfig += 1
         img = PNG if kind.endswith("graphique") else PNG_RESEAU
-        doc.add_picture(img, width=Inches(5.0) if kind.endswith("graphique") else Inches(4.6))
+        doc.add_page_break()                     # une figure par page
+        doc.add_picture(img, width=Inches(6.3))
         doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
         p = doc.add_paragraph(style="Caption"); r = p.add_run(f"Figure {nfig}. " + content); set_font(r)
         p.paragraph_format.line_spacing = 1.0

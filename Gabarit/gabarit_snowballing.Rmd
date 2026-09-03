@@ -124,20 +124,24 @@ Le repérage des sources suit la méthode du *snowballing* [@jalali2012] : à pa
 
 Chaque publication reçoit un indice de pertinence de 0 à 1, moyenne à poids égaux de trois indicateurs normalisés (min-max) : le nombre de citations Google Scholar (en logarithme ; relevé avec un script Python fondé sur la bibliothèque *scholarly*, sinon compte Consensus ramené à l'échelle de Google Scholar), l'année de publication et la récurrence, soit le nombre de bibliographies du corpus qui citent la publication. La figure 1 classe les trente publications incluses les mieux notées ; la figure 2 montre comment elles se citent, la disposition par forces rapprochant les textes qui se citent mutuellement. Les fondateurs vers lesquels convergent les flèches [@rcbb1969; @raynauld1966; @vaillancourt1980] s'y distinguent des synthèses récentes qui citent sans être encore citées. La grille, les bibliographies, les scripts Python (grille, score, réseau, export Zotero) et le code R des figures sont dans le dépôt GitHub `stratification_qc` ; les bibliographies ayant été reconstituées sans les PDF, les récurrences sont des bornes inférieures.
 
-```{r graphique, fig.width=7, fig.height=4.8, out.width="74%", fig.pos="H", fig.cap="Les trente lectures les plus pertinentes (indice = moyenne à poids égaux des citations, de l'année et de la récurrence dans les bibliographies du corpus)."}
+\newpage
+
+```{r graphique, fig.width=8, fig.height=9.4, out.width="100%", fig.pos="H", fig.cap="Les trente lectures les plus pertinentes (indice = moyenne à poids égaux des citations, de l'année et de la récurrence dans les bibliographies du corpus)."}
 top30 <- top30 %>% mutate(etiquette_courte = make.unique(gsub("[()]", "", citationAuteurAnnee), sep = " "))
 ggplot(top30, aes(x = reorder(etiquette_courte, indice), y = indice)) +
   geom_segment(aes(xend = etiquette_courte, y = 0, yend = indice), colour = "grey60", linewidth = 0.4) +
-  geom_point(size = 2.2) +
+  geom_point(size = 3) +
   coord_flip() +
   theme_bw(base_family = "serif") +
   scale_y_continuous(name = "Indice de pertinence", limits = c(0, 1)) +
-  theme(axis.text.y = element_text(size = 8), panel.grid = element_blank(),
-        axis.title.x = element_text(size = 10, face = "bold", vjust = -0.5),
-        axis.title.y = element_blank(), axis.text.x = element_text(size = 9, face = "bold"))
+  theme(axis.text.y = element_text(size = 11), panel.grid = element_blank(),
+        axis.title.x = element_text(size = 12, face = "bold", vjust = -0.5),
+        axis.title.y = element_blank(), axis.text.x = element_text(size = 11, face = "bold"))
 ```
 
-```{r reseau, fig.width=8, fig.height=6, out.width="62%", fig.pos="H", fig.cap="Réseau de citations entre les trente lectures (flèche : « cite » ; taille du point : citations reçues des autres lectures ; disposition par forces)."}
+\newpage
+
+```{r reseau, fig.width=9, fig.height=9.4, out.width="100%", fig.pos="H", fig.cap="Réseau de citations entre les trente lectures (flèche : « cite » ; taille du point : citations reçues des autres lectures ; disposition par forces)."}
 library(igraph)
 library(jsonlite)
 bib   <- fromJSON("../Data/bibliographies.json")           # bibliographies dépouillées (id citant -> ids cités)
@@ -150,16 +154,18 @@ g <- graph_from_data_frame(aretes, directed = TRUE, vertices = data.frame(name =
 etiq <- setNames(gsub("[()]", "", top30$citationAuteurAnnee), top30$id)
 deg_in <- degree(g, mode = "in")
 V(g)$label <- paste0(etiq[V(g)$name], " (", deg_in, ")")
-V(g)$size  <- 2.5 + 0.5 * deg_in                              # plus grand point = plus cité dans le top 30
+V(g)$size  <- 3 + 0.6 * deg_in                              # plus grand point = plus cité dans le top 30
 set.seed(7)
 lay <- layout_with_kk(g)                                    # disposition par forces (Kamada-Kawai, plus aérée que Fruchterman-Reingold)
 par(mar = c(0, 0, 0, 0), family = "serif")
-plot(g, layout = lay, rescale = TRUE,
+plot(g, layout = lay, rescale = TRUE, xlim = c(-1.15, 1.15), ylim = c(-1.1, 1.1),   # marge pour les étiquettes
      edge.arrow.size = 0.25, edge.color = adjustcolor("grey50", 0.3), edge.curved = 0.15, edge.width = 0.4,
      vertex.color = "grey15", vertex.frame.color = NA,
-     vertex.label.color = "black", vertex.label.cex = 0.72, vertex.label.family = "serif",
-     vertex.label.dist = 0.6 + V(g)$size / 6, vertex.label.degree = -pi / 2)
+     vertex.label.color = "black", vertex.label.cex = 0.9, vertex.label.family = "serif",
+     vertex.label.dist = 0.7 + V(g)$size / 6, vertex.label.degree = -pi / 2)
 ```
+
+\newpage
 
 # Revue de littérature
 
