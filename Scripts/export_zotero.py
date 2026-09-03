@@ -95,5 +95,55 @@ for name, sub in (("corpus_snowballing", df), ("top30_snowballing", df.head(30))
         f.write("\n\n".join(to_bib(r) for _, r in sub.iterrows()) + "\n")
     with open(os.path.join(ROOT, "Zotero", name + ".json"), "w", encoding="utf-8") as f:
         json.dump([to_csl(r) for _, r in sub.iterrows()], f, ensure_ascii=False, indent=1)
+# ---- Gabarit/references.bib : BibTeX propre pour pandoc/citeproc (clés = id du corpus) ----
+EXTRAS = [  # références méthodologiques hors corpus
+    "@inproceedings{jalali2012,\n  author = {Jalali, Samireh and Wohlin, Claes},\n  title = {Systematic literature studies: Database searches vs. backward snowballing},\n  booktitle = {Proceedings of the ACM-IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM '12)},\n  year = {2012},\n  pages = {29--38},\n  publisher = {ACM},\n  address = {Lund},\n  doi = {10.1145/2372251.2372257}\n}",
+]
+
+def bib_author(a):
+    parts = []
+    for x in str(a).split(";"):
+        x = re.sub(r"\s*\(dir\.\)|\s*\(Laurendeau-Dunton\)", "", x.strip())
+        if not x:
+            continue
+        if x == "et al.":
+            parts.append("others")
+        elif "," in x:
+            fam, giv = [t.strip() for t in x.split(",", 1)]
+            parts.append(f"{fam}, {giv}" if giv else fam)
+        else:
+            parts.append("{" + x + "}")          # auteur institutionnel : accolades pour éviter le découpage
+    return " and ".join(parts)
+
+def to_bib_gabarit(r):
+    fields = [f"  author = {{{bib_author(r['author'])}}}", f"  title = {{{bib_escape(r['title'])}}}", f"  year = {{{int(r['year'])}}}"]
+    j = bib_escape(r["journal"])
+    if j:
+        if r["type"] == "article":
+            m = re.match(r"^(.*?),\s*(\d+)\s*(?:\(([^)]+)\))?(?:,\s*([\d\-–]+))?\s*$", j)   # « Revue, vol(num), pages »
+            if m:
+                fields.append(f"  journal = {{{m.group(1).strip()}}}")
+                fields.append(f"  volume = {{{m.group(2)}}}")
+                if m.group(3): fields.append(f"  number = {{{m.group(3)}}}")
+                if m.group(4): fields.append(f"  pages = {{{m.group(4).replace('-', '--')}}}")
+            else:
+                fields.append(f"  journal = {{{j}}}")
+        elif r["type"] == "chapter":
+            fields.append(f"  booktitle = {{{j}}}")
+        elif r["type"] == "report":
+            fields.append(f"  institution = {{{j}}}")
+        else:
+            fields.append(f"  publisher = {{{j}}}")
+    if s(r["doi"]):
+        fields.append(f"  doi = {{{r['doi']}}}")
+    elif s(r["url"]):
+        fields.append(f"  url = {{{r['url']}}}")
+    return f"@{BIB_TYPE.get(r['type'], 'misc')}{{{r['id']},\n" + ",\n".join(fields) + "\n}"
+
+os.makedirs(os.path.join(ROOT, "Gabarit"), exist_ok=True)
+with open(os.path.join(ROOT, "Gabarit", "references.bib"), "w", encoding="utf-8") as f:
+    f.write("% Généré par Scripts/export_zotero.py à partir de Data/corpus.json — clés BibTeX = identifiants du corpus.\n\n")
+    f.write("\n\n".join(to_bib_gabarit(r) for _, r in df.sort_values("id").iterrows()) + "\n\n" + "\n\n".join(EXTRAS) + "\n")
+print("Gabarit/references.bib écrit :", len(df) + len(EXTRAS), "entrées")
 print("exports Zotero écrits :", os.listdir(os.path.join(ROOT, "Zotero")))
 print("DOI présents :", int(df["doi"].notna().sum()), "/", len(df), "| URL présentes :", int(df["url"].notna().sum()))

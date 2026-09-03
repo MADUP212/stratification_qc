@@ -24,6 +24,9 @@ fontsize: 12pt
 mainfont: "Times New Roman"
 geometry: margin=2.5cm
 lang: fr
+bibliography: references.bib      # BibTeX généré par Scripts/export_zotero.py (clés = identifiants du corpus, ex. @albouy2008)
+link-citations: true
+# csl: apa.csl                    # facultatif : déposer un style CSL (ex. APA, https://www.zotero.org/styles) dans Gabarit/ ; sinon Chicago auteur-date
 ---
 
 ```{r setup, include=FALSE}
@@ -117,9 +120,9 @@ if (knitr::is_latex_output()) {
 
 # Méthode
 
-Le repérage des sources suit la méthode du *snowballing* (Jalali et Wohlin, 2012) enseignée par la CLESSN : à partir d'un ensemble de départ de onze publications récentes couvrant cinq communautés savantes (économie du langage, histoire économique, sociologie de la stratification, aménagement linguistique, littérature grise sur le recensement de 2021), on dépouille les listes de références (*backward*) et les publications citantes (*forward*), puis on répète l'opération avec chaque texte retenu jusqu'à saturation. Quatre rondes, dont une consacrée aux travaux citant l'échelle professionnelle de Blishen (1958) et *The Vertical Mosaic* de Porter (1965), ont produit un corpus de 103 publications et 101 bibliographies dépouillées. Une publication est retenue si elle compare explicitement francophones et anglophones au Québec (critère obligatoire) et si elle mesure le revenu d'emploi ou le statut socioprofessionnel, couvre un recensement de 1961 à 2021 ou propose une explication (au moins trois points sur six) ; les travaux de contexte sont conservés dans la grille sans être classés.
+Le repérage des sources suit la méthode du *snowballing* [@jalali2012] : à partir d'un ensemble de départ de onze publications récentes couvrant cinq communautés savantes (économie du langage, histoire économique, sociologie de la stratification, aménagement linguistique, littérature grise sur le recensement de 2021), on dépouille les listes de références (*backward*) et les publications citantes (*forward*), puis on répète l'opération avec chaque texte retenu jusqu'à saturation. Quatre rondes, dont une consacrée aux travaux citant l'échelle professionnelle de @blishen1958 et *The Vertical Mosaic* de @porter1965, ont produit un corpus de 103 publications et 101 bibliographies dépouillées. Une publication est retenue si elle compare explicitement francophones et anglophones au Québec (critère obligatoire) et si elle mesure le revenu d'emploi ou le statut socioprofessionnel, couvre un recensement de 1961 à 2021 ou propose une explication (au moins trois points sur six) ; les travaux de contexte sont conservés dans la grille sans être classés.
 
-Chaque publication reçoit un indice de pertinence de 0 à 1, moyenne à poids égaux de trois indicateurs normalisés (min-max) : le nombre de citations Google Scholar (en logarithme ; relevé avec un script Python fondé sur la bibliothèque *scholarly*, sinon compte Consensus ramené à l'échelle de Google Scholar), l'année de publication et la récurrence, soit le nombre de bibliographies du corpus qui citent la publication. La figure 1 classe les trente publications incluses les mieux notées ; la figure 2 montre comment elles se citent, la disposition par forces rapprochant les textes qui se citent mutuellement. Les fondateurs vers lesquels convergent les flèches (Commission royale d'enquête sur le bilinguisme et le biculturalisme, 1969 ; Raynauld, Marion et Béland, 1966 ; Vaillancourt, 1980) s'y distinguent des synthèses récentes qui citent sans être encore citées. La grille, les bibliographies, les scripts Python (grille, score, réseau, export Zotero) et le code R des figures sont dans le dépôt GitHub `stratification_qc` ; les bibliographies ayant été reconstituées sans les PDF, les récurrences sont des bornes inférieures.
+Chaque publication reçoit un indice de pertinence de 0 à 1, moyenne à poids égaux de trois indicateurs normalisés (min-max) : le nombre de citations Google Scholar (en logarithme ; relevé avec un script Python fondé sur la bibliothèque *scholarly*, sinon compte Consensus ramené à l'échelle de Google Scholar), l'année de publication et la récurrence, soit le nombre de bibliographies du corpus qui citent la publication. La figure 1 classe les trente publications incluses les mieux notées ; la figure 2 montre comment elles se citent, la disposition par forces rapprochant les textes qui se citent mutuellement. Les fondateurs vers lesquels convergent les flèches [@rcbb1969; @raynauld1966; @vaillancourt1980] s'y distinguent des synthèses récentes qui citent sans être encore citées. La grille, les bibliographies, les scripts Python (grille, score, réseau, export Zotero) et le code R des figures sont dans le dépôt GitHub `stratification_qc` ; les bibliographies ayant été reconstituées sans les PDF, les récurrences sont des bornes inférieures.
 
 ```{r graphique, fig.width=7, fig.height=4.8, out.width="74%", fig.pos="H", fig.cap="Les trente lectures les plus pertinentes (indice = moyenne à poids égaux des citations, de l'année et de la récurrence dans les bibliographies du corpus)."}
 top30 <- top30 %>% mutate(etiquette_courte = make.unique(gsub("[()]", "", citationAuteurAnnee), sep = " "))
@@ -164,29 +167,11 @@ plot(g, layout = lay, rescale = TRUE,
 
 # Bibliographie {-}
 
-<div class="bibliographie">
-
-```{r bibliographie, results='asis'}
-initiales <- function(prenom) {
-  p <- unlist(strsplit(prenom, "[ -]+")); p <- p[nzchar(p)]
-  paste0(substr(p, 1, 1), ".", collapse = " ")
-}
-formater_auteurs <- function(a) {
-  auteurs <- trimws(unlist(strsplit(a, ";"))); auteurs <- gsub("\\s*\\(dir\\.\\)", "", auteurs)
-  etal <- any(auteurs == "et al."); auteurs <- auteurs[auteurs != "et al."]
-  noms <- vapply(auteurs, function(x) {
-    p <- trimws(unlist(strsplit(x, ",", fixed = TRUE)))
-    if (length(p) >= 2 && nzchar(p[2])) paste0(p[1], ", ", initiales(p[2])) else p[1]
-  }, character(1))
-  n <- length(noms)
-  out <- if (n == 1) noms else if (n == 2) paste(noms, collapse = " et ") else paste0(paste(noms[-n], collapse = ", "), " et ", noms[n])
-  if (etal) paste(out, "et al.") else out
-}
-refs <- top30 %>% arrange(author, year) %>%
-  mutate(ref = paste0(sapply(author, formater_auteurs), " (", year, "). ", title, ". *", journal, "*.",
-                      ifelse(!is.na(doi), paste0(" <https://doi.org/", doi, ">"),
-                             ifelse(!is.na(url), paste0(" <", url, ">"), ""))))
-cat(paste(refs$ref, collapse = "\n\n"))
+```{r nocite, results='asis'}
+# Les trente lectures classées sont ajoutées à la bibliographie même si elles ne sont pas citées dans le texte
+# (bloc de métadonnées pandoc « nocite »). Les autres entrées de references.bib n'apparaissent que si elles sont citées.
+cat("---\nnocite: |\n  ", paste0("@", top30$id, collapse = ", "), "\n---\n", sep = "")
 ```
 
-</div>
+::: {#refs}
+:::

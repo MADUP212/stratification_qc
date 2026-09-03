@@ -105,6 +105,17 @@ renvoie des passages avec leurs citations dans le texte. Il a servi à confirmer
 d'Albouy (2008) (`Data/bibliographies_sources.json`). Pour les comptes Google Scholar, la voie Zotero décrite
 ci-dessus reste la seule praticable.
 
+## Citations et bibliographie du gabarit (BibTeX)
+
+`Gabarit/references.bib` est généré par `Scripts/export_zotero.py` à partir du corpus : chaque clé BibTeX est
+l'identifiant de la grille (`@albouy2008`, `@rcbb1969`…), plus `@jalali2012` pour la méthode. Dans le Rmd,
+citer avec la syntaxe pandoc : `[@albouy2008]` → (Albouy 2008), `@albouy2008` → Albouy (2008),
+`[@rcbb1969; @vaillancourt1980]` pour plusieurs sources. La bibliographie est imprimée automatiquement à la fin
+(bloc `::: {#refs}`) et contient les références citées plus les trente lectures classées (bloc `nocite` généré par
+le chunk `nocite`). Style par défaut : Chicago auteur-date en français ; pour APA, déposer `apa.csl`
+(https://www.zotero.org/styles) dans `Gabarit/` et décommenter `csl: apa.csl` dans l'en-tête. Avec LaTeX, on peut
+aussi passer par biblatex (`citation_package: biblatex` sous `pdf_document`, `biblio-style: apa`).
+
 ## Produire le PDF du gabarit
 
 - **Avec LaTeX** (poste de l'usager) : `rmarkdown::render("Gabarit/gabarit_snowballing.Rmd")` (sortie par défaut,

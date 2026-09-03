@@ -66,7 +66,7 @@ for l in body:
     if s.startswith("#"):
         flush()
         level = len(s) - len(s.lstrip("#"))
-        blocks.append((f"h{level}", s.lstrip("#").strip()))
+        blocks.append((f"h{level}", re.sub(r"\s*\{-\}$", "", s.lstrip("#").strip())))
     elif s.startswith("- "):
         flush(); blocks.append(("li", s[2:].strip()))
     elif s == "":
@@ -134,8 +134,23 @@ for name in ("Heading 1", "Heading 2", "Caption", "List Bullet"):
     if st.element.rPr is not None and st.element.rPr.rFonts is not None:
         st.element.rPr.rFonts.set(qn("w:eastAsia"), "Times New Roman"); st.element.rPr.rFonts.set(qn("w:ascii"), "Times New Roman"); st.element.rPr.rFonts.set(qn("w:hAnsi"), "Times New Roman")
 
+CITES = set()
+AUT = dict(zip(g["id"], g["citationAuteurAnnee"].str.strip("()")))
+AUT["jalali2012"] = "Jalali et Wohlin, 2012"
+def resoudre_citations(text):
+    """[@a; @b] -> (A, année ; B, année) ; @a -> A (année)"""
+    def bloc(m):
+        cles = re.findall(r"@([A-Za-z0-9_]+)", m.group(0)); CITES.update(cles)
+        return "(" + " ; ".join(AUT.get(k, k) for k in cles) + ")"
+    text = re.sub(r"\[@[^\]]+\]", bloc, text)
+    def libre(m):
+        k = m.group(1); CITES.add(k); a = AUT.get(k, k)
+        return re.sub(r", (\d{4})$", r" (\1)", a)
+    return re.sub(r"(?<![\w\[])@([A-Za-z0-9_]+)", libre, text)
+
 def add_inline(p, text):
     """gras **x**, italique *x* ; liens laissés en clair ; justification et interligne double explicites"""
+    text = resoudre_citations(text)
     p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     p.paragraph_format.line_spacing = 2.0
     for tok in re.split(r"(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)", text):
@@ -201,9 +216,24 @@ else: sec._sectPr.append(pg)
 
 h1 = h2 = nfig = 0
 for kind, content in blocks:
-    if kind == "h1":
+    if kind == "h1" and content.startswith("Bibliographie"):
+        p = doc.add_paragraph(style="Heading 1"); r = p.add_run("Bibliographie"); set_font(r, bold=True)
+        cle_top = set(top["id"])
+        sel = g[g["id"].isin(cle_top | CITES)].sort_values(["author", "year"])
+        for _, r_ in sel.iterrows():
+            a, j, c = ref_parts(r_)
+            p = doc.add_paragraph(); p.paragraph_format.left_indent = Cm(1.25); p.paragraph_format.first_line_indent = Cm(-1.25)
+            r = p.add_run(a); set_font(r)
+            if j: r = p.add_run(j); set_font(r, italic=True)
+            r = p.add_run(c); set_font(r)
+        if "jalali2012" in CITES:
+            p = doc.add_paragraph(); p.paragraph_format.left_indent = Cm(1.25); p.paragraph_format.first_line_indent = Cm(-1.25)
+            r = p.add_run("Jalali, S. et Wohlin, C. (2012). Systematic literature studies: Database searches vs. backward snowballing. "); set_font(r)
+            r = p.add_run("Proceedings of the ACM-IEEE International Symposium on Empirical Software Engineering and Measurement"); set_font(r, italic=True)
+            r = p.add_run(", 29-38. https://doi.org/10.1145/2372251.2372257"); set_font(r)
+    elif kind == "h1":
         h1 += 1; h2 = 0
-        p = doc.add_paragraph(style="Heading 1"); r = p.add_run(f"{h1}. {content}" if content != "Bibliographie" else content); set_font(r, bold=True)
+        p = doc.add_paragraph(style="Heading 1"); r = p.add_run(f"{h1}. {content}"); set_font(r, bold=True)
     elif kind == "h2":
         h2 += 1
         p = doc.add_paragraph(style="Heading 2"); r = p.add_run(f"{h1}.{h2} {content}"); set_font(r, bold=True)
@@ -231,7 +261,7 @@ for kind, content in blocks:
                 c.paragraphs[0].paragraph_format.line_spacing = 1.0
         p = doc.add_paragraph(style="Caption"); r = p.add_run("Tableau 1. Composantes de l'indice de pertinence des trente lectures (GS : Google Scholar ; Cons. cal. : compte Consensus ramené à l'échelle Google Scholar ; imputé : médiane)."); set_font(r)
         p.paragraph_format.line_spacing = 1.0
-    elif kind == "bibliographie":
+    elif kind == "bibliographie" or (kind == "h1" and content == "Bibliographie" and False):
         for a, j, c in refs:
             p = doc.add_paragraph(); p.paragraph_format.left_indent = Cm(1.25); p.paragraph_format.first_line_indent = Cm(-1.25)
             r = p.add_run(a); set_font(r)
