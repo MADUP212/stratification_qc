@@ -10,8 +10,9 @@ Installation :  pip install scholarly            (Python >= 3.8 ; si bibtexparse
                 pip install "bibtexparser<2" puis pip install --no-deps scholarly)
 Usage :         python3 Scripts/recuperer_citations_scholar.py [--seulement-manquants] [--top30] [--pause 8]
                 --reprendre : ne réinterroge pas les ids déjà remplis dans le CSV.
-Google Scholar limite les requêtes : garder une pause de 5 à 10 s ; en cas de CAPTCHA, attendre ou configurer
-un proxy (scholarly.use_proxy(ProxyGenerator())). Rien n'est envoyé ailleurs que vers Google Scholar.
+Google Scholar n'a pas de quota officiel mais bloque une adresse IP après 20 à 50 requêtes rapprochées (blocage de
+15 min à plusieurs heures) : le script s'arrête au premier blocage ; attendre, changer de réseau ou utiliser --proxy,
+puis relancer avec --reprendre. Rien n'est envoyé ailleurs que vers Google Scholar (et le proxy choisi).
 """
 import argparse, csv, datetime, difflib, json, os, re, sys, time, unicodedata
 
@@ -54,12 +55,23 @@ def chercher(titre, annee, n=5):
     return meilleur_resultat(out, titre, annee)
 
 
+def sauvegarder(deja, corpus, byid):
+    with open(CSV, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["id", "citations_google_scholar", "date", "author", "year", "title", "titre_scholar", "similarite"])
+        w.writeheader()
+        for j in [e["id"] for e in corpus]:
+            w.writerow({c: deja.get(j, {"id": j, "author": byid[j]["author"], "year": byid[j]["year"], "title": byid[j]["title"]}).get(c, "") for c in w.fieldnames})
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--seulement-manquants", action="store_true", help="ids sans number_citations dans corpus.json")
     ap.add_argument("--top30", action="store_true", help="seulement les 30 lectures classées")
     ap.add_argument("--reprendre", action="store_true", help="ne pas réinterroger les ids déjà remplis dans le CSV")
-    ap.add_argument("--pause", type=float, default=8.0, help="secondes entre deux requêtes")
+    ap.add_argument("--pause", type=float, default=20.0, help="secondes entre deux requêtes (20 s par défaut)")
+    ap.add_argument("--proxy", choices=["aucun", "free", "scraperapi", "tor"], default="aucun",
+                    help="passer par un proxy : free (proxies publics gratuits, instables), scraperapi (clé requise, --cle), tor (Tor Browser lancé, port 9150)")
+    ap.add_argument("--cle", default=os.environ.get("SCRAPERAPI_KEY", ""), help="clé API ScraperAPI (ou variable SCRAPERAPI_KEY)")
     ap.add_argument("--test", action="store_true", help="test hors ligne de l'appariement des titres")
     a = ap.parse_args()
 
@@ -72,6 +84,16 @@ def main():
         assert r2 is None, (r2, s2)
         print("test appariement OK :", s, s2)
         return
+
+    if a.proxy != "aucun":
+        from scholarly import scholarly, ProxyGenerator
+        pg = ProxyGenerator()
+        ok = {"free": lambda: pg.FreeProxies(), "scraperapi": lambda: pg.ScraperAPI(a.cle),
+              "tor": lambda: pg.Tor_External(tor_sock_port=9150, tor_control_port=9151, tor_password="")}[a.proxy]()
+        if not ok:
+            sys.exit("proxy indisponible : vérifier la clé, la connexion ou Tor Browser")
+        scholarly.use_proxy(pg)
+        print("proxy activé :", a.proxy)
 
     corpus = json.load(open(CORPUS, encoding="utf-8"))
     ids = [e["id"] for e in corpus]
@@ -101,14 +123,17 @@ def main():
                 n = r.get("num_citations", 0)
                 print(f"[{k}/{len(ids)}] {i}: {n} citations (similarité {s}) — {r['bib'].get('title', '')[:70]}")
                 deja[i] = {"id": i, "citations_google_scholar": n, "date": aujourdhui, "author": e["author"], "year": e["year"], "title": e["title"], "titre_scholar": r["bib"].get("title", ""), "similarite": s}
-        except Exception as ex:  # CAPTCHA, réseau, etc. : on sauvegarde et on continue
+        except Exception as ex:  # CAPTCHA / blocage de l'IP : on sauvegarde et on ARRÊTE (insister prolonge le blocage)
             print(f"[{k}/{len(ids)}] {i}: ERREUR {type(ex).__name__}: {str(ex)[:120]}")
             deja.setdefault(i, {"id": i, "citations_google_scholar": "", "date": "", "author": e["author"], "year": e["year"], "title": e["title"], "titre_scholar": "", "similarite": ""})
-        with open(CSV, "w", encoding="utf-8-sig", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=["id", "citations_google_scholar", "date", "author", "year", "title", "titre_scholar", "similarite"])
-            w.writeheader()
-            for j in [e["id"] for e in corpus]:
-                w.writerow({c: deja.get(j, {"id": j, "author": byid[j]["author"], "year": byid[j]["year"], "title": byid[j]["title"]}).get(c, "") for c in w.fieldnames})
+            bloque = "MaxTries" in type(ex).__name__ or "Cannot Fetch" in str(ex)
+            if bloque:
+                sauvegarder(deja, corpus, byid)
+                print("\nGoogle Scholar bloque cette adresse IP. Progression sauvegardée dans Data/citations_google_scholar.csv.")
+                print("Attendre 30 à 60 minutes (ou changer de réseau / utiliser --proxy), puis relancer :")
+                print("  python Scripts/recuperer_citations_scholar.py --reprendre --pause 30")
+                return
+        sauvegarder(deja, corpus, byid)
         time.sleep(a.pause)
     print("terminé ; lancer ensuite : python3 Scripts/maj_citations_scholar.py && python3 Scripts/score_snowballing.py")
 
