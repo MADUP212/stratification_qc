@@ -114,17 +114,18 @@ def main():
         e = byid[i]
         if a.reprendre and deja.get(i, {}).get("citations_google_scholar"):
             continue
+        print(f"[{k}/{len(ids)}] {i}: requête en cours…", end=" ", flush=True)
         try:
             r, s = chercher(e["title"], e["year"])
             if r is None:
-                print(f"[{k}/{len(ids)}] {i}: aucun résultat assez proche (similarité {s})")
+                print(f"aucun résultat assez proche (similarité {s})")
                 deja[i] = {"id": i, "citations_google_scholar": "", "date": aujourdhui, "author": e["author"], "year": e["year"], "title": e["title"], "titre_scholar": "", "similarite": s}
             else:
                 n = r.get("num_citations", 0)
-                print(f"[{k}/{len(ids)}] {i}: {n} citations (similarité {s}) — {r['bib'].get('title', '')[:70]}")
+                print(f"{n} citations (similarité {s}) — {r['bib'].get('title', '')[:70]}")
                 deja[i] = {"id": i, "citations_google_scholar": n, "date": aujourdhui, "author": e["author"], "year": e["year"], "title": e["title"], "titre_scholar": r["bib"].get("title", ""), "similarite": s}
         except Exception as ex:  # CAPTCHA / blocage de l'IP : on sauvegarde et on ARRÊTE (insister prolonge le blocage)
-            print(f"[{k}/{len(ids)}] {i}: ERREUR {type(ex).__name__}: {str(ex)[:120]}")
+            print(f"ERREUR {type(ex).__name__}: {str(ex)[:120]}")
             deja.setdefault(i, {"id": i, "citations_google_scholar": "", "date": "", "author": e["author"], "year": e["year"], "title": e["title"], "titre_scholar": "", "similarite": ""})
             bloque = "MaxTries" in type(ex).__name__ or "Cannot Fetch" in str(ex)
             if bloque:
