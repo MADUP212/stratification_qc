@@ -1,0 +1,10 @@
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.log
+*.aux
+*.out
+*.toc
+Gabarit/*.tex
+__pycache__/
