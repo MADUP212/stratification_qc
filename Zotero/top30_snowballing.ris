@@ -4,29 +4,8 @@ TI  - The Vertical Mosaic: An Analysis of Social Class and Power in Canada
 PY  - 1965
 T2  - Toronto : University of Toronto Press
 LA  - en
-N1  - Snowballing id=porter1965 ; rang=1 ; score=0.616 ; récurrence=52 ; citations=257.0 (Consensus/Semantic Scholar 2026-09 (fiche du compte rendu Social Forces 1965))
+N1  - Snowballing id=porter1965 ; rang=1 ; score=0.637 ; récurrence=52 ; citations=257.0 (Consensus/Semantic Scholar 2026-09 (fiche du compte rendu Social Forces 1965))
 AB  - Ouvrage fondateur de la stratification ethnique au Canada (recensement 1961) : 'mosaïque verticale' où les Canadiens français sont sous-représentés dans les professions supérieures et les élites économiques ; chapitre 'Ethnicity and social class'.
-ER  - 
-
-TY  - RPRT
-AU  - Commission royale d'enquête sur le bilinguisme et le biculturalisme (Laurendeau-Dunton)
-TI  - Rapport de la Commission royale d'enquête sur le bilinguisme et le biculturalisme, Livre III : Le monde du travail
-PY  - 1969
-T2  - Ottawa : Imprimeur de la Reine
-LA  - fr/en
-N1  - Snowballing id=rcbb1969 ; rang=2 ; score=0.6 ; récurrence=83 ; citations= (non indexé dans Consensus (rapport gouvernemental))
-AB  - Document fondateur : à partir du recensement de 1961, hiérarchie des revenus selon l'origine ethnique au Québec (les Canadiens français unilingues au 12e rang sur 14 ; revenu moyen des hommes d'origine française inférieur de 35 % à celui des hommes d'origine britannique) ; sous-représentation des francophones dans la direction des entreprises ; explications (scolarité, structure industrielle, propriété, discrimination).
-ER  - 
-
-TY  - JOUR
-AU  - Carliner, Geoffrey
-TI  - Wage differences by language group and the market for language skills in Canada
-PY  - 1981
-JO  - Journal of Human Resources, 16(3), 384-399
-DO  - 10.2307/145627
-LA  - en
-N1  - Snowballing id=carliner1981 ; rang=3 ; score=0.6 ; récurrence=39 ; citations=158.0 (Consensus/Semantic Scholar 2026-09)
-AB  - Recensement 1971 : théorie de la prime à la langue en 'demande excédentaire' ; au Québec, rendement de l'anglais pour les francophones, mais les francophones bilingues gagnent toujours moins que les anglophones unilingues, ceteris paribus.
 ER  - 
 
 TY  - JOUR
@@ -36,41 +15,18 @@ PY  - 1996
 JO  - International Journal of the Sociology of Language, 121, 69-92
 DO  - 10.1515/ijsl.1996.121.69
 LA  - en
-N1  - Snowballing id=vaillancourt1996 ; rang=4 ; score=0.595 ; récurrence=36 ; citations=61.0 (Consensus/Semantic Scholar 2026-09)
+N1  - Snowballing id=vaillancourt1996 ; rang=2 ; score=0.573 ; récurrence=36 ; citations=61.0 (Consensus/Semantic Scholar 2026-09)
 AB  - Synthèse des outils de mesure (revenu, propriété, langue de travail) et des résultats sur le statut des francophones depuis 1960 ; déterminants (scolarité, demande de français, politiques) et coûts des politiques linguistiques.
 ER  - 
 
-TY  - JOUR
-AU  - Shapiro, Daniel M.
-AU  - Stelcner, Morton
-TI  - Language and earnings in Quebec: Trends over twenty years, 1970-1990
-PY  - 1997
-JO  - Canadian Public Policy / Analyse de politiques, 23(2), 115-140
-DO  - 10.2307/3551481
-LA  - en
-N1  - Snowballing id=shapiro1997 ; rang=5 ; score=0.589 ; récurrence=29 ; citations=85.0 (Consensus/Semantic Scholar 2026-09)
-AB  - Recensements 1971, 1981, 1991 : depuis la Loi 101, l'écart entre anglophones (unilingues et bilingues) et francophones bilingues s'est refermé ; détérioration relative des allophones et des francophones unilingues ; analyse par sexe.
-ER  - 
-
-TY  - JOUR
-AU  - Albouy, David
-TI  - The wage gap between Francophones and Anglophones: a Canadian perspective, 1970-2000
-PY  - 2008
-JO  - Canadian Journal of Economics, 41(4), 1211-1238
-DO  - 10.1111/j.1540-5982.2008.00501.x
-LA  - en
-N1  - Snowballing id=albouy2008 ; rang=6 ; score=0.585 ; récurrence=23 ; citations=56.0 (Consensus/Semantic Scholar 2026-09)
-AB  - Écart salarial hommes F/A : -25 points au Québec 1970-2000, -10 points au Canada ; salaires des anglophones du Québec en baisse relative (-15 pts) ; plus de la moitié de la réduction expliquée par la hausse de scolarité des francophones ; baisse de la demande de travail anglophone au Québec.
-ER  - 
-
-TY  - BOOK
-AU  - Lieberson, Stanley
-TI  - Language and Ethnic Relations in Canada
-PY  - 1970
-T2  - New York : John Wiley & Sons
-LA  - en
-N1  - Snowballing id=lieberson1970 ; rang=7 ; score=0.581 ; récurrence=49 ; citations=120.0 (Consensus/Semantic Scholar 2026-09 (fiche du compte rendu PSQ 1972))
-AB  - Sociologie écologique du bilinguisme ; chapitre sur les exigences professionnelles (Occupational Demands) et les écarts de revenu par langue maternelle à Montréal (1961) ; analyse des offres d'emploi.
+TY  - RPRT
+AU  - Commission royale d'enquête sur le bilinguisme et le biculturalisme (Laurendeau-Dunton)
+TI  - Rapport de la Commission royale d'enquête sur le bilinguisme et le biculturalisme, Livre III : Le monde du travail
+PY  - 1969
+T2  - Ottawa : Imprimeur de la Reine
+LA  - fr/en
+N1  - Snowballing id=rcbb1969 ; rang=3 ; score=0.571 ; récurrence=83 ; citations= (non indexé dans Consensus (rapport gouvernemental))
+AB  - Document fondateur : à partir du recensement de 1961, hiérarchie des revenus selon l'origine ethnique au Québec (les Canadiens français unilingues au 12e rang sur 14 ; revenu moyen des hommes d'origine française inférieur de 35 % à celui des hommes d'origine britannique) ; sous-représentation des francophones dans la direction des entreprises ; explications (scolarité, structure industrielle, propriété, discrimination).
 ER  - 
 
 TY  - BOOK
@@ -79,7 +35,7 @@ TI  - The Reconquest of Montreal: Language Policy and Social Change in a Bilingu
 PY  - 1990
 T2  - Philadelphia : Temple University Press
 LA  - en
-N1  - Snowballing id=levine1990 ; rang=8 ; score=0.573 ; récurrence=28 ; citations=112.0 (Consensus/Semantic Scholar 2026-09 (fiche du compte rendu APSR 1991))
+N1  - Snowballing id=levine1990 ; rang=4 ; score=0.564 ; récurrence=28 ; citations=112.0 (Consensus/Semantic Scholar 2026-09 (fiche du compte rendu APSR 1991))
 AB  - Francisation de l'économie montréalaise 1960-1989 : langue de travail, contrôle du capital, statut socioéconomique des francophones ; rôle conjoint de l'État québécois (sociétés d'État, Loi 101) et des forces du marché ; exode anglophone.
 ER  - 
 
@@ -92,8 +48,62 @@ PY  - 2007
 T2  - C.D. Howe Institute Backgrounder no 103
 UR  - https://cdhowe.org/wp-content/uploads/2024/04/backgrounder_103_english.pdf
 LA  - en
-N1  - Snowballing id=vaillancourt2007 ; rang=9 ; score=0.568 ; récurrence=27 ; citations=33.0 (Consensus/Semantic Scholar 2026-09)
+N1  - Snowballing id=vaillancourt2007 ; rang=5 ; score=0.561 ; récurrence=27 ; citations=33.0 (Consensus/Semantic Scholar 2026-09)
 AB  - 1970-2000 : rendement du français en hausse, de l'anglais en baisse ; le bilinguisme accroît le revenu des hommes anglophones depuis 1980 et des femmes anglophones depuis 1990 ; propriété francophone de l'économie de 47 % (1961) à 67 % (2003).
+ER  - 
+
+TY  - BOOK
+AU  - Lieberson, Stanley
+TI  - Language and Ethnic Relations in Canada
+PY  - 1970
+T2  - New York : John Wiley & Sons
+LA  - en
+N1  - Snowballing id=lieberson1970 ; rang=6 ; score=0.561 ; récurrence=49 ; citations=120.0 (Consensus/Semantic Scholar 2026-09 (fiche du compte rendu PSQ 1972))
+AB  - Sociologie écologique du bilinguisme ; chapitre sur les exigences professionnelles (Occupational Demands) et les écarts de revenu par langue maternelle à Montréal (1961) ; analyse des offres d'emploi.
+ER  - 
+
+TY  - JOUR
+AU  - Albouy, David
+TI  - The wage gap between Francophones and Anglophones: a Canadian perspective, 1970-2000
+PY  - 2008
+JO  - Canadian Journal of Economics, 41(4), 1211-1238
+DO  - 10.1111/j.1540-5982.2008.00501.x
+LA  - en
+N1  - Snowballing id=albouy2008 ; rang=7 ; score=0.554 ; récurrence=23 ; citations=56.0 (Consensus/Semantic Scholar 2026-09)
+AB  - Écart salarial hommes F/A : -25 points au Québec 1970-2000, -10 points au Canada ; salaires des anglophones du Québec en baisse relative (-15 pts) ; plus de la moitié de la réduction expliquée par la hausse de scolarité des francophones ; baisse de la demande de travail anglophone au Québec.
+ER  - 
+
+TY  - JOUR
+AU  - Carliner, Geoffrey
+TI  - Wage differences by language group and the market for language skills in Canada
+PY  - 1981
+JO  - Journal of Human Resources, 16(3), 384-399
+DO  - 10.2307/145627
+LA  - en
+N1  - Snowballing id=carliner1981 ; rang=8 ; score=0.549 ; récurrence=39 ; citations=158.0 (Consensus/Semantic Scholar 2026-09)
+AB  - Recensement 1971 : théorie de la prime à la langue en 'demande excédentaire' ; au Québec, rendement de l'anglais pour les francophones, mais les francophones bilingues gagnent toujours moins que les anglophones unilingues, ceteris paribus.
+ER  - 
+
+TY  - JOUR
+AU  - Shapiro, Daniel M.
+AU  - Stelcner, Morton
+TI  - Language and earnings in Quebec: Trends over twenty years, 1970-1990
+PY  - 1997
+JO  - Canadian Public Policy / Analyse de politiques, 23(2), 115-140
+DO  - 10.2307/3551481
+LA  - en
+N1  - Snowballing id=shapiro1997 ; rang=9 ; score=0.542 ; récurrence=29 ; citations=85.0 (Consensus/Semantic Scholar 2026-09)
+AB  - Recensements 1971, 1981, 1991 : depuis la Loi 101, l'écart entre anglophones (unilingues et bilingues) et francophones bilingues s'est refermé ; détérioration relative des allophones et des francophones unilingues ; analyse par sexe.
+ER  - 
+
+TY  - BOOK
+AU  - Vaillancourt, François
+TI  - Differences in earnings by language groups in Quebec, 1970: An economic analysis
+PY  - 1980
+T2  - Québec : Centre international de recherche sur le bilinguisme (CIRB), Université Laval, Publication B-90
+LA  - en
+N1  - Snowballing id=vaillancourt1980 ; rang=10 ; score=0.528 ; récurrence=48 ; citations=20.0 (Consensus/Semantic Scholar 2026-09)
+AB  - Thèse (Queen's) : cadre où la langue est à la fois attribut ethnique et capital humain ; équation de revenu des hommes du Québec en 1970 ; contribution de l'ethnicité à l'écart anglophones/francophones.
 ER  - 
 
 TY  - JOUR
@@ -104,8 +114,20 @@ PY  - 2010
 JO  - Canadian Public Policy / Analyse de politiques, 36(2), 137-158
 DO  - 10.3138/cpp.36.2.137
 LA  - en
-N1  - Snowballing id=christofides2010 ; rang=10 ; score=0.567 ; récurrence=15 ; citations=62.0 (Consensus/Semantic Scholar 2026-09 (fiche Project MUSE, DOI 10.1353/cpp.0.0067))
+N1  - Snowballing id=christofides2010 ; rang=11 ; score=0.525 ; récurrence=15 ; citations=62.0 (Consensus/Semantic Scholar 2026-09 (fiche Project MUSE, DOI 10.1353/cpp.0.0067))
 AB  - Rendement de la connaissance et de l'usage de l'anglais au Québec (et du français hors Québec) à partir du recensement 2001/EDI 2006 : rendement du bilinguisme surtout lié à l'usage au travail.
+ER  - 
+
+TY  - JOUR
+AU  - Pendakur, Krishna
+AU  - Pendakur, Ravi
+TI  - Language as both human capital and ethnicity
+PY  - 2002
+JO  - International Migration Review, 36(1), 147-177
+DO  - 10.1111/j.1747-7379.2002.tb00075.x
+LA  - en
+N1  - Snowballing id=pendakur2002 ; rang=12 ; score=0.511 ; récurrence=6 ; citations=147.0 (Consensus/Semantic Scholar 2026-09)
+AB  - Montréal, Toronto, Vancouver (1991) : la connaissance d'une langue minoritaire est associée à des gains inférieurs, conditionnellement à la langue majoritaire ; la langue opère comme capital humain et comme marqueur ethnique (enclaves, discrimination).
 ER  - 
 
 TY  - JOUR
@@ -117,20 +139,8 @@ PY  - 1987
 JO  - Canadian Review of Sociology and Anthropology, 24(4), 465-488
 DO  - 10.1111/j.1755-618x.1987.tb00639.x
 LA  - en
-N1  - Snowballing id=blishen1987 ; rang=11 ; score=0.556 ; récurrence=10 ; citations=376.0 (Consensus/Semantic Scholar 2026-09)
+N1  - Snowballing id=blishen1987 ; rang=13 ; score=0.507 ; récurrence=10 ; citations=376.0 (Consensus/Semantic Scholar 2026-09)
 AB  - Indice socioéconomique 1981 (revenu + scolarité, calibré sur l'échelle de prestige Pineo-Porter) ; outil standard des études de statut professionnel au Canada dans les années 1980-1990.
-ER  - 
-
-TY  - JOUR
-AU  - Pendakur, Krishna
-AU  - Pendakur, Ravi
-TI  - Language as both human capital and ethnicity
-PY  - 2002
-JO  - International Migration Review, 36(1), 147-177
-DO  - 10.1111/j.1747-7379.2002.tb00075.x
-LA  - en
-N1  - Snowballing id=pendakur2002 ; rang=12 ; score=0.547 ; récurrence=6 ; citations=147.0 (Consensus/Semantic Scholar 2026-09)
-AB  - Montréal, Toronto, Vancouver (1991) : la connaissance d'une langue minoritaire est associée à des gains inférieurs, conditionnellement à la langue majoritaire ; la langue opère comme capital humain et comme marqueur ethnique (enclaves, discrimination).
 ER  - 
 
 TY  - JOUR
@@ -140,8 +150,30 @@ PY  - 1987
 JO  - Canadian Journal of Economics, 20(4), 774-791
 DO  - 10.2307/135415
 LA  - en
-N1  - Snowballing id=grenier1987 ; rang=13 ; score=0.526 ; récurrence=33 ; citations=42.0 (Consensus/Semantic Scholar 2026-09)
+N1  - Snowballing id=grenier1987 ; rang=14 ; score=0.497 ; récurrence=33 ; citations=42.0 (Consensus/Semantic Scholar 2026-09)
 AB  - Recensement 1981 : modèle à deux équations (émigration, revenu) ; biais de sélection chez les anglophones ; le rendement de l'apprentissage du français est sous-estimé si l'on ignore l'émigration.
+ER  - 
+
+TY  - JOUR
+AU  - Bourhis, Richard Y.
+TI  - Evaluating the impact of Bill 101 on the English-speaking communities of Quebec
+PY  - 2019
+JO  - Language Problems and Language Planning, 43(2)
+DO  - 10.1075/lplp.00042.bou
+LA  - en
+N1  - Snowballing id=bourhis2019 ; rang=15 ; score=0.493 ; récurrence=7 ; citations=12.0 (Consensus/Semantic Scholar 2026-09)
+AB  - Perspective de la minorité anglophone : perte nette interprovinciale de 310 000 anglophones ; ceux qui sont restés sont moins scolarisés et ont un revenu inférieur à celui des francophones (2016) ; rôle des lois linguistiques.
+ER  - 
+
+TY  - JOUR
+AU  - Nadeau, Serge
+TI  - Another look at the Francophone wage gap in Canada: Public and private sectors, Quebec and outside Quebec
+PY  - 2010
+JO  - Canadian Public Policy / Analyse de politiques, 36(2), 159-179
+DO  - 10.3138/cpp.36.2.159
+LA  - en
+N1  - Snowballing id=nadeau2010 ; rang=16 ; score=0.485 ; récurrence=15 ; citations=22.0 (Consensus/Semantic Scholar 2026-09 (fiche Project MUSE, DOI 10.1353/cpp.0.0068))
+AB  - Décomposition Blinder-Oaxaca 1970-2000 : hors Québec, aucun avantage anglophone inexpliqué ; au Québec, prime salariale des francophones dans le secteur public (1970-2000) et dans le privé en 2000, allant au-delà des compétences linguistiques.
 ER  - 
 
 TY  - JOUR
@@ -152,140 +184,8 @@ PY  - 1988
 JO  - Research in Population Economics, 6, 183-228 (réédité 2007 dans The Economics of Language, Routledge)
 DO  - 10.4324/9780203963159-26
 LA  - en
-N1  - Snowballing id=chiswick1988 ; rang=14 ; score=0.524 ; récurrence=21 ; citations=90.0 (Consensus/Semantic Scholar 2026-09)
+N1  - Snowballing id=chiswick1988 ; rang=17 ; score=0.484 ; récurrence=21 ; citations=90.0 (Consensus/Semantic Scholar 2026-09)
 AB  - Recensements 1971 et 1981 : effets du statut d'immigrant, de l'ethnicité française et de la compétence linguistique sur les gains ; comparaison décennale.
-ER  - 
-
-TY  - BOOK
-AU  - Vaillancourt, François
-TI  - Differences in earnings by language groups in Quebec, 1970: An economic analysis
-PY  - 1980
-T2  - Québec : Centre international de recherche sur le bilinguisme (CIRB), Université Laval, Publication B-90
-LA  - en
-N1  - Snowballing id=vaillancourt1980 ; rang=15 ; score=0.519 ; récurrence=48 ; citations=20.0 (Consensus/Semantic Scholar 2026-09)
-AB  - Thèse (Queen's) : cadre où la langue est à la fois attribut ethnique et capital humain ; équation de revenu des hommes du Québec en 1970 ; contribution de l'ethnicité à l'écart anglophones/francophones.
-ER  - 
-
-TY  - JOUR
-AU  - Nadeau, Serge
-TI  - Another look at the Francophone wage gap in Canada: Public and private sectors, Quebec and outside Quebec
-PY  - 2010
-JO  - Canadian Public Policy / Analyse de politiques, 36(2), 159-179
-DO  - 10.3138/cpp.36.2.159
-LA  - en
-N1  - Snowballing id=nadeau2010 ; rang=16 ; score=0.51 ; récurrence=15 ; citations=22.0 (Consensus/Semantic Scholar 2026-09 (fiche Project MUSE, DOI 10.1353/cpp.0.0068))
-AB  - Décomposition Blinder-Oaxaca 1970-2000 : hors Québec, aucun avantage anglophone inexpliqué ; au Québec, prime salariale des francophones dans le secteur public (1970-2000) et dans le privé en 2000, allant au-delà des compétences linguistiques.
-ER  - 
-
-TY  - RPRT
-AU  - Provincial Employment Roundtable (PERT)
-TI  - Census 2021 Update: A brief review of the latest data on employment among Québec's English speakers
-PY  - 2023
-T2  - Montréal : PERT
-UR  - https://pertquebec.ca/wp-content/uploads/2023/05/Census-Brief-Update.pdf
-LA  - en
-N1  - Snowballing id=pert2023 ; rang=17 ; score=0.489 ; récurrence=2 ; citations= (non indexé dans Consensus (littérature grise))
-AB  - Recensement 2021 (première langue officielle parlée) : taux de chômage 10,9 % (anglophones) contre 6,9 % (francophones) ; revenu d'emploi médian 32 000 $ contre 37 200 $ ; taux de pauvreté 10 % contre 5,8 % ; l'écart de chômage a doublé depuis 2016.
-ER  - 
-
-TY  - RPRT
-AU  - Vaillancourt, François
-TI  - Analyse économique des politiques linguistiques au Québec : 40 ans de Loi 101
-PY  - 2018
-T2  - CIRANO, Cahier scientifique 2018s-16
-UR  - https://cirano.qc.ca/files/publications/2018s-16.pdf
-LA  - fr
-N1  - Snowballing id=vaillancourt2018 ; rang=18 ; score=0.489 ; récurrence=7 ; citations= (non indexé dans Consensus)
-AB  - Bilan économique de 40 ans de Loi 101 : revenus de travail par attribut linguistique 1970-2015, propriété des entreprises 1961-2003, langue de travail ; coûts et bénéfices des politiques.
-ER  - 
-
-TY  - JOUR
-AU  - Geloso, Vincent
-AU  - Reilly, Chandler S.
-TI  - Revisiting Quebec's Quiet Revolution: A synthetic control analysis
-PY  - 2025
-JO  - Canadian Journal of Economics, 58(2), 548-579
-DO  - 10.1111/caje.70000
-LA  - en
-N1  - Snowballing id=geloso2025 ; rang=19 ; score=0.489 ; récurrence=0 ; citations= ()
-AB  - Contrôle synthétique : 1960 n'est pas une rupture pour le PIB par habitant, les salaires réels ou la scolarisation ; rupture modeste pour l'espérance de vie et la scolarité achevée par cohorte ; nuance le rôle causal de la Révolution tranquille dans la convergence.
-ER  - 
-
-TY  - BOOK
-AU  - Boulet, Jac-André
-TI  - Language and Earnings in Montreal / La langue et le revenu du travail à Montréal
-PY  - 1980
-T2  - Ottawa : Conseil économique du Canada
-LA  - en/fr
-N1  - Snowballing id=boulet1980 ; rang=20 ; score=0.487 ; récurrence=44 ; citations= ()
-AB  - Recensements 1961 et 1971 (RMR de Montréal) : les écarts de revenu de travail par langue se réduisent entre 1961 et 1971 ; rôle de la scolarité et du bilinguisme ; un des rares travaux exploitant 1961.
-ER  - 
-
-TY  - RPRT
-AU  - Vaillancourt, François
-TI  - La rémunération des attributs linguistiques au Québec : résultats pour 2015 et comparaison 1970-2015
-PY  - 2020
-T2  - CIRANO, Rapport 2020s-52 ; version anglaise REAL Working Paper 20-8 (Ulster University)
-UR  - https://cirano.qc.ca/files/publications/2020s-52.pdf
-LA  - fr
-N1  - Snowballing id=vaillancourt2020 ; rang=21 ; score=0.485 ; récurrence=4 ; citations= (non indexé dans Consensus)
-AB  - Recensement 2016 (revenus 2015) : effets nets des attributs linguistiques ; les anglophones bilingues et les francophones bilingues au sommet ; comparaison 1970-2015.
-ER  - 
-
-TY  - RPRT
-AU  - Office québécois de la langue française
-TI  - Portrait du revenu d'emploi au Québec en 2015 selon les langues utilisées au travail
-PY  - 2022
-T2  - Québec : OQLF (étude fondée sur le recensement de 2016)
-UR  - https://www.oqlf.gouv.qc.ca/ressources/sociolinguistique/2022/2022_etude_revenu-emploi-selon-langues-utilisees-travail.pdf
-LA  - fr
-N1  - Snowballing id=oqlf2022 ; rang=22 ; score=0.485 ; récurrence=2 ; citations= (non indexé dans Consensus (littérature grise))
-AB  - Recensement 2016 (revenus 2015) : revenu d'emploi moyen des anglophones 48 793 $ contre 44 029 $ pour les francophones, mais revenu médian inférieur (33 412 $ contre 35 566 $) ; dispersion plus grande chez les anglophones ; effet des langues utilisées au travail.
-ER  - 
-
-TY  - RPRT
-AU  - Serré, Pierre
-TI  - Les Anglo-Québécois sont-ils plus pauvres ? Non !
-PY  - 2023
-T2  - Mémoire présenté au Comité permanent des langues officielles de la Chambre des communes
-UR  - https://www.ourcommons.ca/Content/Committee/441/LANG/Brief/BR12960576/br-external/SerrePierre-f.pdf
-LA  - fr
-N1  - Snowballing id=serre2023 ; rang=23 ; score=0.485 ; récurrence=1 ; citations= (non indexé dans Consensus (littérature grise))
-AB  - Réplique au discours de PERT sur l'appauvrissement des anglophones (recensement 2021) : effets de composition (immigration récente, âge, région) ; illustre le débat public sur l'inversion de l'écart.
-ER  - 
-
-TY  - JOUR
-AU  - Bourhis, Richard Y.
-TI  - Evaluating the impact of Bill 101 on the English-speaking communities of Quebec
-PY  - 2019
-JO  - Language Problems and Language Planning, 43(2)
-DO  - 10.1075/lplp.00042.bou
-LA  - en
-N1  - Snowballing id=bourhis2019 ; rang=24 ; score=0.482 ; récurrence=7 ; citations=12.0 (Consensus/Semantic Scholar 2026-09)
-AB  - Perspective de la minorité anglophone : perte nette interprovinciale de 310 000 anglophones ; ceux qui sont restés sont moins scolarisés et ont un revenu inférieur à celui des francophones (2016) ; rôle des lois linguistiques.
-ER  - 
-
-TY  - RPRT
-AU  - Raynauld, André
-AU  - Marion, Gérald
-AU  - Béland, Richard
-TI  - La répartition des revenus selon les groupes ethniques au Canada (3 vol.)
-PY  - 1966
-T2  - Étude préparée pour la Commission royale d'enquête sur le bilinguisme et le biculturalisme (non publiée)
-LA  - fr
-N1  - Snowballing id=raynauld1966 ; rang=25 ; score=0.48 ; récurrence=56 ; citations= (non indexé dans Consensus)
-AB  - Analyse du recensement de 1961 pour la Commission B-B : revenus de travail par origine ethnique et langue, décomposition par scolarité, profession, industrie ; base empirique du Livre III.
-ER  - 
-
-TY  - JOUR
-AU  - Vaillancourt, François
-TI  - Assessing Bill 101 after 40 years
-PY  - 2019
-JO  - Language Problems and Language Planning, 43(2) (introduction du numéro spécial)
-DO  - 10.1075/lplp.00037.vai
-LA  - en
-N1  - Snowballing id=vaillancourt2019 ; rang=26 ; score=0.477 ; récurrence=3 ; citations= ()
-AB  - Introduction du numéro spécial sur 40 ans de Loi 101 (Grenier 2019, Bourhis 2019, Castonguay 2019) ; cadre d'évaluation des effets économiques et démographiques.
 ER  - 
 
 TY  - JOUR
@@ -298,8 +198,109 @@ PY  - 2013
 JO  - Canadian Public Policy / Analyse de politiques, 39(S1), S25-S40
 DO  - 10.3138/cpp.39.supplement1.s25
 LA  - fr
-N1  - Snowballing id=vaillancourt2013 ; rang=27 ; score=0.475 ; récurrence=15 ; citations=9.0 (Consensus/Semantic Scholar 2026-09)
+N1  - Snowballing id=vaillancourt2013 ; rang=18 ; score=0.482 ; récurrence=15 ; citations=9.0 (Consensus/Semantic Scholar 2026-09)
 AB  - Recensement 2006 (revenus 2005) comparé à 1970-2000 : le bilinguisme augmente le revenu de tous les groupes ; l'avantage historique (1970) des anglophones n'existe plus en 2005.
+ER  - 
+
+TY  - JOUR
+AU  - Geloso, Vincent
+AU  - Reilly, Chandler S.
+TI  - Revisiting Quebec's Quiet Revolution: A synthetic control analysis
+PY  - 2025
+JO  - Canadian Journal of Economics, 58(2), 548-579
+DO  - 10.1111/caje.70000
+LA  - en
+N1  - Snowballing id=geloso2025 ; rang=19 ; score=0.482 ; récurrence=0 ; citations= ()
+AB  - Contrôle synthétique : 1960 n'est pas une rupture pour le PIB par habitant, les salaires réels ou la scolarisation ; rupture modeste pour l'espérance de vie et la scolarité achevée par cohorte ; nuance le rôle causal de la Révolution tranquille dans la convergence.
+ER  - 
+
+TY  - RPRT
+AU  - Provincial Employment Roundtable (PERT)
+TI  - Census 2021 Update: A brief review of the latest data on employment among Québec's English speakers
+PY  - 2023
+T2  - Montréal : PERT
+UR  - https://pertquebec.ca/wp-content/uploads/2023/05/Census-Brief-Update.pdf
+LA  - en
+N1  - Snowballing id=pert2023 ; rang=20 ; score=0.482 ; récurrence=2 ; citations= (non indexé dans Consensus (littérature grise))
+AB  - Recensement 2021 (première langue officielle parlée) : taux de chômage 10,9 % (anglophones) contre 6,9 % (francophones) ; revenu d'emploi médian 32 000 $ contre 37 200 $ ; taux de pauvreté 10 % contre 5,8 % ; l'écart de chômage a doublé depuis 2016.
+ER  - 
+
+TY  - BOOK
+AU  - Boulet, Jac-André
+TI  - Language and Earnings in Montreal / La langue et le revenu du travail à Montréal
+PY  - 1980
+T2  - Ottawa : Conseil économique du Canada
+LA  - en/fr
+N1  - Snowballing id=boulet1980 ; rang=21 ; score=0.48 ; récurrence=44 ; citations= ()
+AB  - Recensements 1961 et 1971 (RMR de Montréal) : les écarts de revenu de travail par langue se réduisent entre 1961 et 1971 ; rôle de la scolarité et du bilinguisme ; un des rares travaux exploitant 1961.
+ER  - 
+
+TY  - RPRT
+AU  - Office québécois de la langue française
+TI  - Portrait du revenu d'emploi au Québec en 2015 selon les langues utilisées au travail
+PY  - 2022
+T2  - Québec : OQLF (étude fondée sur le recensement de 2016)
+UR  - https://www.oqlf.gouv.qc.ca/ressources/sociolinguistique/2022/2022_etude_revenu-emploi-selon-langues-utilisees-travail.pdf
+LA  - fr
+N1  - Snowballing id=oqlf2022 ; rang=22 ; score=0.478 ; récurrence=2 ; citations= (non indexé dans Consensus (littérature grise))
+AB  - Recensement 2016 (revenus 2015) : revenu d'emploi moyen des anglophones 48 793 $ contre 44 029 $ pour les francophones, mais revenu médian inférieur (33 412 $ contre 35 566 $) ; dispersion plus grande chez les anglophones ; effet des langues utilisées au travail.
+ER  - 
+
+TY  - RPRT
+AU  - Serré, Pierre
+TI  - Les Anglo-Québécois sont-ils plus pauvres ? Non !
+PY  - 2023
+T2  - Mémoire présenté au Comité permanent des langues officielles de la Chambre des communes
+UR  - https://www.ourcommons.ca/Content/Committee/441/LANG/Brief/BR12960576/br-external/SerrePierre-f.pdf
+LA  - fr
+N1  - Snowballing id=serre2023 ; rang=23 ; score=0.478 ; récurrence=1 ; citations= (non indexé dans Consensus (littérature grise))
+AB  - Réplique au discours de PERT sur l'appauvrissement des anglophones (recensement 2021) : effets de composition (immigration récente, âge, région) ; illustre le débat public sur l'inversion de l'écart.
+ER  - 
+
+TY  - CHAP
+AU  - Floch, William
+AU  - Pocock, Joanne
+TI  - The socio-economic status of English-speaking Quebec: Those who left and those who stayed
+PY  - 2012
+T2  - In R. Y. Bourhis (dir.), Decline and Prospects of the English-Speaking Communities of Quebec, Ottawa : Patrimoine canadien, 127-173
+LA  - en
+N1  - Snowballing id=floch2012 ; rang=24 ; score=0.475 ; récurrence=7 ; citations= (non indexé dans Consensus)
+AB  - Recensements 1971-2006 : statut socioéconomique des anglophones du Québec ; effet de sélection de l'émigration (les partants plus scolarisés/mieux rémunérés) ; les anglophones restés au Québec ont un revenu et une scolarité inférieurs aux francophones à partir des années 2000.
+ER  - 
+
+TY  - RPRT
+AU  - Raynauld, André
+AU  - Marion, Gérald
+AU  - Béland, Richard
+TI  - La répartition des revenus selon les groupes ethniques au Canada (3 vol.)
+PY  - 1966
+T2  - Étude préparée pour la Commission royale d'enquête sur le bilinguisme et le biculturalisme (non publiée)
+LA  - fr
+N1  - Snowballing id=raynauld1966 ; rang=25 ; score=0.473 ; récurrence=56 ; citations= (non indexé dans Consensus)
+AB  - Analyse du recensement de 1961 pour la Commission B-B : revenus de travail par origine ethnique et langue, décomposition par scolarité, profession, industrie ; base empirique du Livre III.
+ER  - 
+
+TY  - JOUR
+AU  - Vaillancourt, François
+TI  - Assessing Bill 101 after 40 years
+PY  - 2019
+JO  - Language Problems and Language Planning, 43(2) (introduction du numéro spécial)
+DO  - 10.1075/lplp.00037.vai
+LA  - en
+N1  - Snowballing id=vaillancourt2019 ; rang=26 ; score=0.471 ; récurrence=3 ; citations= ()
+AB  - Introduction du numéro spécial sur 40 ans de Loi 101 (Grenier 2019, Bourhis 2019, Castonguay 2019) ; cadre d'évaluation des effets économiques et démographiques.
+ER  - 
+
+TY  - JOUR
+AU  - Bourhis, Richard Y.
+AU  - Sioufi, Rana
+TI  - Assessing forty years of language planning on the vitality of the francophone and anglophone communities of Quebec
+PY  - 2017
+JO  - Multilingua, 36(5), 627-661
+DO  - 10.1515/multi-2017-3048
+LA  - en
+N1  - Snowballing id=bourhis2017 ; rang=27 ; score=0.469 ; récurrence=1 ; citations= ()
+AB  - Vitalité ethnolinguistique (démographie, statut, soutien institutionnel) des deux communautés après 40 ans d'aménagement linguistique ; indicateurs de statut économique (revenu, scolarité) des anglophones restés au Québec.
 ER  - 
 
 TY  - JOUR
@@ -311,28 +312,28 @@ PY  - 2021
 JO  - Journal of Labor Research, 42(1), 1-28
 DO  - 10.1007/s12122-020-09316-1
 LA  - en
-N1  - Snowballing id=bousmah2021 ; rang=28 ; score=0.474 ; récurrence=2 ; citations=13.0 (Consensus/Semantic Scholar 2026-09)
+N1  - Snowballing id=bousmah2021 ; rang=28 ; score=0.469 ; récurrence=2 ; citations=13.0 (Consensus/Semantic Scholar 2026-09)
 AB  - Recensements 2001-2006, ENM 2011 : l'usage du français et de l'anglais au travail est rémunéré positivement à Montréal, mais l'anglais davantage ; immigrants.
 ER  - 
 
-TY  - CHAP
-AU  - Vaillancourt, François
-AU  - Fontaine, Marc-Antoine
-TI  - Les attributs linguistiques et le revenu de travail au Québec : cadre d'analyse et résultats pour 2010 et comparaison 1970-2010
-PY  - 2017
-T2  - Dans M. Joanis et C. Montmarquette (dir.), Le Québec économique 6 : le défi des ressources minières, CIRANO / PUL (chapitre)
-LA  - fr
-N1  - Snowballing id=vaillancourt2017 ; rang=29 ; score=0.473 ; récurrence=4 ; citations= (non indexé dans Consensus)
-AB  - Enquête nationale auprès des ménages 2011 (revenus 2010) : effets nets des attributs linguistiques comparés à 1970-2005 ; cadre de Vaillancourt (1980) ajoutant la langue comme troisième forme de capital humain à l'équation de Mincer.
+TY  - JOUR
+AU  - Dean, Joshua
+AU  - Geloso, Vincent
+TI  - The linguistic wage gap in Quebec, 1901 to 1951
+PY  - 2022
+JO  - Cliometrica
+DO  - 10.1007/s11698-021-00236-3
+LA  - en
+N1  - Snowballing id=dean2022 ; rang=29 ; score=0.462 ; récurrence=4 ; citations=9.0 (Consensus/Semantic Scholar 2026-09)
+AB  - Recensements 1901-1921 (et 1951) : l'écart se réduit modestement au début du XXe siècle puis stagne jusqu'en 1970 ; l'essentiel de la convergence est postérieur à 1970. Situe le point de départ de 1961.
 ER  - 
 
-TY  - CHAP
-AU  - Grenier, Gilles
-AU  - Nadeau, Serge
-TI  - English as the lingua franca and the economic value of other languages: The case of the language of work in the Montreal labor market
-PY  - 2016
-T2  - In M. Gazzola et B.-A. Wickström (dir.), The Economics of Language Policy, Cambridge (MA) : MIT Press, 267-312
+TY  - BOOK
+AU  - Bourhis, Richard Y.
+TI  - Decline and Prospects of the English-Speaking Communities of Quebec
+PY  - 2012
+T2  - Ottawa : Patrimoine canadien / CIRLM, coll. Nouvelles perspectives canadiennes
 LA  - en
-N1  - Snowballing id=grenier2016 ; rang=30 ; score=0.469 ; récurrence=4 ; citations= (non indexé dans Consensus)
-AB  - Recensements 2001-2006 : valeur de l'usage de l'anglais et du français au travail à Montréal par groupe linguistique ; l'anglais comme lingua franca conserve une valeur marchande supérieure malgré la francisation.
+N1  - Snowballing id=bourhis2012 ; rang=30 ; score=0.459 ; récurrence=7 ; citations= (non indexé dans Consensus)
+AB  - Ouvrage collectif sur la vitalité des communautés anglophones du Québec (démographie, éducation, santé, statut socioéconomique — chap. Floch & Pocock).
 ER  - 

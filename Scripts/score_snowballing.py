@@ -3,8 +3,11 @@
 
 Score = w_cit * minmax(log1p(citations)) + w_year * minmax(année) + w_pert * minmax(récurrence)
 Pondération : poids égaux w_cit = w_year = w_pert = 1/3 (voir Protocole/protocole_snowballing.md).
-Les citations manquantes (littérature grise non indexée) sont imputées par la médiane du corpus et signalées
-(colonne `citations_imputees`). À remplacer par les comptes Google Scholar avant publication.
+Citations utilisées dans le score (colonne `citations_score`, source dans `citations_score_source`) :
+  1. Google Scholar (`citations_google_scholar`) quand le compte a été relevé ;
+  2. sinon le compte Consensus/Semantic Scholar (`number_citations`) multiplié par le ratio médian Google Scholar /
+     Consensus observé sur les publications qui ont les deux (calibration, source « Consensus calibré ») ;
+  3. sinon la médiane des valeurs précédentes (source « imputé »).
 """
 import json, os, math, sys
 import pandas as pd
@@ -26,18 +29,32 @@ for citing, cited in bib.items():
             cited_by[c].append(citing)
 
 df = pd.DataFrame(corpus)
-if "author_short" not in df.columns:
-    df["author_short"] = None
+for c in ("author_short", "citations_google_scholar", "citations_google_scholar_date"):
+    if c not in df.columns:
+        df[c] = None
 df["recurrence"] = df["id"].map(rec)
 df["cite_par"] = df["id"].map(lambda i: "; ".join(sorted(cited_by[i])))
 df["bibliographie_depouillee"] = df["id"].map(lambda i: int(i in bib))
 df["pertinence_thematique"] = df[["c1", "c2", "c3", "c4"]].fillna(0).sum(axis=1)
 
-# citations : imputation par la médiane des valeurs connues
+# citations : Google Scholar si relevé, sinon Consensus calibré sur l'échelle Google Scholar, sinon médiane
 df["number_citations"] = pd.to_numeric(df["number_citations"], errors="coerce")
-df["citations_imputees"] = df["number_citations"].isna().astype(int)
-med = df["number_citations"].median()
-df["citations_utilisees"] = df["number_citations"].fillna(med)
+if "citations_google_scholar" not in df.columns:
+    df["citations_google_scholar"] = np.nan
+df["citations_google_scholar"] = pd.to_numeric(df["citations_google_scholar"], errors="coerce")
+both = df[df["citations_google_scholar"].notna() & df["number_citations"].notna() & (df["number_citations"] > 0)]
+ratio = float((both["citations_google_scholar"] / both["number_citations"]).median()) if len(both) >= 5 else 1.0
+df["citations_score"] = df["citations_google_scholar"]
+df["citations_score_source"] = np.where(df["citations_google_scholar"].notna(), "Google Scholar", "")
+cal = df["citations_score"].isna() & df["number_citations"].notna()
+df.loc[cal, "citations_score"] = (df.loc[cal, "number_citations"] * ratio).round()
+df.loc[cal, "citations_score_source"] = "Consensus calibré (x%.2f)" % ratio
+med = df["citations_score"].median()
+imp = df["citations_score"].isna()
+df.loc[imp, "citations_score"] = med
+df.loc[imp, "citations_score_source"] = "imputé (médiane)"
+df["citations_imputees"] = imp.astype(int)
+df["citations_utilisees"] = df["citations_score"]
 
 def minmax(x):
     x = x.astype(float)
@@ -68,7 +85,8 @@ df["titre_court"] = df["title"].str.slice(0, 58).where(df["title"].str.len() <= 
 df["etiquette"] = df["titre_court"] + " " + df["citationAuteurAnnee"]
 
 cols = ["id", "author", "author_short", "year", "title", "journal", "type", "langue", "doi", "url", "number_citations",
-        "citations_source", "citations_imputees", "citations_utilisees", "recurrence", "cite_par",
+        "citations_source", "citations_google_scholar", "citations_google_scholar_date", "citations_score", "citations_score_source",
+        "citations_imputees", "citations_utilisees", "recurrence", "cite_par",
         "bibliographie_depouillee", "round", "direction", "found_via", "statut", "c1", "c2", "c3", "c4",
         "pertinence_thematique", "cit_norm", "year_norm", "pert_norm", "score", "citationAuteurAnnee", "etiquette", "notes"]
 df = df[cols].sort_values("score", ascending=False).reset_index(drop=True)
@@ -81,10 +99,10 @@ top = df[df["statut"] == "inclus"].head(TOP_N)  # seules les publications satisf
 top.to_csv(os.path.join(ROOT, "Data", "grille_snowballing_top30.csv"), index=False, encoding="utf-8-sig")
 
 params = pd.DataFrame({
-    "parametre": ["w_cit", "w_year", "w_pert", "citations : transformation", "citations manquantes",
+    "parametre": ["w_cit", "w_year", "w_pert", "citations : transformation", "citations : source",
                   "année : normalisation", "pertinence : définition", "source des citations", "date"],
     "valeur": [W_CIT, W_YEAR, W_PERT, "log(1 + citations) puis min-max",
-               f"imputées par la médiane du corpus ({med:.0f}) et signalées (citations_imputees = 1)",
+               f"Google Scholar si relevé ({int(df['citations_google_scholar'].notna().sum())} publications) ; sinon Consensus x ratio médian GS/Consensus = {ratio:.2f} ; sinon médiane ({med:.0f})",
                "min-max (1 = plus récente, 0 = plus ancienne)",
                "nombre de bibliographies du corpus (98 dépouillées) citant la publication, min-max",
                "Consensus / Semantic Scholar (proxy de Google Scholar, à mettre à jour)", "2026-09-03"]})
@@ -113,5 +131,5 @@ for s in ["top", "right"]:
 plt.tight_layout()
 os.makedirs(os.path.join(ROOT, "Graphiques"), exist_ok=True)
 fig.savefig(os.path.join(ROOT, "Graphiques", "lectures_snowballing_top30.png"), dpi=200)
-print(top[["rang", "id", "year", "number_citations", "recurrence", "score"]].to_string(index=False))
-print("\nmédiane citations imputée:", med, "| n imputés:", int(df["citations_imputees"].sum()))
+print(top[["rang", "id", "year", "citations_score", "citations_score_source", "recurrence", "score"]].to_string(index=False))
+print("\nratio Google Scholar / Consensus (médiane, n=%d) : %.2f | médiane imputée : %.0f | n imputés : %d" % (len(both), ratio, med, int(df["citations_imputees"].sum())))

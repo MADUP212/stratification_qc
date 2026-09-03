@@ -17,54 +17,9 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 1 ; score 0.616 ; récurrence 52 ; citations 257.0",
+  "note": "Snowballing rang 1 ; score 0.637 ; récurrence 52 ; citations 257.0",
   "publisher": "Toronto : University of Toronto Press",
   "abstract": "Ouvrage fondateur de la stratification ethnique au Canada (recensement 1961) : 'mosaïque verticale' où les Canadiens français sont sous-représentés dans les professions supérieures et les élites économiques ; chapitre 'Ethnicity and social class'."
- },
- {
-  "id": "rcbb1969",
-  "type": "report",
-  "title": "Rapport de la Commission royale d'enquête sur le bilinguisme et le biculturalisme, Livre III : Le monde du travail",
-  "author": [
-   {
-    "family": "Commission royale d'enquête sur le bilinguisme et le biculturalisme (Laurendeau-Dunton)",
-    "given": ""
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1969
-    ]
-   ]
-  },
-  "language": "fr/en",
-  "note": "Snowballing rang 2 ; score 0.6 ; récurrence 83 ; citations ",
-  "publisher": "Ottawa : Imprimeur de la Reine",
-  "abstract": "Document fondateur : à partir du recensement de 1961, hiérarchie des revenus selon l'origine ethnique au Québec (les Canadiens français unilingues au 12e rang sur 14 ; revenu moyen des hommes d'origine française inférieur de 35 % à celui des hommes d'origine britannique) ; sous-représentation des francophones dans la direction des entreprises ; explications (scolarité, structure industrielle, propriété, discrimination)."
- },
- {
-  "id": "carliner1981",
-  "type": "article-journal",
-  "title": "Wage differences by language group and the market for language skills in Canada",
-  "author": [
-   {
-    "family": "Carliner",
-    "given": "Geoffrey"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1981
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 3 ; score 0.6 ; récurrence 39 ; citations 158.0",
-  "container-title": "Journal of Human Resources, 16(3), 384-399",
-  "DOI": "10.2307/145627",
-  "abstract": "Recensement 1971 : théorie de la prime à la langue en 'demande excédentaire' ; au Québec, rendement de l'anglais pour les francophones, mais les francophones bilingues gagnent toujours moins que les anglophones unilingues, ceteris paribus."
  },
  {
   "id": "vaillancourt1996",
@@ -84,82 +39,32 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 4 ; score 0.595 ; récurrence 36 ; citations 61.0",
+  "note": "Snowballing rang 2 ; score 0.573 ; récurrence 36 ; citations 61.0",
   "container-title": "International Journal of the Sociology of Language, 121, 69-92",
   "DOI": "10.1515/ijsl.1996.121.69",
   "abstract": "Synthèse des outils de mesure (revenu, propriété, langue de travail) et des résultats sur le statut des francophones depuis 1960 ; déterminants (scolarité, demande de français, politiques) et coûts des politiques linguistiques."
  },
  {
-  "id": "shapiro1997",
-  "type": "article-journal",
-  "title": "Language and earnings in Quebec: Trends over twenty years, 1970-1990",
+  "id": "rcbb1969",
+  "type": "report",
+  "title": "Rapport de la Commission royale d'enquête sur le bilinguisme et le biculturalisme, Livre III : Le monde du travail",
   "author": [
    {
-    "family": "Shapiro",
-    "given": "Daniel M."
-   },
-   {
-    "family": "Stelcner",
-    "given": "Morton"
+    "family": "Commission royale d'enquête sur le bilinguisme et le biculturalisme (Laurendeau-Dunton)",
+    "given": ""
    }
   ],
   "issued": {
    "date-parts": [
     [
-     1997
+     1969
     ]
    ]
   },
-  "language": "en",
-  "note": "Snowballing rang 5 ; score 0.589 ; récurrence 29 ; citations 85.0",
-  "container-title": "Canadian Public Policy / Analyse de politiques, 23(2), 115-140",
-  "DOI": "10.2307/3551481",
-  "abstract": "Recensements 1971, 1981, 1991 : depuis la Loi 101, l'écart entre anglophones (unilingues et bilingues) et francophones bilingues s'est refermé ; détérioration relative des allophones et des francophones unilingues ; analyse par sexe."
- },
- {
-  "id": "albouy2008",
-  "type": "article-journal",
-  "title": "The wage gap between Francophones and Anglophones: a Canadian perspective, 1970-2000",
-  "author": [
-   {
-    "family": "Albouy",
-    "given": "David"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2008
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 6 ; score 0.585 ; récurrence 23 ; citations 56.0",
-  "container-title": "Canadian Journal of Economics, 41(4), 1211-1238",
-  "DOI": "10.1111/j.1540-5982.2008.00501.x",
-  "abstract": "Écart salarial hommes F/A : -25 points au Québec 1970-2000, -10 points au Canada ; salaires des anglophones du Québec en baisse relative (-15 pts) ; plus de la moitié de la réduction expliquée par la hausse de scolarité des francophones ; baisse de la demande de travail anglophone au Québec."
- },
- {
-  "id": "lieberson1970",
-  "type": "book",
-  "title": "Language and Ethnic Relations in Canada",
-  "author": [
-   {
-    "family": "Lieberson",
-    "given": "Stanley"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1970
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 7 ; score 0.581 ; récurrence 49 ; citations 120.0",
-  "publisher": "New York : John Wiley & Sons",
-  "abstract": "Sociologie écologique du bilinguisme ; chapitre sur les exigences professionnelles (Occupational Demands) et les écarts de revenu par langue maternelle à Montréal (1961) ; analyse des offres d'emploi."
+  "language": "fr/en",
+  "note": "Snowballing rang 3 ; score 0.571 ; récurrence 83 ; citations ",
+  "publisher": "Ottawa : Imprimeur de la Reine",
+  "abstract": "Document fondateur : à partir du recensement de 1961, hiérarchie des revenus selon l'origine ethnique au Québec (les Canadiens français unilingues au 12e rang sur 14 ; revenu moyen des hommes d'origine française inférieur de 35 % à celui des hommes d'origine britannique) ; sous-représentation des francophones dans la direction des entreprises ; explications (scolarité, structure industrielle, propriété, discrimination)."
  },
  {
   "id": "levine1990",
@@ -179,7 +84,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 8 ; score 0.573 ; récurrence 28 ; citations 112.0",
+  "note": "Snowballing rang 4 ; score 0.564 ; récurrence 28 ; citations 112.0",
   "publisher": "Philadelphia : Temple University Press",
   "abstract": "Francisation de l'économie montréalaise 1960-1989 : langue de travail, contrôle du capital, statut socioéconomique des francophones ; rôle conjoint de l'État québécois (sociétés d'État, Loi 101) et des forces du marché ; exode anglophone."
  },
@@ -209,10 +114,127 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 9 ; score 0.568 ; récurrence 27 ; citations 33.0",
+  "note": "Snowballing rang 5 ; score 0.561 ; récurrence 27 ; citations 33.0",
   "publisher": "C.D. Howe Institute Backgrounder no 103",
   "URL": "https://cdhowe.org/wp-content/uploads/2024/04/backgrounder_103_english.pdf",
   "abstract": "1970-2000 : rendement du français en hausse, de l'anglais en baisse ; le bilinguisme accroît le revenu des hommes anglophones depuis 1980 et des femmes anglophones depuis 1990 ; propriété francophone de l'économie de 47 % (1961) à 67 % (2003)."
+ },
+ {
+  "id": "lieberson1970",
+  "type": "book",
+  "title": "Language and Ethnic Relations in Canada",
+  "author": [
+   {
+    "family": "Lieberson",
+    "given": "Stanley"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1970
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 6 ; score 0.561 ; récurrence 49 ; citations 120.0",
+  "publisher": "New York : John Wiley & Sons",
+  "abstract": "Sociologie écologique du bilinguisme ; chapitre sur les exigences professionnelles (Occupational Demands) et les écarts de revenu par langue maternelle à Montréal (1961) ; analyse des offres d'emploi."
+ },
+ {
+  "id": "albouy2008",
+  "type": "article-journal",
+  "title": "The wage gap between Francophones and Anglophones: a Canadian perspective, 1970-2000",
+  "author": [
+   {
+    "family": "Albouy",
+    "given": "David"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2008
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 7 ; score 0.554 ; récurrence 23 ; citations 56.0",
+  "container-title": "Canadian Journal of Economics, 41(4), 1211-1238",
+  "DOI": "10.1111/j.1540-5982.2008.00501.x",
+  "abstract": "Écart salarial hommes F/A : -25 points au Québec 1970-2000, -10 points au Canada ; salaires des anglophones du Québec en baisse relative (-15 pts) ; plus de la moitié de la réduction expliquée par la hausse de scolarité des francophones ; baisse de la demande de travail anglophone au Québec."
+ },
+ {
+  "id": "carliner1981",
+  "type": "article-journal",
+  "title": "Wage differences by language group and the market for language skills in Canada",
+  "author": [
+   {
+    "family": "Carliner",
+    "given": "Geoffrey"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1981
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 8 ; score 0.549 ; récurrence 39 ; citations 158.0",
+  "container-title": "Journal of Human Resources, 16(3), 384-399",
+  "DOI": "10.2307/145627",
+  "abstract": "Recensement 1971 : théorie de la prime à la langue en 'demande excédentaire' ; au Québec, rendement de l'anglais pour les francophones, mais les francophones bilingues gagnent toujours moins que les anglophones unilingues, ceteris paribus."
+ },
+ {
+  "id": "shapiro1997",
+  "type": "article-journal",
+  "title": "Language and earnings in Quebec: Trends over twenty years, 1970-1990",
+  "author": [
+   {
+    "family": "Shapiro",
+    "given": "Daniel M."
+   },
+   {
+    "family": "Stelcner",
+    "given": "Morton"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1997
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 9 ; score 0.542 ; récurrence 29 ; citations 85.0",
+  "container-title": "Canadian Public Policy / Analyse de politiques, 23(2), 115-140",
+  "DOI": "10.2307/3551481",
+  "abstract": "Recensements 1971, 1981, 1991 : depuis la Loi 101, l'écart entre anglophones (unilingues et bilingues) et francophones bilingues s'est refermé ; détérioration relative des allophones et des francophones unilingues ; analyse par sexe."
+ },
+ {
+  "id": "vaillancourt1980",
+  "type": "book",
+  "title": "Differences in earnings by language groups in Quebec, 1970: An economic analysis",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1980
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 10 ; score 0.528 ; récurrence 48 ; citations 20.0",
+  "publisher": "Québec : Centre international de recherche sur le bilinguisme (CIRB), Université Laval, Publication B-90",
+  "abstract": "Thèse (Queen's) : cadre où la langue est à la fois attribut ethnique et capital humain ; équation de revenu des hommes du Québec en 1970 ; contribution de l'ethnicité à l'écart anglophones/francophones."
  },
  {
   "id": "christofides2010",
@@ -236,10 +258,37 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 10 ; score 0.567 ; récurrence 15 ; citations 62.0",
+  "note": "Snowballing rang 11 ; score 0.525 ; récurrence 15 ; citations 62.0",
   "container-title": "Canadian Public Policy / Analyse de politiques, 36(2), 137-158",
   "DOI": "10.3138/cpp.36.2.137",
   "abstract": "Rendement de la connaissance et de l'usage de l'anglais au Québec (et du français hors Québec) à partir du recensement 2001/EDI 2006 : rendement du bilinguisme surtout lié à l'usage au travail."
+ },
+ {
+  "id": "pendakur2002",
+  "type": "article-journal",
+  "title": "Language as both human capital and ethnicity",
+  "author": [
+   {
+    "family": "Pendakur",
+    "given": "Krishna"
+   },
+   {
+    "family": "Pendakur",
+    "given": "Ravi"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2002
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 12 ; score 0.511 ; récurrence 6 ; citations 147.0",
+  "container-title": "International Migration Review, 36(1), 147-177",
+  "DOI": "10.1111/j.1747-7379.2002.tb00075.x",
+  "abstract": "Montréal, Toronto, Vancouver (1991) : la connaissance d'une langue minoritaire est associée à des gains inférieurs, conditionnellement à la langue majoritaire ; la langue opère comme capital humain et comme marqueur ethnique (enclaves, discrimination)."
  },
  {
   "id": "blishen1987",
@@ -267,37 +316,10 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 11 ; score 0.556 ; récurrence 10 ; citations 376.0",
+  "note": "Snowballing rang 13 ; score 0.507 ; récurrence 10 ; citations 376.0",
   "container-title": "Canadian Review of Sociology and Anthropology, 24(4), 465-488",
   "DOI": "10.1111/j.1755-618x.1987.tb00639.x",
   "abstract": "Indice socioéconomique 1981 (revenu + scolarité, calibré sur l'échelle de prestige Pineo-Porter) ; outil standard des études de statut professionnel au Canada dans les années 1980-1990."
- },
- {
-  "id": "pendakur2002",
-  "type": "article-journal",
-  "title": "Language as both human capital and ethnicity",
-  "author": [
-   {
-    "family": "Pendakur",
-    "given": "Krishna"
-   },
-   {
-    "family": "Pendakur",
-    "given": "Ravi"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2002
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 12 ; score 0.547 ; récurrence 6 ; citations 147.0",
-  "container-title": "International Migration Review, 36(1), 147-177",
-  "DOI": "10.1111/j.1747-7379.2002.tb00075.x",
-  "abstract": "Montréal, Toronto, Vancouver (1991) : la connaissance d'une langue minoritaire est associée à des gains inférieurs, conditionnellement à la langue majoritaire ; la langue opère comme capital humain et comme marqueur ethnique (enclaves, discrimination)."
  },
  {
   "id": "grenier1987",
@@ -317,10 +339,56 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 13 ; score 0.526 ; récurrence 33 ; citations 42.0",
+  "note": "Snowballing rang 14 ; score 0.497 ; récurrence 33 ; citations 42.0",
   "container-title": "Canadian Journal of Economics, 20(4), 774-791",
   "DOI": "10.2307/135415",
   "abstract": "Recensement 1981 : modèle à deux équations (émigration, revenu) ; biais de sélection chez les anglophones ; le rendement de l'apprentissage du français est sous-estimé si l'on ignore l'émigration."
+ },
+ {
+  "id": "bourhis2019",
+  "type": "article-journal",
+  "title": "Evaluating the impact of Bill 101 on the English-speaking communities of Quebec",
+  "author": [
+   {
+    "family": "Bourhis",
+    "given": "Richard Y."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2019
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 15 ; score 0.493 ; récurrence 7 ; citations 12.0",
+  "container-title": "Language Problems and Language Planning, 43(2)",
+  "DOI": "10.1075/lplp.00042.bou",
+  "abstract": "Perspective de la minorité anglophone : perte nette interprovinciale de 310 000 anglophones ; ceux qui sont restés sont moins scolarisés et ont un revenu inférieur à celui des francophones (2016) ; rôle des lois linguistiques."
+ },
+ {
+  "id": "nadeau2010",
+  "type": "article-journal",
+  "title": "Another look at the Francophone wage gap in Canada: Public and private sectors, Quebec and outside Quebec",
+  "author": [
+   {
+    "family": "Nadeau",
+    "given": "Serge"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2010
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 16 ; score 0.485 ; récurrence 15 ; citations 22.0",
+  "container-title": "Canadian Public Policy / Analyse de politiques, 36(2), 159-179",
+  "DOI": "10.3138/cpp.36.2.159",
+  "abstract": "Décomposition Blinder-Oaxaca 1970-2000 : hors Québec, aucun avantage anglophone inexpliqué ; au Québec, prime salariale des francophones dans le secteur public (1970-2000) et dans le privé en 2000, allant au-delà des compétences linguistiques."
  },
  {
   "id": "chiswick1988",
@@ -344,295 +412,10 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 14 ; score 0.524 ; récurrence 21 ; citations 90.0",
+  "note": "Snowballing rang 17 ; score 0.484 ; récurrence 21 ; citations 90.0",
   "container-title": "Research in Population Economics, 6, 183-228 (réédité 2007 dans The Economics of Language, Routledge)",
   "DOI": "10.4324/9780203963159-26",
   "abstract": "Recensements 1971 et 1981 : effets du statut d'immigrant, de l'ethnicité française et de la compétence linguistique sur les gains ; comparaison décennale."
- },
- {
-  "id": "vaillancourt1980",
-  "type": "book",
-  "title": "Differences in earnings by language groups in Quebec, 1970: An economic analysis",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1980
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 15 ; score 0.519 ; récurrence 48 ; citations 20.0",
-  "publisher": "Québec : Centre international de recherche sur le bilinguisme (CIRB), Université Laval, Publication B-90",
-  "abstract": "Thèse (Queen's) : cadre où la langue est à la fois attribut ethnique et capital humain ; équation de revenu des hommes du Québec en 1970 ; contribution de l'ethnicité à l'écart anglophones/francophones."
- },
- {
-  "id": "nadeau2010",
-  "type": "article-journal",
-  "title": "Another look at the Francophone wage gap in Canada: Public and private sectors, Quebec and outside Quebec",
-  "author": [
-   {
-    "family": "Nadeau",
-    "given": "Serge"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2010
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 16 ; score 0.51 ; récurrence 15 ; citations 22.0",
-  "container-title": "Canadian Public Policy / Analyse de politiques, 36(2), 159-179",
-  "DOI": "10.3138/cpp.36.2.159",
-  "abstract": "Décomposition Blinder-Oaxaca 1970-2000 : hors Québec, aucun avantage anglophone inexpliqué ; au Québec, prime salariale des francophones dans le secteur public (1970-2000) et dans le privé en 2000, allant au-delà des compétences linguistiques."
- },
- {
-  "id": "pert2023",
-  "type": "report",
-  "title": "Census 2021 Update: A brief review of the latest data on employment among Québec's English speakers",
-  "author": [
-   {
-    "family": "Provincial Employment Roundtable (PERT)",
-    "given": ""
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2023
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 17 ; score 0.489 ; récurrence 2 ; citations ",
-  "publisher": "Montréal : PERT",
-  "URL": "https://pertquebec.ca/wp-content/uploads/2023/05/Census-Brief-Update.pdf",
-  "abstract": "Recensement 2021 (première langue officielle parlée) : taux de chômage 10,9 % (anglophones) contre 6,9 % (francophones) ; revenu d'emploi médian 32 000 $ contre 37 200 $ ; taux de pauvreté 10 % contre 5,8 % ; l'écart de chômage a doublé depuis 2016."
- },
- {
-  "id": "vaillancourt2018",
-  "type": "report",
-  "title": "Analyse économique des politiques linguistiques au Québec : 40 ans de Loi 101",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2018
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 18 ; score 0.489 ; récurrence 7 ; citations ",
-  "publisher": "CIRANO, Cahier scientifique 2018s-16",
-  "URL": "https://cirano.qc.ca/files/publications/2018s-16.pdf",
-  "abstract": "Bilan économique de 40 ans de Loi 101 : revenus de travail par attribut linguistique 1970-2015, propriété des entreprises 1961-2003, langue de travail ; coûts et bénéfices des politiques."
- },
- {
-  "id": "geloso2025",
-  "type": "article-journal",
-  "title": "Revisiting Quebec's Quiet Revolution: A synthetic control analysis",
-  "author": [
-   {
-    "family": "Geloso",
-    "given": "Vincent"
-   },
-   {
-    "family": "Reilly",
-    "given": "Chandler S."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2025
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 19 ; score 0.489 ; récurrence 0 ; citations ",
-  "container-title": "Canadian Journal of Economics, 58(2), 548-579",
-  "DOI": "10.1111/caje.70000",
-  "abstract": "Contrôle synthétique : 1960 n'est pas une rupture pour le PIB par habitant, les salaires réels ou la scolarisation ; rupture modeste pour l'espérance de vie et la scolarité achevée par cohorte ; nuance le rôle causal de la Révolution tranquille dans la convergence."
- },
- {
-  "id": "boulet1980",
-  "type": "book",
-  "title": "Language and Earnings in Montreal / La langue et le revenu du travail à Montréal",
-  "author": [
-   {
-    "family": "Boulet",
-    "given": "Jac-André"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1980
-    ]
-   ]
-  },
-  "language": "en/fr",
-  "note": "Snowballing rang 20 ; score 0.487 ; récurrence 44 ; citations ",
-  "publisher": "Ottawa : Conseil économique du Canada",
-  "abstract": "Recensements 1961 et 1971 (RMR de Montréal) : les écarts de revenu de travail par langue se réduisent entre 1961 et 1971 ; rôle de la scolarité et du bilinguisme ; un des rares travaux exploitant 1961."
- },
- {
-  "id": "vaillancourt2020",
-  "type": "report",
-  "title": "La rémunération des attributs linguistiques au Québec : résultats pour 2015 et comparaison 1970-2015",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2020
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 21 ; score 0.485 ; récurrence 4 ; citations ",
-  "publisher": "CIRANO, Rapport 2020s-52 ; version anglaise REAL Working Paper 20-8 (Ulster University)",
-  "URL": "https://cirano.qc.ca/files/publications/2020s-52.pdf",
-  "abstract": "Recensement 2016 (revenus 2015) : effets nets des attributs linguistiques ; les anglophones bilingues et les francophones bilingues au sommet ; comparaison 1970-2015."
- },
- {
-  "id": "oqlf2022",
-  "type": "report",
-  "title": "Portrait du revenu d'emploi au Québec en 2015 selon les langues utilisées au travail",
-  "author": [
-   {
-    "family": "Office québécois de la langue française",
-    "given": ""
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2022
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 22 ; score 0.485 ; récurrence 2 ; citations ",
-  "publisher": "Québec : OQLF (étude fondée sur le recensement de 2016)",
-  "URL": "https://www.oqlf.gouv.qc.ca/ressources/sociolinguistique/2022/2022_etude_revenu-emploi-selon-langues-utilisees-travail.pdf",
-  "abstract": "Recensement 2016 (revenus 2015) : revenu d'emploi moyen des anglophones 48 793 $ contre 44 029 $ pour les francophones, mais revenu médian inférieur (33 412 $ contre 35 566 $) ; dispersion plus grande chez les anglophones ; effet des langues utilisées au travail."
- },
- {
-  "id": "serre2023",
-  "type": "report",
-  "title": "Les Anglo-Québécois sont-ils plus pauvres ? Non !",
-  "author": [
-   {
-    "family": "Serré",
-    "given": "Pierre"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2023
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 23 ; score 0.485 ; récurrence 1 ; citations ",
-  "publisher": "Mémoire présenté au Comité permanent des langues officielles de la Chambre des communes",
-  "URL": "https://www.ourcommons.ca/Content/Committee/441/LANG/Brief/BR12960576/br-external/SerrePierre-f.pdf",
-  "abstract": "Réplique au discours de PERT sur l'appauvrissement des anglophones (recensement 2021) : effets de composition (immigration récente, âge, région) ; illustre le débat public sur l'inversion de l'écart."
- },
- {
-  "id": "bourhis2019",
-  "type": "article-journal",
-  "title": "Evaluating the impact of Bill 101 on the English-speaking communities of Quebec",
-  "author": [
-   {
-    "family": "Bourhis",
-    "given": "Richard Y."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2019
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 24 ; score 0.482 ; récurrence 7 ; citations 12.0",
-  "container-title": "Language Problems and Language Planning, 43(2)",
-  "DOI": "10.1075/lplp.00042.bou",
-  "abstract": "Perspective de la minorité anglophone : perte nette interprovinciale de 310 000 anglophones ; ceux qui sont restés sont moins scolarisés et ont un revenu inférieur à celui des francophones (2016) ; rôle des lois linguistiques."
- },
- {
-  "id": "raynauld1966",
-  "type": "report",
-  "title": "La répartition des revenus selon les groupes ethniques au Canada (3 vol.)",
-  "author": [
-   {
-    "family": "Raynauld",
-    "given": "André"
-   },
-   {
-    "family": "Marion",
-    "given": "Gérald"
-   },
-   {
-    "family": "Béland",
-    "given": "Richard"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1966
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 25 ; score 0.48 ; récurrence 56 ; citations ",
-  "publisher": "Étude préparée pour la Commission royale d'enquête sur le bilinguisme et le biculturalisme (non publiée)",
-  "abstract": "Analyse du recensement de 1961 pour la Commission B-B : revenus de travail par origine ethnique et langue, décomposition par scolarité, profession, industrie ; base empirique du Livre III."
- },
- {
-  "id": "vaillancourt2019",
-  "type": "article-journal",
-  "title": "Assessing Bill 101 after 40 years",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2019
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 26 ; score 0.477 ; récurrence 3 ; citations ",
-  "container-title": "Language Problems and Language Planning, 43(2) (introduction du numéro spécial)",
-  "DOI": "10.1075/lplp.00037.vai",
-  "abstract": "Introduction du numéro spécial sur 40 ans de Loi 101 (Grenier 2019, Bourhis 2019, Castonguay 2019) ; cadre d'évaluation des effets économiques et démographiques."
  },
  {
   "id": "vaillancourt2013",
@@ -664,10 +447,234 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 27 ; score 0.475 ; récurrence 15 ; citations 9.0",
+  "note": "Snowballing rang 18 ; score 0.482 ; récurrence 15 ; citations 9.0",
   "container-title": "Canadian Public Policy / Analyse de politiques, 39(S1), S25-S40",
   "DOI": "10.3138/cpp.39.supplement1.s25",
   "abstract": "Recensement 2006 (revenus 2005) comparé à 1970-2000 : le bilinguisme augmente le revenu de tous les groupes ; l'avantage historique (1970) des anglophones n'existe plus en 2005."
+ },
+ {
+  "id": "geloso2025",
+  "type": "article-journal",
+  "title": "Revisiting Quebec's Quiet Revolution: A synthetic control analysis",
+  "author": [
+   {
+    "family": "Geloso",
+    "given": "Vincent"
+   },
+   {
+    "family": "Reilly",
+    "given": "Chandler S."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 19 ; score 0.482 ; récurrence 0 ; citations ",
+  "container-title": "Canadian Journal of Economics, 58(2), 548-579",
+  "DOI": "10.1111/caje.70000",
+  "abstract": "Contrôle synthétique : 1960 n'est pas une rupture pour le PIB par habitant, les salaires réels ou la scolarisation ; rupture modeste pour l'espérance de vie et la scolarité achevée par cohorte ; nuance le rôle causal de la Révolution tranquille dans la convergence."
+ },
+ {
+  "id": "pert2023",
+  "type": "report",
+  "title": "Census 2021 Update: A brief review of the latest data on employment among Québec's English speakers",
+  "author": [
+   {
+    "family": "Provincial Employment Roundtable (PERT)",
+    "given": ""
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2023
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 20 ; score 0.482 ; récurrence 2 ; citations ",
+  "publisher": "Montréal : PERT",
+  "URL": "https://pertquebec.ca/wp-content/uploads/2023/05/Census-Brief-Update.pdf",
+  "abstract": "Recensement 2021 (première langue officielle parlée) : taux de chômage 10,9 % (anglophones) contre 6,9 % (francophones) ; revenu d'emploi médian 32 000 $ contre 37 200 $ ; taux de pauvreté 10 % contre 5,8 % ; l'écart de chômage a doublé depuis 2016."
+ },
+ {
+  "id": "boulet1980",
+  "type": "book",
+  "title": "Language and Earnings in Montreal / La langue et le revenu du travail à Montréal",
+  "author": [
+   {
+    "family": "Boulet",
+    "given": "Jac-André"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1980
+    ]
+   ]
+  },
+  "language": "en/fr",
+  "note": "Snowballing rang 21 ; score 0.48 ; récurrence 44 ; citations ",
+  "publisher": "Ottawa : Conseil économique du Canada",
+  "abstract": "Recensements 1961 et 1971 (RMR de Montréal) : les écarts de revenu de travail par langue se réduisent entre 1961 et 1971 ; rôle de la scolarité et du bilinguisme ; un des rares travaux exploitant 1961."
+ },
+ {
+  "id": "oqlf2022",
+  "type": "report",
+  "title": "Portrait du revenu d'emploi au Québec en 2015 selon les langues utilisées au travail",
+  "author": [
+   {
+    "family": "Office québécois de la langue française",
+    "given": ""
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 22 ; score 0.478 ; récurrence 2 ; citations ",
+  "publisher": "Québec : OQLF (étude fondée sur le recensement de 2016)",
+  "URL": "https://www.oqlf.gouv.qc.ca/ressources/sociolinguistique/2022/2022_etude_revenu-emploi-selon-langues-utilisees-travail.pdf",
+  "abstract": "Recensement 2016 (revenus 2015) : revenu d'emploi moyen des anglophones 48 793 $ contre 44 029 $ pour les francophones, mais revenu médian inférieur (33 412 $ contre 35 566 $) ; dispersion plus grande chez les anglophones ; effet des langues utilisées au travail."
+ },
+ {
+  "id": "serre2023",
+  "type": "report",
+  "title": "Les Anglo-Québécois sont-ils plus pauvres ? Non !",
+  "author": [
+   {
+    "family": "Serré",
+    "given": "Pierre"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2023
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 23 ; score 0.478 ; récurrence 1 ; citations ",
+  "publisher": "Mémoire présenté au Comité permanent des langues officielles de la Chambre des communes",
+  "URL": "https://www.ourcommons.ca/Content/Committee/441/LANG/Brief/BR12960576/br-external/SerrePierre-f.pdf",
+  "abstract": "Réplique au discours de PERT sur l'appauvrissement des anglophones (recensement 2021) : effets de composition (immigration récente, âge, région) ; illustre le débat public sur l'inversion de l'écart."
+ },
+ {
+  "id": "floch2012",
+  "type": "chapter",
+  "title": "The socio-economic status of English-speaking Quebec: Those who left and those who stayed",
+  "author": [
+   {
+    "family": "Floch",
+    "given": "William"
+   },
+   {
+    "family": "Pocock",
+    "given": "Joanne"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2012
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 24 ; score 0.475 ; récurrence 7 ; citations ",
+  "container-title": "In R. Y. Bourhis (dir.), Decline and Prospects of the English-Speaking Communities of Quebec, Ottawa : Patrimoine canadien, 127-173",
+  "abstract": "Recensements 1971-2006 : statut socioéconomique des anglophones du Québec ; effet de sélection de l'émigration (les partants plus scolarisés/mieux rémunérés) ; les anglophones restés au Québec ont un revenu et une scolarité inférieurs aux francophones à partir des années 2000."
+ },
+ {
+  "id": "raynauld1966",
+  "type": "report",
+  "title": "La répartition des revenus selon les groupes ethniques au Canada (3 vol.)",
+  "author": [
+   {
+    "family": "Raynauld",
+    "given": "André"
+   },
+   {
+    "family": "Marion",
+    "given": "Gérald"
+   },
+   {
+    "family": "Béland",
+    "given": "Richard"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1966
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 25 ; score 0.473 ; récurrence 56 ; citations ",
+  "publisher": "Étude préparée pour la Commission royale d'enquête sur le bilinguisme et le biculturalisme (non publiée)",
+  "abstract": "Analyse du recensement de 1961 pour la Commission B-B : revenus de travail par origine ethnique et langue, décomposition par scolarité, profession, industrie ; base empirique du Livre III."
+ },
+ {
+  "id": "vaillancourt2019",
+  "type": "article-journal",
+  "title": "Assessing Bill 101 after 40 years",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2019
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 26 ; score 0.471 ; récurrence 3 ; citations ",
+  "container-title": "Language Problems and Language Planning, 43(2) (introduction du numéro spécial)",
+  "DOI": "10.1075/lplp.00037.vai",
+  "abstract": "Introduction du numéro spécial sur 40 ans de Loi 101 (Grenier 2019, Bourhis 2019, Castonguay 2019) ; cadre d'évaluation des effets économiques et démographiques."
+ },
+ {
+  "id": "bourhis2017",
+  "type": "article-journal",
+  "title": "Assessing forty years of language planning on the vitality of the francophone and anglophone communities of Quebec",
+  "author": [
+   {
+    "family": "Bourhis",
+    "given": "Richard Y."
+   },
+   {
+    "family": "Sioufi",
+    "given": "Rana"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2017
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 27 ; score 0.469 ; récurrence 1 ; citations ",
+  "container-title": "Multilingua, 36(5), 627-661",
+  "DOI": "10.1515/multi-2017-3048",
+  "abstract": "Vitalité ethnolinguistique (démographie, statut, soutien institutionnel) des deux communautés après 40 ans d'aménagement linguistique ; indicateurs de statut économique (revenu, scolarité) des anglophones restés au Québec."
  },
  {
   "id": "bousmah2021",
@@ -695,62 +702,10 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 28 ; score 0.474 ; récurrence 2 ; citations 13.0",
+  "note": "Snowballing rang 28 ; score 0.469 ; récurrence 2 ; citations 13.0",
   "container-title": "Journal of Labor Research, 42(1), 1-28",
   "DOI": "10.1007/s12122-020-09316-1",
   "abstract": "Recensements 2001-2006, ENM 2011 : l'usage du français et de l'anglais au travail est rémunéré positivement à Montréal, mais l'anglais davantage ; immigrants."
- },
- {
-  "id": "vaillancourt2017",
-  "type": "chapter",
-  "title": "Les attributs linguistiques et le revenu de travail au Québec : cadre d'analyse et résultats pour 2010 et comparaison 1970-2010",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   },
-   {
-    "family": "Fontaine",
-    "given": "Marc-Antoine"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2017
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 29 ; score 0.473 ; récurrence 4 ; citations ",
-  "container-title": "Dans M. Joanis et C. Montmarquette (dir.), Le Québec économique 6 : le défi des ressources minières, CIRANO / PUL (chapitre)",
-  "abstract": "Enquête nationale auprès des ménages 2011 (revenus 2010) : effets nets des attributs linguistiques comparés à 1970-2005 ; cadre de Vaillancourt (1980) ajoutant la langue comme troisième forme de capital humain à l'équation de Mincer."
- },
- {
-  "id": "grenier2016",
-  "type": "chapter",
-  "title": "English as the lingua franca and the economic value of other languages: The case of the language of work in the Montreal labor market",
-  "author": [
-   {
-    "family": "Grenier",
-    "given": "Gilles"
-   },
-   {
-    "family": "Nadeau",
-    "given": "Serge"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2016
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 30 ; score 0.469 ; récurrence 4 ; citations ",
-  "container-title": "In M. Gazzola et B.-A. Wickström (dir.), The Economics of Language Policy, Cambridge (MA) : MIT Press, 267-312",
-  "abstract": "Recensements 2001-2006 : valeur de l'usage de l'anglais et du français au travail à Montréal par groupe linguistique ; l'anglais comme lingua franca conserve une valeur marchande supérieure malgré la francisation."
  },
  {
   "id": "dean2022",
@@ -774,7 +729,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 31 ; score 0.467 ; récurrence 4 ; citations 9.0",
+  "note": "Snowballing rang 29 ; score 0.462 ; récurrence 4 ; citations 9.0",
   "container-title": "Cliometrica",
   "DOI": "10.1007/s11698-021-00236-3",
   "abstract": "Recensements 1901-1921 (et 1951) : l'écart se réduit modestement au début du XXe siècle puis stagne jusqu'en 1970 ; l'essentiel de la convergence est postérieur à 1970. Situe le point de départ de 1961."
@@ -797,22 +752,174 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 32 ; score 0.466 ; récurrence 7 ; citations ",
+  "note": "Snowballing rang 30 ; score 0.459 ; récurrence 7 ; citations ",
   "publisher": "Ottawa : Patrimoine canadien / CIRLM, coll. Nouvelles perspectives canadiennes",
   "abstract": "Ouvrage collectif sur la vitalité des communautés anglophones du Québec (démographie, éducation, santé, statut socioéconomique — chap. Floch & Pocock)."
  },
  {
-  "id": "floch2012",
+  "id": "grenier2016",
   "type": "chapter",
-  "title": "The socio-economic status of English-speaking Quebec: Those who left and those who stayed",
+  "title": "English as the lingua franca and the economic value of other languages: The case of the language of work in the Montreal labor market",
   "author": [
    {
-    "family": "Floch",
-    "given": "William"
+    "family": "Grenier",
+    "given": "Gilles"
    },
    {
-    "family": "Pocock",
-    "given": "Joanne"
+    "family": "Nadeau",
+    "given": "Serge"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2016
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 31 ; score 0.454 ; récurrence 4 ; citations ",
+  "container-title": "In M. Gazzola et B.-A. Wickström (dir.), The Economics of Language Policy, Cambridge (MA) : MIT Press, 267-312",
+  "abstract": "Recensements 2001-2006 : valeur de l'usage de l'anglais et du français au travail à Montréal par groupe linguistique ; l'anglais comme lingua franca conserve une valeur marchande supérieure malgré la francisation."
+ },
+ {
+  "id": "gagnon2023",
+  "type": "article-journal",
+  "title": "The incubated revolution: Education, cohort effects, and the linguistic wage gap in Quebec during the 20th century",
+  "author": [
+   {
+    "family": "Gagnon",
+    "given": "Julien"
+   },
+   {
+    "family": "Geloso",
+    "given": "Vincent"
+   },
+   {
+    "family": "Isabelle",
+    "given": "Maripier"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2023
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 32 ; score 0.45 ; récurrence 4 ; citations 4.0",
+  "container-title": "Journal of Economic Behavior & Organization",
+  "DOI": "10.1016/j.jebo.2022.12.017",
+  "abstract": "Cohortes de naissance 1910-1970 : la fermeture de l'écart salarial 1970-2000 passe par le remplacement des générations ; modèle à deux secteurs (barrières linguistiques, mobilité du capital) ; choc = scolarité obligatoire (1943)."
+ },
+ {
+  "id": "vaillancourt2018",
+  "type": "report",
+  "title": "Analyse économique des politiques linguistiques au Québec : 40 ans de Loi 101",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2018
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 33 ; score 0.442 ; récurrence 7 ; citations ",
+  "publisher": "CIRANO, Cahier scientifique 2018s-16",
+  "URL": "https://cirano.qc.ca/files/publications/2018s-16.pdf",
+  "abstract": "Bilan économique de 40 ans de Loi 101 : revenus de travail par attribut linguistique 1970-2015, propriété des entreprises 1961-2003, langue de travail ; coûts et bénéfices des politiques."
+ },
+ {
+  "id": "grenier2019",
+  "type": "article-journal",
+  "title": "Quebec's language policy and economic globalization",
+  "author": [
+   {
+    "family": "Grenier",
+    "given": "Gilles"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2019
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 34 ; score 0.439 ; récurrence 6 ; citations 5.0",
+  "container-title": "Language Problems and Language Planning, 43(2)",
+  "DOI": "10.1075/lplp.00041.gre",
+  "abstract": "Situation économique des groupes linguistiques depuis 1970 vue comme un marché (offre/demande) ; la position relative des francophones s'est améliorée (pouvoir d'achat, contrôle de l'économie) ; l'anglais au travail paie plus pour les immigrants."
+ },
+ {
+  "id": "vaillancourt2001",
+  "type": "report",
+  "title": "Le statut du français sur le marché du travail au Québec, de 1970 à 1995 : les revenus de travail",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   },
+   {
+    "family": "Touchette",
+    "given": "Christine"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2001
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 35 ; score 0.439 ; récurrence 13 ; citations ",
+  "publisher": "Montréal : CIRANO, Rapport de projet 2001RP-04 (pour le Conseil de la langue française)",
+  "abstract": "Recensement 1996 (revenus 1995) : effets nets des attributs linguistiques comparés à 1970-1990 ; disparition de l'avantage des anglophones unilingues chez les hommes."
+ },
+ {
+  "id": "lian1998",
+  "type": "article-journal",
+  "title": "Does the vertical mosaic still exist? Ethnicity and income in Canada, 1991",
+  "author": [
+   {
+    "family": "Lian",
+    "given": "Jason Z."
+   },
+   {
+    "family": "Matthews",
+    "given": "David Ralph"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1998
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 36 ; score 0.436 ; récurrence 3 ; citations 48.0",
+  "container-title": "Canadian Review of Sociology and Anthropology, 35(4), 461-481",
+  "DOI": "10.1111/j.1755-618x.1998.tb00732.x",
+  "abstract": "Canada 1991 : à scolarité égale et autres variables contrôlées, les Canadiens d'origine française gagnent significativement plus que ceux d'origine britannique ; la race a remplacé l'ethnicité comme fondement des inégalités de revenu."
+ },
+ {
+  "id": "pettinicchio2012",
+  "type": "article-journal",
+  "title": "Migration and ethnic nationalism: Anglophone exit and the 'decolonisation' of Québec",
+  "author": [
+   {
+    "family": "Pettinicchio",
+    "given": "David"
    }
   ],
   "issued": {
@@ -823,9 +930,37 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 33 ; score 0.466 ; récurrence 7 ; citations ",
-  "container-title": "In R. Y. Bourhis (dir.), Decline and Prospects of the English-Speaking Communities of Quebec, Ottawa : Patrimoine canadien, 127-173",
-  "abstract": "Recensements 1971-2006 : statut socioéconomique des anglophones du Québec ; effet de sélection de l'émigration (les partants plus scolarisés/mieux rémunérés) ; les anglophones restés au Québec ont un revenu et une scolarité inférieurs aux francophones à partir des années 2000."
+  "note": "Snowballing rang 37 ; score 0.436 ; récurrence 2 ; citations 14.0",
+  "container-title": "Nations and Nationalism, 18(4), 719-743",
+  "DOI": "10.1111/j.1469-8129.2011.00513.x",
+  "abstract": "Le nationalisme ethnique des années 1960 démantèle la division culturelle du travail ; les politiques réduisent le rendement économique des anglophones scolarisés et augmentent celui des francophones, ce qui explique l'émigration anglophone (modèle de colonie interne, exit/voice)."
+ },
+ {
+  "id": "nadeau2010b",
+  "type": "article-journal",
+  "title": "The immigrant wage gap in Canada: Quebec and the rest of Canada",
+  "author": [
+   {
+    "family": "Nadeau",
+    "given": "Serge"
+   },
+   {
+    "family": "Seckin",
+    "given": "Aylin"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2010
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 38 ; score 0.435 ; récurrence 3 ; citations ",
+  "container-title": "Canadian Public Policy / Analyse de politiques, 36(3), 265-285",
+  "DOI": "10.3138/cpp.36.3.265",
+  "abstract": "Écart salarial des immigrants au Québec vs reste du Canada (1970-2000) ; complément de nadeau2010 sur la structure linguistique du marché du travail québécois."
  },
  {
   "id": "blishen1967",
@@ -845,10 +980,81 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 34 ; score 0.463 ; récurrence 28 ; citations 81.0",
+  "note": "Snowballing rang 39 ; score 0.435 ; récurrence 28 ; citations 81.0",
   "container-title": "Canadian Review of Sociology and Anthropology, 4(1), 41-53",
   "DOI": "10.1111/j.1755-618x.1967.tb00473.x",
   "abstract": "Indice socioéconomique des professions (recensement 1961) utilisé par les études de statut francophones/anglophones (McRoberts et al. 1976, Boyd et al. 1985, Béland 1987)."
+ },
+ {
+  "id": "vaillancourt2005",
+  "type": "report",
+  "title": "La propriété des employeurs au Québec en 2003 selon le groupe d'appartenance linguistique",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   },
+   {
+    "family": "Vaillancourt",
+    "given": "Luc"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2005
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 40 ; score 0.431 ; récurrence 7 ; citations ",
+  "publisher": "Québec : Conseil supérieur de la langue française",
+  "abstract": "Contrôle de l'économie : part de l'emploi sous contrôle francophone de 47 % (1961) à 55 % (1978), 62 % (1991) et 67 % (2003)."
+ },
+ {
+  "id": "vaillancourt1988",
+  "type": "report",
+  "title": "Langue et disparités de statut économique au Québec, 1970 et 1980",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1988
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 41 ; score 0.428 ; récurrence 23 ; citations ",
+  "publisher": "Québec : Conseil de la langue française, coll. Dossiers no 28",
+  "abstract": "Recensements 1971 et 1981 : revenus de travail et rendement net des attributs linguistiques (hommes et femmes) ; réduction de l'avantage anglophone entre 1970 et 1980 ; premier volet de la série CLF."
+ },
+ {
+  "id": "vaillancourt2020",
+  "type": "report",
+  "title": "La rémunération des attributs linguistiques au Québec : résultats pour 2015 et comparaison 1970-2015",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2020
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 42 ; score 0.427 ; récurrence 4 ; citations ",
+  "publisher": "CIRANO, Rapport 2020s-52 ; version anglaise REAL Working Paper 20-8 (Ulster University)",
+  "URL": "https://cirano.qc.ca/files/publications/2020s-52.pdf",
+  "abstract": "Recensement 2016 (revenus 2015) : effets nets des attributs linguistiques ; les anglophones bilingues et les francophones bilingues au sommet ; comparaison 1970-2015."
  },
  {
   "id": "blishen1958",
@@ -868,7 +1074,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 35 ; score 0.462 ; récurrence 28 ; citations 151.0",
+  "note": "Snowballing rang 43 ; score 0.426 ; récurrence 28 ; citations 151.0",
   "container-title": "Canadian Journal of Economics and Political Science, 24(4), 519-531",
   "DOI": "10.2307/139088",
   "abstract": "Outil de mesure du statut socioprofessionnel : échelle de classes professionnelles (recensement 1951) fondée sur revenu et scolarité ; application à certaines caractéristiques de la société canadienne, dont la distribution des origines britannique et française."
@@ -911,290 +1117,9 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 36 ; score 0.462 ; récurrence 14 ; citations 60.0",
+  "note": "Snowballing rang 44 ; score 0.426 ; récurrence 14 ; citations 60.0",
   "publisher": "Ottawa : Carleton University Press",
   "abstract": "Statut socioprofessionnel : synthèse de la Canadian Mobility Study (1973) ; chapitres sur l'attainment du statut des francophones et des anglophones ; convergence intergénérationnelle."
- },
- {
-  "id": "bourhis2017",
-  "type": "article-journal",
-  "title": "Assessing forty years of language planning on the vitality of the francophone and anglophone communities of Quebec",
-  "author": [
-   {
-    "family": "Bourhis",
-    "given": "Richard Y."
-   },
-   {
-    "family": "Sioufi",
-    "given": "Rana"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2017
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 37 ; score 0.461 ; récurrence 1 ; citations ",
-  "container-title": "Multilingua, 36(5), 627-661",
-  "DOI": "10.1515/multi-2017-3048",
-  "abstract": "Vitalité ethnolinguistique (démographie, statut, soutien institutionnel) des deux communautés après 40 ans d'aménagement linguistique ; indicateurs de statut économique (revenu, scolarité) des anglophones restés au Québec."
- },
- {
-  "id": "lian1998",
-  "type": "article-journal",
-  "title": "Does the vertical mosaic still exist? Ethnicity and income in Canada, 1991",
-  "author": [
-   {
-    "family": "Lian",
-    "given": "Jason Z."
-   },
-   {
-    "family": "Matthews",
-    "given": "David Ralph"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1998
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 38 ; score 0.457 ; récurrence 3 ; citations 48.0",
-  "container-title": "Canadian Review of Sociology and Anthropology, 35(4), 461-481",
-  "DOI": "10.1111/j.1755-618x.1998.tb00732.x",
-  "abstract": "Canada 1991 : à scolarité égale et autres variables contrôlées, les Canadiens d'origine française gagnent significativement plus que ceux d'origine britannique ; la race a remplacé l'ethnicité comme fondement des inégalités de revenu."
- },
- {
-  "id": "fortin2011",
-  "type": "chapter",
-  "title": "La Révolution tranquille et l'économie : où étions-nous, que visions-nous, qu'avons-nous accompli ?",
-  "author": [
-   {
-    "family": "Fortin",
-    "given": "Pierre"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2011
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 39 ; score 0.45 ; récurrence 4 ; citations ",
-  "container-title": "Dans G. Berthiaume et C. Corbo (dir.), La Révolution tranquille en héritage, Montréal : Boréal, 87-115",
-  "abstract": "Bilan économique de la Révolution tranquille : rattrapage du revenu par habitant du Québec sur l'Ontario et disparition de l'écart de revenu francophones/anglophones ; rôle de la scolarisation et des politiques."
- },
- {
-  "id": "vaillancourt2001",
-  "type": "report",
-  "title": "Le statut du français sur le marché du travail au Québec, de 1970 à 1995 : les revenus de travail",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   },
-   {
-    "family": "Touchette",
-    "given": "Christine"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2001
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 40 ; score 0.446 ; récurrence 13 ; citations ",
-  "publisher": "Montréal : CIRANO, Rapport de projet 2001RP-04 (pour le Conseil de la langue française)",
-  "abstract": "Recensement 1996 (revenus 1995) : effets nets des attributs linguistiques comparés à 1970-1990 ; disparition de l'avantage des anglophones unilingues chez les hommes."
- },
- {
-  "id": "pettinicchio2012",
-  "type": "article-journal",
-  "title": "Migration and ethnic nationalism: Anglophone exit and the 'decolonisation' of Québec",
-  "author": [
-   {
-    "family": "Pettinicchio",
-    "given": "David"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2012
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 41 ; score 0.442 ; récurrence 2 ; citations 14.0",
-  "container-title": "Nations and Nationalism, 18(4), 719-743",
-  "DOI": "10.1111/j.1469-8129.2011.00513.x",
-  "abstract": "Le nationalisme ethnique des années 1960 démantèle la division culturelle du travail ; les politiques réduisent le rendement économique des anglophones scolarisés et augmentent celui des francophones, ce qui explique l'émigration anglophone (modèle de colonie interne, exit/voice)."
- },
- {
-  "id": "nadeau2010b",
-  "type": "article-journal",
-  "title": "The immigrant wage gap in Canada: Quebec and the rest of Canada",
-  "author": [
-   {
-    "family": "Nadeau",
-    "given": "Serge"
-   },
-   {
-    "family": "Seckin",
-    "given": "Aylin"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2010
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 42 ; score 0.442 ; récurrence 3 ; citations ",
-  "container-title": "Canadian Public Policy / Analyse de politiques, 36(3), 265-285",
-  "DOI": "10.3138/cpp.36.3.265",
-  "abstract": "Écart salarial des immigrants au Québec vs reste du Canada (1970-2000) ; complément de nadeau2010 sur la structure linguistique du marché du travail québécois."
- },
- {
-  "id": "helmeshayes1998",
-  "type": "book",
-  "title": "The Vertical Mosaic Revisited",
-  "author": [
-   {
-    "family": "Helmes-Hayes",
-    "given": "Rick"
-   },
-   {
-    "family": "Curtis",
-    "given": "James"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1998
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 43 ; score 0.442 ; récurrence 1 ; citations 42.0",
-  "publisher": "Toronto : University of Toronto Press",
-  "DOI": "10.3138/9781442683051",
-  "abstract": "Bilan trente ans après Porter : chapitres de Clement (pouvoir, ethnicité, classe), Breton (ethnicité et race), Ornstein (élites) ; situe l'évolution de la place des Canadiens français."
- },
- {
-  "id": "vaillancourt2005",
-  "type": "report",
-  "title": "La propriété des employeurs au Québec en 2003 selon le groupe d'appartenance linguistique",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   },
-   {
-    "family": "Vaillancourt",
-    "given": "Luc"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2005
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 44 ; score 0.438 ; récurrence 7 ; citations ",
-  "publisher": "Québec : Conseil supérieur de la langue française",
-  "abstract": "Contrôle de l'économie : part de l'emploi sous contrôle francophone de 47 % (1961) à 55 % (1978), 62 % (1991) et 67 % (2003)."
- },
- {
-  "id": "vaillancourt1988",
-  "type": "report",
-  "title": "Langue et disparités de statut économique au Québec, 1970 et 1980",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1988
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 45 ; score 0.435 ; récurrence 23 ; citations ",
-  "publisher": "Québec : Conseil de la langue française, coll. Dossiers no 28",
-  "abstract": "Recensements 1971 et 1981 : revenus de travail et rendement net des attributs linguistiques (hommes et femmes) ; réduction de l'avantage anglophone entre 1970 et 1980 ; premier volet de la série CLF."
- },
- {
-  "id": "grenier2019",
-  "type": "article-journal",
-  "title": "Quebec's language policy and economic globalization",
-  "author": [
-   {
-    "family": "Grenier",
-    "given": "Gilles"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2019
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 46 ; score 0.434 ; récurrence 6 ; citations 5.0",
-  "container-title": "Language Problems and Language Planning, 43(2)",
-  "DOI": "10.1075/lplp.00041.gre",
-  "abstract": "Situation économique des groupes linguistiques depuis 1970 vue comme un marché (offre/demande) ; la position relative des francophones s'est améliorée (pouvoir d'achat, contrôle de l'économie) ; l'anglais au travail paie plus pour les immigrants."
- },
- {
-  "id": "gagnon2023",
-  "type": "article-journal",
-  "title": "The incubated revolution: Education, cohort effects, and the linguistic wage gap in Quebec during the 20th century",
-  "author": [
-   {
-    "family": "Gagnon",
-    "given": "Julien"
-   },
-   {
-    "family": "Geloso",
-    "given": "Vincent"
-   },
-   {
-    "family": "Isabelle",
-    "given": "Maripier"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2023
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 47 ; score 0.432 ; récurrence 4 ; citations 4.0",
-  "container-title": "Journal of Economic Behavior & Organization",
-  "DOI": "10.1016/j.jebo.2022.12.017",
-  "abstract": "Cohortes de naissance 1910-1970 : la fermeture de l'écart salarial 1970-2000 passe par le remplacement des générations ; modèle à deux secteurs (barrières linguistiques, mobilité du capital) ; choc = scolarité obligatoire (1943)."
  },
  {
   "id": "christofides1998",
@@ -1218,36 +1143,58 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 48 ; score 0.43 ; récurrence 12 ; citations ",
+  "note": "Snowballing rang 45 ; score 0.423 ; récurrence 12 ; citations ",
   "container-title": "In A. Breton (dir.), Economic Approaches to Language and Bilingualism, Ottawa : Patrimoine canadien, coll. Nouvelles perspectives canadiennes, 121-183",
   "abstract": "Recensements 1971 et 1981 : rendement du bilinguisme et écarts anglophones/francophones au Québec et hors Québec ; distinction connaissance/usage."
  },
  {
-  "id": "shapiro1981",
-  "type": "article-journal",
-  "title": "Male-female earnings differentials and the role of language in Canada, Ontario, and Quebec, 1970",
+  "id": "helmeshayes1998",
+  "type": "book",
+  "title": "The Vertical Mosaic Revisited",
   "author": [
    {
-    "family": "Shapiro",
-    "given": "Daniel M."
+    "family": "Helmes-Hayes",
+    "given": "Rick"
    },
    {
-    "family": "Stelcner",
-    "given": "Morton"
+    "family": "Curtis",
+    "given": "James"
    }
   ],
   "issued": {
    "date-parts": [
     [
-     1981
+     1998
     ]
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 49 ; score 0.422 ; récurrence 13 ; citations 42.0",
-  "container-title": "Canadian Journal of Economics, 14(2), 341-348",
-  "DOI": "10.2307/134804",
-  "abstract": "Décomposition des écarts hommes-femmes 1970 avec variables linguistiques (définition large) au Québec ; montre l'interaction sexe/langue."
+  "note": "Snowballing rang 46 ; score 0.422 ; récurrence 1 ; citations 42.0",
+  "publisher": "Toronto : University of Toronto Press",
+  "DOI": "10.3138/9781442683051",
+  "abstract": "Bilan trente ans après Porter : chapitres de Clement (pouvoir, ethnicité, classe), Breton (ethnicité et race), Ornstein (élites) ; situe l'évolution de la place des Canadiens français."
+ },
+ {
+  "id": "fortin2011",
+  "type": "chapter",
+  "title": "La Révolution tranquille et l'économie : où étions-nous, que visions-nous, qu'avons-nous accompli ?",
+  "author": [
+   {
+    "family": "Fortin",
+    "given": "Pierre"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2011
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 47 ; score 0.416 ; récurrence 4 ; citations ",
+  "container-title": "Dans G. Berthiaume et C. Corbo (dir.), La Révolution tranquille en héritage, Montréal : Boréal, 87-115",
+  "abstract": "Bilan économique de la Révolution tranquille : rattrapage du revenu par habitant du Québec sur l'Ontario et disparition de l'écart de revenu francophones/anglophones ; rôle de la scolarisation et des politiques."
  },
  {
   "id": "wanner1999",
@@ -1267,60 +1214,10 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 50 ; score 0.421 ; récurrence 1 ; citations 27.0",
+  "note": "Snowballing rang 48 ; score 0.408 ; récurrence 1 ; citations 27.0",
   "container-title": "Canadian Review of Sociology and Anthropology, 36(3), 409-442",
   "DOI": "10.1111/j.1755-618x.1999.tb00582.x",
   "abstract": "Canadian Mobility Study 1973 et ESG 1986/1994 : les effets de la première langue parlée sur la scolarité, très prononcés dans les cohortes anciennes, deviennent négligeables dans les cohortes récentes, au Québec comme ailleurs ; canal éducatif de la convergence."
- },
- {
-  "id": "herberg1990",
-  "type": "article-journal",
-  "title": "The ethno-racial socioeconomic hierarchy in Canada: Theory and analysis of the new vertical mosaic",
-  "author": [
-   {
-    "family": "Herberg",
-    "given": "Edward N."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1990
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 51 ; score 0.421 ; récurrence 8 ; citations 31.0",
-  "container-title": "International Journal of Comparative Sociology, 31(3-4), 206-221",
-  "DOI": "10.1177/002071529003100305",
-  "abstract": "Recensements 1921-1986 : hiérarchie socioéconomique ethno-raciale ; la mosaïque verticale existe encore mais presque inversée par rapport à Porter (les groupes d'origine française et britannique ne dominent plus)."
- },
- {
-  "id": "marion1972",
-  "type": "article-journal",
-  "title": "Une analyse économique de la disparité inter-ethnique des revenus",
-  "author": [
-   {
-    "family": "Marion",
-    "given": "Gérald"
-   },
-   {
-    "family": "Raynauld",
-    "given": "André"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1972
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 52 ; score 0.417 ; récurrence 23 ; citations 35.0",
-  "container-title": "Revue économique, 23(1), 1-19",
-  "DOI": "10.3406/reco.1972.408007",
-  "abstract": "Applique la théorie du commerce international (tarif optimal) aux disparités de revenu entre groupes anglophone (capital abondant) et francophone (travail abondant) au Québec ; limitation des échanges entre 'secteurs' ethniques comme explication de l'inégalité."
  },
  {
   "id": "migue1970",
@@ -1340,157 +1237,33 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 53 ; score 0.416 ; récurrence 33 ; citations 19.0",
+  "note": "Snowballing rang 49 ; score 0.407 ; récurrence 33 ; citations 19.0",
   "container-title": "Canadian Journal of Economics, 3(2), 183-198",
   "DOI": "10.2307/133671",
   "abstract": "Explication : sous-représentation des Canadiens français aux échelons supérieurs des entreprises expliquée par la théorie de l'information (réseaux d'information établis hors de la communauté francophone) ; marché du travail scindé en deux sous-groupes ; dispersion plus grande des salaires francophones."
  },
  {
-  "id": "shapiro1987",
+  "id": "herberg1990",
   "type": "article-journal",
-  "title": "Earnings disparities among linguistic groups in Quebec, 1970-1980",
+  "title": "The ethno-racial socioeconomic hierarchy in Canada: Theory and analysis of the new vertical mosaic",
   "author": [
    {
-    "family": "Shapiro",
-    "given": "Daniel M."
-   },
-   {
-    "family": "Stelcner",
-    "given": "Morton"
+    "family": "Herberg",
+    "given": "Edward N."
    }
   ],
   "issued": {
    "date-parts": [
     [
-     1987
+     1990
     ]
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 54 ; score 0.411 ; récurrence 18 ; citations ",
-  "container-title": "Canadian Public Policy / Analyse de politiques, 13(1), 97-104",
-  "DOI": "10.2307/3550913",
-  "abstract": "Comparaison 1970-1980 : réduction marquée des disparités de revenu entre anglophones et francophones au cours de la décennie 1970."
- },
- {
-  "id": "wanner2005",
-  "type": "article-journal",
-  "title": "Twentieth-century trends in occupational attainment in Canada",
-  "author": [
-   {
-    "family": "Wanner",
-    "given": "Richard A."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     2005
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 55 ; score 0.41 ; récurrence 0 ; citations 15.0",
-  "container-title": "Canadian Journal of Sociology, 30(4), 441-469",
-  "DOI": "10.1353/cjs.2006.0015",
-  "abstract": "CMS 1973 et ESG 1986/1994 : l'effet de la langue sur le statut professionnel décline au cours du XXe siècle pour les hommes et les femmes ; l'effet de la scolarité reste inchangé."
- },
- {
-  "id": "ogmundson1992",
-  "type": "article-journal",
-  "title": "Trends in the ethnic origins of Canadian elites: The decline of the BRITS?",
-  "author": [
-   {
-    "family": "Ogmundson",
-    "given": "Rick"
-   },
-   {
-    "family": "McLaughlin",
-    "given": "J."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1992
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 56 ; score 0.407 ; récurrence 6 ; citations 24.0",
-  "container-title": "Canadian Review of Sociology and Anthropology, 29(2), 227-242",
-  "DOI": "10.1111/j.1755-618x.1992.tb02437.x",
-  "abstract": "Réexamen des données de Porter sur les élites : la stratification ethnique est plus faible que prévu et en déclin ; nouvelles données sur l'origine ethnique (dont française) des élites canadiennes."
- },
- {
-  "id": "vaillancourt1991",
-  "type": "report",
-  "title": "Langues et statut économique au Québec, 1980-1985",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1991
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 57 ; score 0.406 ; récurrence 13 ; citations ",
-  "publisher": "Québec : Conseil de la langue française, coll. Dossiers no 34",
-  "abstract": "Recensement 1986 (revenus 1985) comparé à 1980 : poursuite de la convergence ; avantage des bilingues."
- },
- {
-  "id": "laczko1995",
-  "type": "book",
-  "title": "Pluralism and Inequality in Quebec",
-  "author": [
-   {
-    "family": "Laczko",
-    "given": "Leslie S."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1995
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 58 ; score 0.402 ; récurrence 8 ; citations ",
-  "publisher": "Toronto : University of Toronto Press",
-  "abstract": "Sociologie : inégalités ethnolinguistiques au Québec (revenu, profession, scolarité) des années 1960 aux années 1990 ; rapprochement francophones/anglophones et nouvelles minorités ; explications par la pluralité et la 'privation relative'."
- },
- {
-  "id": "sales1985",
-  "type": "report",
-  "title": "Décideurs et gestionnaires : étude sur la direction et l'encadrement des secteurs privé et public",
-  "author": [
-   {
-    "family": "Sales",
-    "given": "Arnaud"
-   },
-   {
-    "family": "Bélanger",
-    "given": "Noël"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1985
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 59 ; score 0.399 ; récurrence 17 ; citations ",
-  "publisher": "Québec : Conseil de la langue française, coll. Dossiers no 20",
-  "abstract": "Statut socioprofessionnel : présence des francophones et des anglophones dans les postes de direction et d'encadrement (secteurs privé et public) au Québec au début des années 1980 ; comparaison avec 1961-1971."
+  "note": "Snowballing rang 50 ; score 0.406 ; récurrence 8 ; citations 31.0",
+  "container-title": "International Journal of Comparative Sociology, 31(3-4), 206-221",
+  "DOI": "10.1177/002071529003100305",
+  "abstract": "Recensements 1921-1986 : hiérarchie socioéconomique ethno-raciale ; la mosaïque verticale existe encore mais presque inversée par rapport à Porter (les groupes d'origine française et britannique ne dominent plus)."
  },
  {
   "id": "bloom1992",
@@ -1514,33 +1287,242 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 60 ; score 0.399 ; récurrence 24 ; citations 5.0",
+  "note": "Snowballing rang 51 ; score 0.404 ; récurrence 24 ; citations 5.0",
   "container-title": "In B. R. Chiswick (dir.), Immigration, Language and Ethnicity: Canada and the United States, AEI Press ; NBER Working Paper 3660",
   "DOI": "10.3386/w3660",
   "abstract": "1970-1986 : l'écart français/anglais se réduit surtout au Québec, en raison d'une forte hausse de la demande relative de travailleurs francophones ; en 1986, l'écart restant s'explique par les heures, l'âge, la scolarité, la région."
  },
  {
-  "id": "mcroberts1979",
+  "id": "shapiro1987",
   "type": "article-journal",
-  "title": "Internal colonialism: The case of Quebec",
+  "title": "Earnings disparities among linguistic groups in Quebec, 1970-1980",
   "author": [
    {
-    "family": "McRoberts",
-    "given": "Kenneth"
+    "family": "Shapiro",
+    "given": "Daniel M."
+   },
+   {
+    "family": "Stelcner",
+    "given": "Morton"
    }
   ],
   "issued": {
    "date-parts": [
     [
-     1979
+     1987
     ]
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 61 ; score 0.395 ; récurrence 7 ; citations 46.0",
-  "container-title": "Ethnic and Racial Studies, 2(3), 293-318",
-  "DOI": "10.1080/01419870.1979.9993270",
-  "abstract": "Explication : applique (et critique) le modèle de la colonie interne (division culturelle du travail) au Québec ; inégalités de revenu et de statut entre francophones et anglophones comme fondement du nationalisme."
+  "note": "Snowballing rang 52 ; score 0.404 ; récurrence 18 ; citations ",
+  "container-title": "Canadian Public Policy / Analyse de politiques, 13(1), 97-104",
+  "DOI": "10.2307/3550913",
+  "abstract": "Comparaison 1970-1980 : réduction marquée des disparités de revenu entre anglophones et francophones au cours de la décennie 1970."
+ },
+ {
+  "id": "wanner2005",
+  "type": "article-journal",
+  "title": "Twentieth-century trends in occupational attainment in Canada",
+  "author": [
+   {
+    "family": "Wanner",
+    "given": "Richard A."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2005
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 53 ; score 0.403 ; récurrence 0 ; citations 15.0",
+  "container-title": "Canadian Journal of Sociology, 30(4), 441-469",
+  "DOI": "10.1353/cjs.2006.0015",
+  "abstract": "CMS 1973 et ESG 1986/1994 : l'effet de la langue sur le statut professionnel décline au cours du XXe siècle pour les hommes et les femmes ; l'effet de la scolarité reste inchangé."
+ },
+ {
+  "id": "shapiro1981",
+  "type": "article-journal",
+  "title": "Male-female earnings differentials and the role of language in Canada, Ontario, and Quebec, 1970",
+  "author": [
+   {
+    "family": "Shapiro",
+    "given": "Daniel M."
+   },
+   {
+    "family": "Stelcner",
+    "given": "Morton"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1981
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 54 ; score 0.403 ; récurrence 13 ; citations 42.0",
+  "container-title": "Canadian Journal of Economics, 14(2), 341-348",
+  "DOI": "10.2307/134804",
+  "abstract": "Décomposition des écarts hommes-femmes 1970 avec variables linguistiques (définition large) au Québec ; montre l'interaction sexe/langue."
+ },
+ {
+  "id": "vaillancourt1991",
+  "type": "report",
+  "title": "Langues et statut économique au Québec, 1980-1985",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1991
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 55 ; score 0.4 ; récurrence 13 ; citations ",
+  "publisher": "Québec : Conseil de la langue française, coll. Dossiers no 34",
+  "abstract": "Recensement 1986 (revenus 1985) comparé à 1980 : poursuite de la convergence ; avantage des bilingues."
+ },
+ {
+  "id": "marion1972",
+  "type": "article-journal",
+  "title": "Une analyse économique de la disparité inter-ethnique des revenus",
+  "author": [
+   {
+    "family": "Marion",
+    "given": "Gérald"
+   },
+   {
+    "family": "Raynauld",
+    "given": "André"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1972
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 56 ; score 0.4 ; récurrence 23 ; citations 35.0",
+  "container-title": "Revue économique, 23(1), 1-19",
+  "DOI": "10.3406/reco.1972.408007",
+  "abstract": "Applique la théorie du commerce international (tarif optimal) aux disparités de revenu entre groupes anglophone (capital abondant) et francophone (travail abondant) au Québec ; limitation des échanges entre 'secteurs' ethniques comme explication de l'inégalité."
+ },
+ {
+  "id": "laczko1995",
+  "type": "book",
+  "title": "Pluralism and Inequality in Quebec",
+  "author": [
+   {
+    "family": "Laczko",
+    "given": "Leslie S."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1995
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 57 ; score 0.395 ; récurrence 8 ; citations ",
+  "publisher": "Toronto : University of Toronto Press",
+  "abstract": "Sociologie : inégalités ethnolinguistiques au Québec (revenu, profession, scolarité) des années 1960 aux années 1990 ; rapprochement francophones/anglophones et nouvelles minorités ; explications par la pluralité et la 'privation relative'."
+ },
+ {
+  "id": "ogmundson1992",
+  "type": "article-journal",
+  "title": "Trends in the ethnic origins of Canadian elites: The decline of the BRITS?",
+  "author": [
+   {
+    "family": "Ogmundson",
+    "given": "Rick"
+   },
+   {
+    "family": "McLaughlin",
+    "given": "J."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1992
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 58 ; score 0.395 ; récurrence 6 ; citations 24.0",
+  "container-title": "Canadian Review of Sociology and Anthropology, 29(2), 227-242",
+  "DOI": "10.1111/j.1755-618x.1992.tb02437.x",
+  "abstract": "Réexamen des données de Porter sur les élites : la stratification ethnique est plus faible que prévu et en déclin ; nouvelles données sur l'origine ethnique (dont française) des élites canadiennes."
+ },
+ {
+  "id": "sales1985",
+  "type": "report",
+  "title": "Décideurs et gestionnaires : étude sur la direction et l'encadrement des secteurs privé et public",
+  "author": [
+   {
+    "family": "Sales",
+    "given": "Arnaud"
+   },
+   {
+    "family": "Bélanger",
+    "given": "Noël"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1985
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 59 ; score 0.392 ; récurrence 17 ; citations ",
+  "publisher": "Québec : Conseil de la langue française, coll. Dossiers no 20",
+  "abstract": "Statut socioprofessionnel : présence des francophones et des anglophones dans les postes de direction et d'encadrement (secteurs privé et public) au Québec au début des années 1980 ; comparaison avec 1961-1971."
+ },
+ {
+  "id": "beland2010",
+  "type": "article-journal",
+  "title": "Inégalités salariales et bilinguisme au Québec et au Nouveau-Brunswick, 1970 à 2000",
+  "author": [
+   {
+    "family": "Béland",
+    "given": "Nicolas"
+   },
+   {
+    "family": "Forgues",
+    "given": "Éric"
+   },
+   {
+    "family": "Beaudin",
+    "given": "Maurice"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2010
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 60 ; score 0.386 ; récurrence 6 ; citations 3.0",
+  "container-title": "Recherches sociographiques (Érudit)",
+  "DOI": "10.7202/044694ar",
+  "abstract": "Hommes natifs, 1970-2000 : le lien historique salaire/origine linguistique disparaît graduellement au Québec de 1970 à 1995 ; en 1995, pour la première fois, les bilingues (francophones ou anglophones) sont mieux rémunérés que les unilingues ; reproduit en 2000."
  },
  {
   "id": "mcroberts1976",
@@ -1580,7 +1562,7 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 62 ; score 0.391 ; récurrence 24 ; citations 15.0",
+  "note": "Snowballing rang 61 ; score 0.384 ; récurrence 24 ; citations 15.0",
   "container-title": "Sociologie et sociétés, 8(2), 61-79",
   "DOI": "10.7202/001491ar",
   "abstract": "Statut socioprofessionnel : Canadian Mobility Study (1973) ; les différences de mobilité entre francophones du Québec et anglophones du Canada subsistent mais sont beaucoup plus faibles dans les cohortes récentes ; le modèle traditionnel de stratification linguistique est peut-être en train de disparaître."
@@ -1603,7 +1585,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 63 ; score 0.39 ; récurrence 12 ; citations ",
+  "note": "Snowballing rang 62 ; score 0.384 ; récurrence 12 ; citations ",
   "publisher": "Toronto : McClelland & Stewart",
   "abstract": "Synthèse de la sociologie politique du Québec ; chapitres sur la division ethnique du travail, la 'nouvelle classe moyenne' et les politiques économiques de la Révolution tranquille."
  },
@@ -1629,53 +1611,9 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 64 ; score 0.39 ; récurrence 11 ; citations ",
+  "note": "Snowballing rang 63 ; score 0.384 ; récurrence 11 ; citations ",
   "publisher": "Québec : Office de la langue française / Les Publications du Québec",
   "abstract": "Contrôle de l'économie : mise à jour de Raynauld (1974) pour 1978 et 1987 ; progression de la part francophone de l'emploi sous contrôle francophone."
- },
- {
-  "id": "vaillancourt1985",
-  "type": "book",
-  "title": "Économie et langue",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1985
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 65 ; score 0.383 ; récurrence 13 ; citations ",
-  "publisher": "Québec : Conseil de la langue française, coll. Documentation no 20",
-  "abstract": "Recueil de textes d'économie de la langue (Breton, Grenier, Vaillancourt, Lacroix) appliqués au Québec ; revenus et langue 1970-1980."
- },
- {
-  "id": "breton1978",
-  "type": "book",
-  "title": "Le bilinguisme : une approche économique / Bilingualism: An Economic Approach",
-  "author": [
-   {
-    "family": "Breton",
-    "given": "Albert"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1978
-    ]
-   ]
-  },
-  "language": "fr/en",
-  "note": "Snowballing rang 66 ; score 0.383 ; récurrence 20 ; citations ",
-  "publisher": "Montréal : Institut C.D. Howe",
-  "abstract": "Cadre théorique de l'économie de la langue (la langue comme capital humain et bien collectif) mobilisé pour interpréter les écarts de revenu par groupe linguistique au Canada."
  },
  {
   "id": "boulet1983",
@@ -1699,9 +1637,31 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 67 ; score 0.383 ; récurrence 15 ; citations ",
+  "note": "Snowballing rang 64 ; score 0.376 ; récurrence 15 ; citations ",
   "publisher": "Ottawa : Conseil économique du Canada, Document no 245",
   "abstract": "1970-1980 : réduction des disparités de revenu de travail entre groupes linguistiques au Canada et au Québec ; les francophones bilingues rattrapent les anglophones."
+ },
+ {
+  "id": "breton1978",
+  "type": "book",
+  "title": "Le bilinguisme : une approche économique / Bilingualism: An Economic Approach",
+  "author": [
+   {
+    "family": "Breton",
+    "given": "Albert"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1978
+    ]
+   ]
+  },
+  "language": "fr/en",
+  "note": "Snowballing rang 65 ; score 0.376 ; récurrence 20 ; citations ",
+  "publisher": "Montréal : Institut C.D. Howe",
+  "abstract": "Cadre théorique de l'économie de la langue (la langue comme capital humain et bien collectif) mobilisé pour interpréter les écarts de revenu par groupe linguistique au Canada."
  },
  {
   "id": "lautard1990",
@@ -1725,89 +1685,31 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 68 ; score 0.382 ; récurrence 8 ; citations ",
+  "note": "Snowballing rang 66 ; score 0.376 ; récurrence 8 ; citations ",
   "container-title": "In P. S. Li (dir.), Race and Ethnic Relations in Canada, Toronto : Oxford University Press, 189-208",
   "abstract": "Indices de dissimilarité professionnelle par groupe ethnique 1931-1986 : la stratification ethnique diminue mais persiste ; position des Français par rapport aux Britanniques."
  },
  {
-  "id": "beland2010",
-  "type": "article-journal",
-  "title": "Inégalités salariales et bilinguisme au Québec et au Nouveau-Brunswick, 1970 à 2000",
+  "id": "vaillancourt1985",
+  "type": "book",
+  "title": "Économie et langue",
   "author": [
    {
-    "family": "Béland",
-    "given": "Nicolas"
-   },
-   {
-    "family": "Forgues",
-    "given": "Éric"
-   },
-   {
-    "family": "Beaudin",
-    "given": "Maurice"
+    "family": "Vaillancourt",
+    "given": "François"
    }
   ],
   "issued": {
    "date-parts": [
     [
-     2010
+     1985
     ]
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 69 ; score 0.376 ; récurrence 6 ; citations 3.0",
-  "container-title": "Recherches sociographiques (Érudit)",
-  "DOI": "10.7202/044694ar",
-  "abstract": "Hommes natifs, 1970-2000 : le lien historique salaire/origine linguistique disparaît graduellement au Québec de 1970 à 1995 ; en 1995, pour la première fois, les bilingues (francophones ou anglophones) sont mieux rémunérés que les unilingues ; reproduit en 2000."
- },
- {
-  "id": "cuneo1975",
-  "type": "article-journal",
-  "title": "Social ascription in the educational and occupational status attainment of urban Canadians",
-  "author": [
-   {
-    "family": "Cuneo",
-    "given": "Carl J."
-   },
-   {
-    "family": "Curtis",
-    "given": "James E."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1975
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 70 ; score 0.375 ; récurrence 21 ; citations 15.0",
-  "container-title": "Canadian Review of Sociology and Anthropology, 12(1), 6-24",
-  "DOI": "10.1111/j.1755-618x.1975.tb00023.x",
-  "abstract": "Modèle Blau-Duncan appliqué à quatre sous-échantillons urbains (hommes/femmes francophones et anglophones) : forte ascription ; la scolarité pèse davantage sur la profession chez les francophones que chez les anglophones."
- },
- {
-  "id": "coleman1984",
-  "type": "book",
-  "title": "The Independence Movement in Quebec, 1945-1980",
-  "author": [
-   {
-    "family": "Coleman",
-    "given": "William D."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1984
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 71 ; score 0.371 ; récurrence 11 ; citations ",
-  "publisher": "Toronto : University of Toronto Press",
-  "abstract": "Politiques économiques du Québec 1960-1980 visant à créer des entreprises contrôlées par la communauté francophone ; succès partiel dans l'accroissement du poids économique des francophones."
+  "note": "Snowballing rang 67 ; score 0.376 ; récurrence 13 ; citations ",
+  "publisher": "Québec : Conseil de la langue française, coll. Documentation no 20",
+  "abstract": "Recueil de textes d'économie de la langue (Breton, Grenier, Vaillancourt, Lacroix) appliqués au Québec ; revenus et langue 1970-1980."
  },
  {
   "id": "christofides2006",
@@ -1831,96 +1733,19 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 72 ; score 0.371 ; récurrence 3 ; citations 5.0",
+  "note": "Snowballing rang 68 ; score 0.375 ; récurrence 3 ; citations 5.0",
   "container-title": "Industrial Relations: A Journal of Economy and Society, 45(3)",
   "DOI": "10.1111/j.1468-232x.2006.00438.x",
   "abstract": "Prime au bilinguisme dans le secteur public vs privé au Canada sur trois recensements ; sélection ; pertinent pour la prime francophone du secteur public relevée par Nadeau (2010)."
  },
  {
-  "id": "dofny1962",
+  "id": "mcroberts1979",
   "type": "article-journal",
-  "title": "Les classes sociales au Canada français",
+  "title": "Internal colonialism: The case of Quebec",
   "author": [
    {
-    "family": "Dofny",
-    "given": "Jacques"
-   },
-   {
-    "family": "Rioux",
-    "given": "Marcel"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1962
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 73 ; score 0.368 ; récurrence 32 ; citations ",
-  "container-title": "Revue française de sociologie, 3(3), 290-300",
-  "DOI": "10.2307/3319613",
-  "abstract": "Explication : concept de 'classe ethnique' — les Canadiens français forment une quasi-classe subordonnée dans la structure économique dominée par les anglophones ; conscience ethnique et conscience de classe."
- },
- {
-  "id": "dejocas1957",
-  "type": "article-journal",
-  "title": "Inter-generation occupational mobility in the Province of Quebec",
-  "author": [
-   {
-    "family": "de Jocas",
-    "given": "Yves"
-   },
-   {
-    "family": "Rocher",
-    "given": "Guy"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1957
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 74 ; score 0.367 ; récurrence 31 ; citations 23.0",
-  "container-title": "Canadian Journal of Economics and Political Science, 23(1), 57-68",
-  "DOI": "10.2307/138485",
-  "abstract": "Statut socioprofessionnel : première étude de mobilité intergénérationnelle au Québec (registres de mariage, 1954) comparant Canadiens français et anglophones ; mobilité plus faible et concentration des francophones dans les métiers manuels."
- },
- {
-  "id": "nakhaie1997",
-  "type": "article-journal",
-  "title": "Vertical mosaic among the elites: The new imagery revisited",
-  "author": [
-   {
-    "family": "Nakhaie",
-    "given": "M. Reza"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1997
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 75 ; score 0.364 ; récurrence 3 ; citations 9.0",
-  "container-title": "Canadian Review of Sociology and Anthropology, 34(1), 1-24",
-  "DOI": "10.1111/j.1755-618x.1997.tb00197.x",
-  "abstract": "Élites canadiennes 1935-1987 : domination britannique stable ; les groupes d'origine française et 'autres' ont accru leur représentation dans les élites sans atteindre la proportionnalité."
- },
- {
-  "id": "darroch1979",
-  "type": "article-journal",
-  "title": "Another look at ethnicity, stratification and social mobility in Canada",
-  "author": [
-   {
-    "family": "Darroch",
-    "given": "A. Gordon"
+    "family": "McRoberts",
+    "given": "Kenneth"
    }
   ],
   "issued": {
@@ -1931,193 +1756,37 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 76 ; score 0.363 ; récurrence 14 ; citations ",
-  "container-title": "Canadian Journal of Sociology, 4(1), 1-25",
-  "DOI": "10.2307/3340349",
-  "abstract": "Réexamen des données de Porter (1931-1961) et Forcese (1971) : la dissimilarité professionnelle entre groupes ethniques (dont Français/Britanniques) est modeste et diminue avec le temps ; critique de la thèse de la mosaïque verticale."
+  "note": "Snowballing rang 69 ; score 0.375 ; récurrence 7 ; citations 46.0",
+  "container-title": "Ethnic and Racial Studies, 2(3), 293-318",
+  "DOI": "10.1080/01419870.1979.9993270",
+  "abstract": "Explication : applique (et critique) le modèle de la colonie interne (division culturelle du travail) au Québec ; inégalités de revenu et de statut entre francophones et anglophones comme fondement du nationalisme."
  },
  {
-  "id": "beattie1971",
+  "id": "cuneo1975",
   "type": "article-journal",
-  "title": "Career attainment in Canadian bureaucracies: Unscrambling the effects of age, seniority, education, and ethnolinguistic factors on salary",
+  "title": "Social ascription in the educational and occupational status attainment of urban Canadians",
   "author": [
    {
-    "family": "Beattie",
-    "given": "Christopher"
+    "family": "Cuneo",
+    "given": "Carl J."
    },
    {
-    "family": "Spencer",
-    "given": "Byron G."
+    "family": "Curtis",
+    "given": "James E."
    }
   ],
   "issued": {
    "date-parts": [
     [
-     1971
+     1975
     ]
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 77 ; score 0.358 ; récurrence 17 ; citations 20.0",
-  "container-title": "American Journal of Sociology, 77(3), 472-490",
-  "DOI": "10.1086/225159",
-  "abstract": "Fonction publique fédérale (années 1960) : âge, ancienneté et scolarité rapportent moins aux francophones qu'aux anglophones ; la discrimination de carrière est le principal facteur des écarts salariaux."
- },
- {
-  "id": "veltman1979",
-  "type": "article-journal",
-  "title": "The economic context of bilingualism and language transfer in the Montreal metropolitan area",
-  "author": [
-   {
-    "family": "Veltman",
-    "given": "Calvin J."
-   },
-   {
-    "family": "Boulet",
-    "given": "Jac-André"
-   },
-   {
-    "family": "Castonguay",
-    "given": "Charles"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1979
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 78 ; score 0.356 ; récurrence 6 ; citations 24.0",
-  "container-title": "Canadian Journal of Economics, 12(3), 468-479",
-  "DOI": "10.2307/134735",
-  "abstract": "Recensement 1971, RMR de Montréal : contexte économique du bilinguisme et des transferts linguistiques ; revenus par groupe linguistique et incitations économiques à l'anglicisation."
- },
- {
-  "id": "fenwick1982",
-  "type": "article-journal",
-  "title": "Ethnic culture and economic structure: Determinants of French-English earnings inequality in Quebec",
-  "author": [
-   {
-    "family": "Fenwick",
-    "given": "Rudy"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1982
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 79 ; score 0.355 ; récurrence 12 ; citations 12.0",
-  "container-title": "Social Forces, 61(1), 1-23",
-  "DOI": "10.1093/sf/61.1.1",
-  "abstract": "Enquête 1970-71 : oppose l'explication culturelle (capital humain) à l'explication structurelle (marché du travail segmenté/scindé sous contrôle anglophone) ; l'inégalité tient à la plus grande efficacité avec laquelle les anglophones convertissent leurs positions structurelles en gains."
- },
- {
-  "id": "raynauld1974",
-  "type": "book",
-  "title": "La propriété des entreprises au Québec : les années 60",
-  "author": [
-   {
-    "family": "Raynauld",
-    "given": "André"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1974
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 80 ; score 0.351 ; récurrence 16 ; citations ",
-  "publisher": "Montréal : Presses de l'Université de Montréal",
-  "abstract": "Statut socioprofessionnel/contrôle : mesure de la propriété des entreprises au Québec en 1961 selon le groupe (canadien-français, canadien-anglais, étranger) ; référence de base de la série 1961-2023 sur le contrôle de l'économie."
- },
- {
-  "id": "beattie1972",
-  "type": "book",
-  "title": "Bureaucratic Careers: Anglophones and Francophones in the Canadian Public Service",
-  "author": [
-   {
-    "family": "Beattie",
-    "given": "Christopher"
-   },
-   {
-    "family": "Désy",
-    "given": "Jacques"
-   },
-   {
-    "family": "Longstaff",
-    "given": "Stephen"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1972
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 81 ; score 0.347 ; récurrence 17 ; citations ",
-  "publisher": "Ottawa : Information Canada (étude de la Commission royale d'enquête sur le bilinguisme et le biculturalisme)",
-  "abstract": "Statut socioprofessionnel : carrières et salaires des anglophones et francophones dans la fonction publique fédérale (années 1960) ; écarts de progression à scolarité et ancienneté égales."
- },
- {
-  "id": "lanphier1974",
-  "type": "article-journal",
-  "title": "Structural aspects of differences in income between anglophones and francophones",
-  "author": [
-   {
-    "family": "Lanphier",
-    "given": "C. Michael"
-   },
-   {
-    "family": "Morris",
-    "given": "Raymond N."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1974
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 82 ; score 0.345 ; récurrence 34 ; citations 3.0",
-  "container-title": "Canadian Review of Sociology and Anthropology, 11(1), 53-66",
-  "DOI": "10.1111/j.1755-618x.1974.tb00003.x",
-  "abstract": "Compare les données de Raynauld et al. (1961) à une enquête de 1968 : nivellement des écarts de revenu 1961-1968 au niveau national, mais accentuation chez les travailleurs peu qualifiés ; critique méthodologique et invocation de la discrimination."
- },
- {
-  "id": "taylor1961",
-  "type": "article-journal",
-  "title": "L'industriel canadien-français et son milieu",
-  "author": [
-   {
-    "family": "Taylor",
-    "given": "Norman W."
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1961
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 83 ; score 0.341 ; récurrence 24 ; citations 18.0",
-  "container-title": "Recherches sociographiques, 2(2), 123-150",
-  "DOI": "10.7202/055075ar",
-  "abstract": "Explication culturelle de la faible participation des Canadiens français à la direction de l'économie (entrevues avec 52 chefs d'entreprise, 1961)."
+  "note": "Snowballing rang 70 ; score 0.368 ; récurrence 21 ; citations 15.0",
+  "container-title": "Canadian Review of Sociology and Anthropology, 12(1), 6-24",
+  "DOI": "10.1111/j.1755-618x.1975.tb00023.x",
+  "abstract": "Modèle Blau-Duncan appliqué à quatre sous-échantillons urbains (hommes/femmes francophones et anglophones) : forte ascription ; la scolarité pèse davantage sur la profession chez les francophones que chez les anglophones."
  },
  {
   "id": "vaillancourt2024",
@@ -2145,32 +1814,338 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 84 ; score 0.337 ; récurrence 2 ; citations 0.0",
+  "note": "Snowballing rang 71 ; score 0.367 ; récurrence 2 ; citations 0.0",
   "publisher": "CIRANO, Rapport de projet",
   "DOI": "10.54932/bpkc2426",
   "abstract": "Neuf recensements (1971-2021). En 2020 : bilingues (allophones, anglophones, francophones) en tête ; rupture nette entre 1970 et 1980-2020 dans la sur-rémunération des hommes anglophones ; anglophones désormais au niveau des unilingues francophones (effet net)."
  },
  {
-  "id": "hughes1943",
+  "id": "coleman1984",
   "type": "book",
-  "title": "French Canada in Transition",
+  "title": "The Independence Movement in Quebec, 1945-1980",
   "author": [
    {
-    "family": "Hughes",
-    "given": "Everett C."
+    "family": "Coleman",
+    "given": "William D."
    }
   ],
   "issued": {
    "date-parts": [
     [
-     1943
+     1984
     ]
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 85 ; score 0.332 ; récurrence 42 ; citations ",
-  "publisher": "Chicago : University of Chicago Press (trad. fr. Rencontre de deux mondes, 1945)",
-  "abstract": "Étude classique de 'Cantonville' (Drummondville) : division ethnique du travail dans l'industrialisation du Québec ; anglophones aux postes de direction, francophones ouvriers ; point de départ de la sociologie de la stratification linguistique."
+  "note": "Snowballing rang 72 ; score 0.364 ; récurrence 11 ; citations ",
+  "publisher": "Toronto : University of Toronto Press",
+  "abstract": "Politiques économiques du Québec 1960-1980 visant à créer des entreprises contrôlées par la communauté francophone ; succès partiel dans l'accroissement du poids économique des francophones."
+ },
+ {
+  "id": "nakhaie1997",
+  "type": "article-journal",
+  "title": "Vertical mosaic among the elites: The new imagery revisited",
+  "author": [
+   {
+    "family": "Nakhaie",
+    "given": "M. Reza"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1997
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 73 ; score 0.363 ; récurrence 3 ; citations 9.0",
+  "container-title": "Canadian Review of Sociology and Anthropology, 34(1), 1-24",
+  "DOI": "10.1111/j.1755-618x.1997.tb00197.x",
+  "abstract": "Élites canadiennes 1935-1987 : domination britannique stable ; les groupes d'origine française et 'autres' ont accru leur représentation dans les élites sans atteindre la proportionnalité."
+ },
+ {
+  "id": "dofny1962",
+  "type": "article-journal",
+  "title": "Les classes sociales au Canada français",
+  "author": [
+   {
+    "family": "Dofny",
+    "given": "Jacques"
+   },
+   {
+    "family": "Rioux",
+    "given": "Marcel"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1962
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 74 ; score 0.361 ; récurrence 32 ; citations ",
+  "container-title": "Revue française de sociologie, 3(3), 290-300",
+  "DOI": "10.2307/3319613",
+  "abstract": "Explication : concept de 'classe ethnique' — les Canadiens français forment une quasi-classe subordonnée dans la structure économique dominée par les anglophones ; conscience ethnique et conscience de classe."
+ },
+ {
+  "id": "darroch1979",
+  "type": "article-journal",
+  "title": "Another look at ethnicity, stratification and social mobility in Canada",
+  "author": [
+   {
+    "family": "Darroch",
+    "given": "A. Gordon"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1979
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 75 ; score 0.356 ; récurrence 14 ; citations ",
+  "container-title": "Canadian Journal of Sociology, 4(1), 1-25",
+  "DOI": "10.2307/3340349",
+  "abstract": "Réexamen des données de Porter (1931-1961) et Forcese (1971) : la dissimilarité professionnelle entre groupes ethniques (dont Français/Britanniques) est modeste et diminue avec le temps ; critique de la thèse de la mosaïque verticale."
+ },
+ {
+  "id": "lanphier1974",
+  "type": "article-journal",
+  "title": "Structural aspects of differences in income between anglophones and francophones",
+  "author": [
+   {
+    "family": "Lanphier",
+    "given": "C. Michael"
+   },
+   {
+    "family": "Morris",
+    "given": "Raymond N."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1974
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 76 ; score 0.355 ; récurrence 34 ; citations 3.0",
+  "container-title": "Canadian Review of Sociology and Anthropology, 11(1), 53-66",
+  "DOI": "10.1111/j.1755-618x.1974.tb00003.x",
+  "abstract": "Compare les données de Raynauld et al. (1961) à une enquête de 1968 : nivellement des écarts de revenu 1961-1968 au niveau national, mais accentuation chez les travailleurs peu qualifiés ; critique méthodologique et invocation de la discrimination."
+ },
+ {
+  "id": "dejocas1957",
+  "type": "article-journal",
+  "title": "Inter-generation occupational mobility in the Province of Quebec",
+  "author": [
+   {
+    "family": "de Jocas",
+    "given": "Yves"
+   },
+   {
+    "family": "Rocher",
+    "given": "Guy"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1957
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 77 ; score 0.355 ; récurrence 31 ; citations 23.0",
+  "container-title": "Canadian Journal of Economics and Political Science, 23(1), 57-68",
+  "DOI": "10.2307/138485",
+  "abstract": "Statut socioprofessionnel : première étude de mobilité intergénérationnelle au Québec (registres de mariage, 1954) comparant Canadiens français et anglophones ; mobilité plus faible et concentration des francophones dans les métiers manuels."
+ },
+ {
+  "id": "fenwick1982",
+  "type": "article-journal",
+  "title": "Ethnic culture and economic structure: Determinants of French-English earnings inequality in Quebec",
+  "author": [
+   {
+    "family": "Fenwick",
+    "given": "Rudy"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1982
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 78 ; score 0.352 ; récurrence 12 ; citations 12.0",
+  "container-title": "Social Forces, 61(1), 1-23",
+  "DOI": "10.1093/sf/61.1.1",
+  "abstract": "Enquête 1970-71 : oppose l'explication culturelle (capital humain) à l'explication structurelle (marché du travail segmenté/scindé sous contrôle anglophone) ; l'inégalité tient à la plus grande efficacité avec laquelle les anglophones convertissent leurs positions structurelles en gains."
+ },
+ {
+  "id": "beattie1971",
+  "type": "article-journal",
+  "title": "Career attainment in Canadian bureaucracies: Unscrambling the effects of age, seniority, education, and ethnolinguistic factors on salary",
+  "author": [
+   {
+    "family": "Beattie",
+    "given": "Christopher"
+   },
+   {
+    "family": "Spencer",
+    "given": "Byron G."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1971
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 79 ; score 0.349 ; récurrence 17 ; citations 20.0",
+  "container-title": "American Journal of Sociology, 77(3), 472-490",
+  "DOI": "10.1086/225159",
+  "abstract": "Fonction publique fédérale (années 1960) : âge, ancienneté et scolarité rapportent moins aux francophones qu'aux anglophones ; la discrimination de carrière est le principal facteur des écarts salariaux."
+ },
+ {
+  "id": "raynauld1974",
+  "type": "book",
+  "title": "La propriété des entreprises au Québec : les années 60",
+  "author": [
+   {
+    "family": "Raynauld",
+    "given": "André"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1974
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 80 ; score 0.344 ; récurrence 16 ; citations ",
+  "publisher": "Montréal : Presses de l'Université de Montréal",
+  "abstract": "Statut socioprofessionnel/contrôle : mesure de la propriété des entreprises au Québec en 1961 selon le groupe (canadien-français, canadien-anglais, étranger) ; référence de base de la série 1961-2023 sur le contrôle de l'économie."
+ },
+ {
+  "id": "veltman1979",
+  "type": "article-journal",
+  "title": "The economic context of bilingualism and language transfer in the Montreal metropolitan area",
+  "author": [
+   {
+    "family": "Veltman",
+    "given": "Calvin J."
+   },
+   {
+    "family": "Boulet",
+    "given": "Jac-André"
+   },
+   {
+    "family": "Castonguay",
+    "given": "Charles"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1979
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 81 ; score 0.343 ; récurrence 6 ; citations 24.0",
+  "container-title": "Canadian Journal of Economics, 12(3), 468-479",
+  "DOI": "10.2307/134735",
+  "abstract": "Recensement 1971, RMR de Montréal : contexte économique du bilinguisme et des transferts linguistiques ; revenus par groupe linguistique et incitations économiques à l'anglicisation."
+ },
+ {
+  "id": "beattie1972",
+  "type": "book",
+  "title": "Bureaucratic Careers: Anglophones and Francophones in the Canadian Public Service",
+  "author": [
+   {
+    "family": "Beattie",
+    "given": "Christopher"
+   },
+   {
+    "family": "Désy",
+    "given": "Jacques"
+   },
+   {
+    "family": "Longstaff",
+    "given": "Stephen"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1972
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 82 ; score 0.34 ; récurrence 17 ; citations ",
+  "publisher": "Ottawa : Information Canada (étude de la Commission royale d'enquête sur le bilinguisme et le biculturalisme)",
+  "abstract": "Statut socioprofessionnel : carrières et salaires des anglophones et francophones dans la fonction publique fédérale (années 1960) ; écarts de progression à scolarité et ancienneté égales."
+ },
+ {
+  "id": "taylor1961",
+  "type": "article-journal",
+  "title": "L'industriel canadien-français et son milieu",
+  "author": [
+   {
+    "family": "Taylor",
+    "given": "Norman W."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1961
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 83 ; score 0.333 ; récurrence 24 ; citations 18.0",
+  "container-title": "Recherches sociographiques, 2(2), 123-150",
+  "DOI": "10.7202/055075ar",
+  "abstract": "Explication culturelle de la faible participation des Canadiens français à la direction de l'économie (entrevues avec 52 chefs d'entreprise, 1961)."
+ },
+ {
+  "id": "nakhaie1994",
+  "type": "article-journal",
+  "title": "Class, gender and ethnic income inequalities in 1973 and 1984: Findings from the Canadian national surveys",
+  "author": [
+   {
+    "family": "Nakhaie",
+    "given": "M. Reza"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1994
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 84 ; score 0.332 ; récurrence 6 ; citations 4.0",
+  "container-title": "Review of Radical Political Economics, 26(1)",
+  "DOI": "10.1177/048661349402600102",
+  "abstract": "Enquêtes nationales 1973 et 1984 : les écarts de revenu anglophones/francophones sont beaucoup plus faibles que les écarts de classe et de sexe, et encore plus en 1984 ; amélioration liée à des structures salariales moins discriminatoires."
  },
  {
   "id": "donovan2024",
@@ -2194,7 +2169,7 @@
    ]
   },
   "language": "fr/en",
-  "note": "Snowballing rang 86 ; score 0.329 ; récurrence 0 ; citations 0.0",
+  "note": "Snowballing rang 85 ; score 0.329 ; récurrence 0 ; citations 0.0",
   "publisher": "QUESCREN, École des affaires publiques et communautaires, Université Concordia",
   "URL": "https://www.concordia.ca/content/dam/artsci/scpa/quescren/docs/Brief_14_FRA.pdf",
   "abstract": "Note de synthèse (révisée par V. Geloso et L. O'Donnell) sur les disparités de revenu anglophones/francophones au Québec à partir des recensements récents (2016, 2021) : revenu médian et taux de chômage défavorables aux anglophones, effets de composition (immigration, région)."
@@ -2221,33 +2196,58 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 87 ; score 0.329 ; récurrence 0 ; citations 0.0",
+  "note": "Snowballing rang 86 ; score 0.329 ; récurrence 0 ; citations 0.0",
   "publisher": "CIRANO, Rapport de projet",
   "DOI": "10.54932/kaoe9156",
   "abstract": "Statut socioprofessionnel/contrôle : 73 % de l'emploi au Québec relève d'employeurs sous contrôle canadien francophone en 2023 contre 47 % en 1961 ; contrôle non francophone 39 % → 20 % ; étranger 14 % → 7 %."
  },
  {
-  "id": "nakhaie1994",
-  "type": "article-journal",
-  "title": "Class, gender and ethnic income inequalities in 1973 and 1984: Findings from the Canadian national surveys",
+  "id": "hughes1943",
+  "type": "book",
+  "title": "French Canada in Transition",
   "author": [
    {
-    "family": "Nakhaie",
-    "given": "M. Reza"
+    "family": "Hughes",
+    "given": "Everett C."
    }
   ],
   "issued": {
    "date-parts": [
     [
-     1994
+     1943
     ]
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 88 ; score 0.325 ; récurrence 6 ; citations 4.0",
-  "container-title": "Review of Radical Political Economics, 26(1)",
-  "DOI": "10.1177/048661349402600102",
-  "abstract": "Enquêtes nationales 1973 et 1984 : les écarts de revenu anglophones/francophones sont beaucoup plus faibles que les écarts de classe et de sexe, et encore plus en 1984 ; amélioration liée à des structures salariales moins discriminatoires."
+  "note": "Snowballing rang 87 ; score 0.326 ; récurrence 42 ; citations ",
+  "publisher": "Chicago : University of Chicago Press (trad. fr. Rencontre de deux mondes, 1945)",
+  "abstract": "Étude classique de 'Cantonville' (Drummondville) : division ethnique du travail dans l'industrialisation du Québec ; anglophones aux postes de direction, francophones ouvriers ; point de départ de la sociologie de la stratification linguistique."
+ },
+ {
+  "id": "vaillancourt2017",
+  "type": "chapter",
+  "title": "Les attributs linguistiques et le revenu de travail au Québec : cadre d'analyse et résultats pour 2010 et comparaison 1970-2010",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   },
+   {
+    "family": "Fontaine",
+    "given": "Marc-Antoine"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2017
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 88 ; score 0.318 ; récurrence 4 ; citations ",
+  "container-title": "Dans M. Joanis et C. Montmarquette (dir.), Le Québec économique 6 : le défi des ressources minières, CIRANO / PUL (chapitre)",
+  "abstract": "Enquête nationale auprès des ménages 2011 (revenus 2010) : effets nets des attributs linguistiques comparés à 1970-2005 ; cadre de Vaillancourt (1980) ajoutant la langue comme troisième forme de capital humain à l'équation de Mincer."
  },
  {
   "id": "guindon1964",
@@ -2267,9 +2267,32 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 89 ; score 0.311 ; récurrence 16 ; citations ",
+  "note": "Snowballing rang 89 ; score 0.305 ; récurrence 16 ; citations ",
   "container-title": "Queen's Quarterly, 71(2), 150-162",
   "abstract": "Explication : la 'nouvelle classe moyenne' francophone issue de la bureaucratisation (État, secteur public) et ses revendications contre le plafonnement dans les entreprises anglophones ; base sociale de la Révolution tranquille."
+ },
+ {
+  "id": "vaillancourt1978",
+  "type": "article-journal",
+  "title": "Les attributs linguistiques et la détermination du revenu des hommes au Québec en 1971 : les groupes d'âge et d'éducation",
+  "author": [
+   {
+    "family": "Vaillancourt",
+    "given": "François"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1978
+    ]
+   ]
+  },
+  "language": "fr",
+  "note": "Snowballing rang 90 ; score 0.303 ; récurrence 22 ; citations 2.0",
+  "container-title": "L'Actualité économique, 54(4)",
+  "DOI": "10.7202/800839ar",
+  "abstract": "En 1970, la connaissance de l'anglais est une compétence mieux rémunérée que celle du français au Québec ; rendements variant avec l'âge mais pas avec la scolarité."
  },
  {
   "id": "dofny1969",
@@ -2293,33 +2316,10 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 90 ; score 0.307 ; récurrence 10 ; citations ",
+  "note": "Snowballing rang 91 ; score 0.3 ; récurrence 10 ; citations ",
   "container-title": "Sociologie et sociétés, 1(2), 277-301",
   "DOI": "10.7202/001648ar",
   "abstract": "Statut socioprofessionnel : réplication de de Jocas & Rocher (1954) avec les registres de mariage de 1964 ; mobilité professionnelle des francophones et des anglophones au Québec ; base de la série 1954-1964-1974."
- },
- {
-  "id": "vaillancourt1978",
-  "type": "article-journal",
-  "title": "Les attributs linguistiques et la détermination du revenu des hommes au Québec en 1971 : les groupes d'âge et d'éducation",
-  "author": [
-   {
-    "family": "Vaillancourt",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1978
-    ]
-   ]
-  },
-  "language": "fr",
-  "note": "Snowballing rang 91 ; score 0.297 ; récurrence 22 ; citations 2.0",
-  "container-title": "L'Actualité économique, 54(4)",
-  "DOI": "10.7202/800839ar",
-  "abstract": "En 1970, la connaissance de l'anglais est une compétence mieux rémunérée que celle du français au Québec ; rendements variant avec l'âge mais pas avec la scolarité."
  },
  {
   "id": "lacroix1981",
@@ -2348,6 +2348,29 @@
   "abstract": "Recensement 1971 et enquêtes 1978-1979 : le lien positif entre revenu et connaissance de l'anglais perd de l'importance entre 1970 et 1978."
  },
  {
+  "id": "beland1987",
+  "type": "article-journal",
+  "title": "A comparison of the mobility structures of francophones and anglophones in Quebec: 1954, 1964, 1974",
+  "author": [
+   {
+    "family": "Béland",
+    "given": "François"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1987
+    ]
+   ]
+  },
+  "language": "en",
+  "note": "Snowballing rang 93 ; score 0.267 ; récurrence 4 ; citations 2.0",
+  "container-title": "Canadian Review of Sociology and Anthropology, 24(2), 232-251",
+  "DOI": "10.1111/j.1755-618x.1987.tb01094.x",
+  "abstract": "Statut socioprofessionnel : comparaison des structures de mobilité professionnelle des francophones et des anglophones du Québec à trois dates (1954, 1964, 1974)."
+ },
+ {
   "id": "veltman1976",
   "type": "article-journal",
   "title": "Les incidences du revenu sur les transferts linguistiques dans la région métropolitaine de Montréal",
@@ -2365,7 +2388,7 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 93 ; score 0.264 ; récurrence 4 ; citations 6.0",
+  "note": "Snowballing rang 94 ; score 0.266 ; récurrence 4 ; citations 6.0",
   "container-title": "Recherches sociographiques, 17(3), 323-339",
   "DOI": "10.7202/055724ar",
   "abstract": "Recensement 1971 (tabulations spéciales) comparé aux données de la Commission B-B (1961) : relation langue-revenu dans la RMR de Montréal et transferts linguistiques ; disparités persistantes en faveur des anglophones, en voie de réduction."
@@ -2388,33 +2411,10 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 94 ; score 0.263 ; récurrence 1 ; citations 12.0",
+  "note": "Snowballing rang 95 ; score 0.26 ; récurrence 1 ; citations 12.0",
   "container-title": "Canadian Review of Sociology and Anthropology, 7(2), 110-127",
   "DOI": "10.1111/j.1755-618x.1970.tb01152.x",
   "abstract": "Recensement 1961 : six classes construites avec l'indice socioéconomique de 320 professions ; au Québec, les natifs (majoritairement francophones) sont sous-représentés dans les trois classes supérieures, les immigrants des États-Unis, du Royaume-Uni et d'Allemagne surreprésentés."
- },
- {
-  "id": "beland1987",
-  "type": "article-journal",
-  "title": "A comparison of the mobility structures of francophones and anglophones in Quebec: 1954, 1964, 1974",
-  "author": [
-   {
-    "family": "Béland",
-    "given": "François"
-   }
-  ],
-  "issued": {
-   "date-parts": [
-    [
-     1987
-    ]
-   ]
-  },
-  "language": "en",
-  "note": "Snowballing rang 95 ; score 0.26 ; récurrence 4 ; citations 2.0",
-  "container-title": "Canadian Review of Sociology and Anthropology, 24(2), 232-251",
-  "DOI": "10.1111/j.1755-618x.1987.tb01094.x",
-  "abstract": "Statut socioprofessionnel : comparaison des structures de mobilité professionnelle des francophones et des anglophones du Québec à trois dates (1954, 1964, 1974)."
  },
  {
   "id": "shapiro1982",
@@ -2438,7 +2438,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 96 ; score 0.249 ; récurrence 6 ; citations 2.0",
+  "note": "Snowballing rang 96 ; score 0.255 ; récurrence 6 ; citations 2.0",
   "container-title": "Canadian Public Policy / Analyse de politiques, 8(1), 106-113",
   "DOI": "10.2307/3549814",
   "abstract": "Commentaire sur les prémisses économiques de la Loi 101 (structure des professions, contrôle des entreprises, disparités de revenu) discutées par Vaillancourt (1978)."
@@ -2465,7 +2465,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 97 ; score 0.237 ; récurrence 4 ; citations 2.0",
+  "note": "Snowballing rang 97 ; score 0.243 ; récurrence 4 ; citations 2.0",
   "container-title": "Canadian Review of Sociology and Anthropology, 18(3)",
   "DOI": "10.1111/j.1755-618x.1981.tb01236.x",
   "abstract": "Statut socioprofessionnel : recensement 1971, hommes de la RMR de Montréal, rang social mesuré par l'indice de Blishen ; les anglophones obtiennent un rang supérieur à celui que prédisent leurs caractéristiques ; le bilinguisme est rentable pour tous sauf les anglophones ; résultats conformes à la théorie des réseaux d'information (Migué 1970)."
@@ -2488,7 +2488,7 @@
    ]
   },
   "language": "fr",
-  "note": "Snowballing rang 98 ; score 0.232 ; récurrence 2 ; citations 2.0",
+  "note": "Snowballing rang 98 ; score 0.239 ; récurrence 2 ; citations 2.0",
   "container-title": "Canadian Review of Sociology and Anthropology, 19(3)",
   "DOI": "10.1111/j.1755-618x.1982.tb00863.x",
   "abstract": "Réanalyse des tables de mobilité 1954-1964-1974 (Garon-Audy) : la stabilité ou le changement de la structure de mobilité au Québec dépend du modèle statistique retenu."
@@ -2515,7 +2515,7 @@
    ]
   },
   "language": "en",
-  "note": "Snowballing rang 99 ; score 0.204 ; récurrence 13 ; citations 14.0",
+  "note": "Snowballing rang 99 ; score 0.199 ; récurrence 13 ; citations 14.0",
   "container-title": "Canadian Journal of Economics and Political Science, 7(4), 493-505",
   "DOI": "10.2307/137222",
   "abstract": "Point de départ historique : positions de contrôle financier à Montréal ; les anglophones exercent une part du contrôle bien supérieure à leur poids démographique."

@@ -25,11 +25,16 @@ n_top  <- 30
 #********************************************************#
 normalize0to1 <- function(x) (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
 
+# Citations : Google Scholar si relevé ; sinon compte Consensus ramené à l'échelle Google Scholar (ratio médian) ; sinon médiane
+if (!"citations_google_scholar" %in% names(Data)) Data$citations_google_scholar <- NA_real_
+ok    <- !is.na(Data$citations_google_scholar) & !is.na(Data$number_citations) & Data$number_citations > 0
+ratio <- if (sum(ok) >= 5) median(Data$citations_google_scholar[ok] / Data$number_citations[ok]) else 1
 Data <- Data %>%
   mutate(
-    # citations manquantes (littérature grise non indexée) : médiane du corpus, signalée
-    citations_imputees  = as.integer(is.na(number_citations)),
-    citations_utilisees = ifelse(is.na(number_citations), median(number_citations, na.rm = TRUE), number_citations),
+    citations_score = ifelse(!is.na(citations_google_scholar), citations_google_scholar,
+                             ifelse(!is.na(number_citations), round(number_citations * ratio), NA_real_)),
+    citations_imputees  = as.integer(is.na(citations_score)),
+    citations_utilisees = ifelse(is.na(citations_score), median(citations_score, na.rm = TRUE), citations_score),
     cit_norm  = normalize0to1(log1p(citations_utilisees)),   # log pour atténuer l'asymétrie extrême
     year_norm = normalize0to1(year),
     pert_norm = normalize0to1(recurrence),
@@ -71,7 +76,7 @@ ggsave("Graphiques/lectures_snowballing_top30_R.png", g, height = 24, width = 30
 #*************************************************************************#
 #### ____ 5. Exporter la liste des 30 lectures (pour Zotero / lecture) ____ ####
 #*************************************************************************#
-write_csv(DataGraph %>% select(rang, id, author, year, title, journal, doi, url, number_citations, recurrence, formula),
+write_csv(DataGraph %>% select(rang, id, author, year, title, journal, doi, url, number_citations, citations_google_scholar, citations_utilisees, recurrence, formula),
           "Data/grille_snowballing_top30_R.csv")
 
 #*********************************************************************#

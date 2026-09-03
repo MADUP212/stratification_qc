@@ -79,8 +79,7 @@ flush()
 g = pd.read_csv(GRILLE, encoding="utf-8-sig")
 import numpy as np
 def minmax(x): return (x - x.min()) / (x.max() - x.min())
-g["citations_utilisees"] = g["number_citations"].fillna(g["number_citations"].median())
-g["indice"] = (W_CIT * minmax(np.log1p(g["citations_utilisees"])) + W_YEAR * minmax(g["year"]) + W_PERT * minmax(g["recurrence"])).round(2)
+g["indice"] = g["score"].round(2)   # calculé par Scripts/score_snowballing.py (Google Scholar / Consensus calibré / imputé)
 top = g[g["statut"] == "inclus"].sort_values("indice", ascending=False).head(N_TOP).reset_index(drop=True)
 
 def initiales(prenom):
@@ -220,16 +219,17 @@ for kind, content in blocks:
         p = doc.add_paragraph(style="Caption"); r = p.add_run(f"Figure {nfig}. " + content); set_font(r)
         p.paragraph_format.line_spacing = 1.0
     elif kind == "tableau":
-        t = doc.add_table(rows=1, cols=5); t.style = "Table Grid"
-        for i, h in enumerate(["Rang", "Publication", "Citations", "Récurrence", "Indice"]):
+        t = doc.add_table(rows=1, cols=6); t.style = "Table Grid"
+        for i, h in enumerate(["Rang", "Publication", "Citations", "Source", "Récurrence", "Indice"]):
             c = t.rows[0].cells[i]; c.text = ""; r = c.paragraphs[0].add_run(h); set_font(r, size=10, bold=True)
         for i, row in top.iterrows():
             cells = t.add_row().cells
-            vals = [str(i + 1), row["citationAuteurAnnee"], "" if pd.isna(row["number_citations"]) else str(int(row["number_citations"])), str(int(row["recurrence"])), f"{row['indice']:.2f}"]
+            src = {"Google Scholar": "GS", "imputé (médiane)": "imputé"}.get(str(row.get("citations_score_source", "")), "Cons. cal.")
+            vals = [str(i + 1), row["citationAuteurAnnee"], str(int(row["citations_score"])), src, str(int(row["recurrence"])), f"{row['indice']:.2f}"]
             for c, v in zip(cells, vals):
                 c.text = ""; r = c.paragraphs[0].add_run(v); set_font(r, size=10)
                 c.paragraphs[0].paragraph_format.line_spacing = 1.0
-        p = doc.add_paragraph(style="Caption"); r = p.add_run("Tableau 1. Composantes de l'indice de pertinence des trente lectures (les citations manquantes sont imputées par la médiane du corpus)."); set_font(r)
+        p = doc.add_paragraph(style="Caption"); r = p.add_run("Tableau 1. Composantes de l'indice de pertinence des trente lectures (GS : Google Scholar ; Cons. cal. : compte Consensus ramené à l'échelle Google Scholar ; imputé : médiane)."); set_font(r)
         p.paragraph_format.line_spacing = 1.0
     elif kind == "bibliographie":
         for a, j, c in refs:

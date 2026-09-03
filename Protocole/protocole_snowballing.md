@@ -111,3 +111,7 @@ Docs/        état du savoir (Markdown, DOCX)
   `Gabarit/gabarit_snowballing.docx` (produit par `Scripts/render_gabarit_docx.py`) : Times New Roman 12 pt,
   interligne double, texte justifié, pagination, identifiants en gras et en majuscules en haut à droite,
   nombre de mots sur la page titre, aucun nom.
+- **Comptes Google Scholar** (2026-09-03) : relevés par l'usager avec `Scripts/recuperer_citations_scholar.py`
+  pour le top 30 et deux autres textes (28 comptes ; introuvables ou mal appariés : Commission B-B 1969, PERT 2023,
+  Boulet 1980, OQLF 2022, Raynauld et al. 1966). Le score utilise Google Scholar quand il existe, sinon le compte
+  Consensus multiplié par le ratio médian Google Scholar / Consensus (2,23 sur 19 publications), sinon la médiane.

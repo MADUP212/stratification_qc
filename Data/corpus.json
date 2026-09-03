@@ -19,7 +19,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Cohortes de naissance 1910-1970 : la fermeture de l'écart salarial 1970-2000 passe par le remplacement des générations ; modèle à deux secteurs (barrières linguistiques, mobilité du capital) ; choc = scolarité obligatoire (1943).",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 12,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "dean2022",
@@ -41,7 +44,10 @@
   "c3": 0,
   "c4": 1,
   "notes": "Recensements 1901-1921 (et 1951) : l'écart se réduit modestement au début du XXe siècle puis stagne jusqu'en 1970 ; l'essentiel de la convergence est postérieur à 1970. Situe le point de départ de 1961.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 18,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "vaillancourt2024",
@@ -63,7 +69,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Neuf recensements (1971-2021). En 2020 : bilingues (allophones, anglophones, francophones) en tête ; rupture nette entre 1970 et 1980-2020 dans la sur-rémunération des hommes anglophones ; anglophones désormais au niveau des unilingues francophones (effet net).",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 1,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "vaillancourt2013",
@@ -85,7 +94,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Recensement 2006 (revenus 2005) comparé à 1970-2000 : le bilinguisme augmente le revenu de tous les groupes ; l'avantage historique (1970) des anglophones n'existe plus en 2005.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 24,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "albouy2008",
@@ -107,7 +119,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Écart salarial hommes F/A : -25 points au Québec 1970-2000, -10 points au Canada ; salaires des anglophones du Québec en baisse relative (-15 pts) ; plus de la moitié de la réduction expliquée par la hausse de scolarité des francophones ; baisse de la demande de travail anglophone au Québec.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 101,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.09"
  },
  {
   "id": "nadeau2010",
@@ -129,7 +144,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Décomposition Blinder-Oaxaca 1970-2000 : hors Québec, aucun avantage anglophone inexpliqué ; au Québec, prime salariale des francophones dans le secteur public (1970-2000) et dans le privé en 2000, allant au-delà des compétences linguistiques.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 35,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "christofides2010",
@@ -151,7 +169,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Rendement de la connaissance et de l'usage de l'anglais au Québec (et du français hors Québec) à partir du recensement 2001/EDI 2006 : rendement du bilinguisme surtout lié à l'usage au travail.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 91,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "beland2010",
@@ -195,7 +216,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Perspective de la minorité anglophone : perte nette interprovinciale de 310 000 anglophones ; ceux qui sont restés sont moins scolarisés et ont un revenu inférieur à celui des francophones (2016) ; rôle des lois linguistiques.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 39,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "grenier2019",
@@ -261,7 +285,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Recensements 1971, 1981, 1991 : depuis la Loi 101, l'écart entre anglophones (unilingues et bilingues) et francophones bilingues s'est refermé ; détérioration relative des allophones et des francophones unilingues ; analyse par sexe.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 121,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "shapiro1987",
@@ -349,7 +376,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Thèse (Queen's) : cadre où la langue est à la fois attribut ethnique et capital humain ; équation de revenu des hommes du Québec en 1970 ; contribution de l'ethnicité à l'écart anglophones/francophones.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 70,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "vaillancourt1978",
@@ -415,7 +445,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Synthèse des outils de mesure (revenu, propriété, langue de travail) et des résultats sur le statut des francophones depuis 1960 ; déterminants (scolarité, demande de français, politiques) et coûts des politiques linguistiques.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 145,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "vaillancourt2007",
@@ -437,7 +470,10 @@
   "c2": 2,
   "c3": 1,
   "c4": 1,
-  "notes": "1970-2000 : rendement du français en hausse, de l'anglais en baisse ; le bilinguisme accroît le revenu des hommes anglophones depuis 1980 et des femmes anglophones depuis 1990 ; propriété francophone de l'économie de 47 % (1961) à 67 % (2003)."
+  "notes": "1970-2000 : rendement du français en hausse, de l'anglais en baisse ; le bilinguisme accroît le revenu des hommes anglophones depuis 1980 et des femmes anglophones depuis 1990 ; propriété francophone de l'économie de 47 % (1961) à 67 % (2003).",
+  "citations_google_scholar": 91,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "grenier1987",
@@ -459,7 +495,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Recensement 1981 : modèle à deux équations (émigration, revenu) ; biais de sélection chez les anglophones ; le rendement de l'apprentissage du français est sous-estimé si l'on ignore l'émigration.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 73,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "grenier1984",
@@ -503,7 +542,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Recensement 1971 : théorie de la prime à la langue en 'demande excédentaire' ; au Québec, rendement de l'anglais pour les francophones, mais les francophones bilingues gagnent toujours moins que les anglophones unilingues, ceteris paribus.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 253,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "bloom1992",
@@ -547,7 +589,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Recensements 1971 et 1981 : effets du statut d'immigrant, de l'ethnicité française et de la compétence linguistique sur les gains ; comparaison décennale.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 155,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "pendakur2002",
@@ -635,7 +680,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Francisation de l'économie montréalaise 1960-1989 : langue de travail, contrôle du capital, statut socioéconomique des francophones ; rôle conjoint de l'État québécois (sociétés d'État, Loi 101) et des forces du marché ; exode anglophone.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 437,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "lieberson1970",
@@ -657,7 +705,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Sociologie écologique du bilinguisme ; chapitre sur les exigences professionnelles (Occupational Demands) et les écarts de revenu par langue maternelle à Montréal (1961) ; analyse des offres d'emploi.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 361,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "pettinicchio2012",
@@ -834,7 +885,10 @@
   "c4": 1,
   "notes": "Document fondateur : à partir du recensement de 1961, hiérarchie des revenus selon l'origine ethnique au Québec (les Canadiens français unilingues au 12e rang sur 14 ; revenu moyen des hommes d'origine française inférieur de 35 % à celui des hommes d'origine britannique) ; sous-représentation des francophones dans la direction des entreprises ; explications (scolarité, structure industrielle, propriété, discrimination).",
   "url": null,
-  "author_short": "Commission B-B"
+  "author_short": "Commission B-B",
+  "citations_google_scholar": 19,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "0.83"
  },
  {
   "id": "raynauld1966",
@@ -1098,7 +1152,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Statut socioprofessionnel : synthèse de la Canadian Mobility Study (1973) ; chapitres sur l'attainment du statut des francophones et des anglophones ; convergence intergénérationnelle.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 101,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "mcroberts1979",
@@ -1142,7 +1199,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Ouvrage fondateur de la stratification ethnique au Canada (recensement 1961) : 'mosaïque verticale' où les Canadiens français sont sous-représentés dans les professions supérieures et les élites économiques ; chapitre 'Ethnicity and social class'.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 2670,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "0.97"
  },
  {
   "id": "vaillancourt2018",
@@ -1164,7 +1224,10 @@
   "c2": 2,
   "c3": 1,
   "c4": 1,
-  "notes": "Bilan économique de 40 ans de Loi 101 : revenus de travail par attribut linguistique 1970-2015, propriété des entreprises 1961-2003, langue de travail ; coûts et bénéfices des politiques."
+  "notes": "Bilan économique de 40 ans de Loi 101 : revenus de travail par attribut linguistique 1970-2015, propriété des entreprises 1961-2003, langue de travail ; coûts et bénéfices des politiques.",
+  "citations_google_scholar": 12,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.09"
  },
  {
   "id": "vaillancourt2020",
@@ -1186,7 +1249,10 @@
   "c2": 2,
   "c3": 1,
   "c4": 1,
-  "notes": "Recensement 2016 (revenus 2015) : effets nets des attributs linguistiques ; les anglophones bilingues et les francophones bilingues au sommet ; comparaison 1970-2015."
+  "notes": "Recensement 2016 (revenus 2015) : effets nets des attributs linguistiques ; les anglophones bilingues et les francophones bilingues au sommet ; comparaison 1970-2015.",
+  "citations_google_scholar": 9,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "0.97"
  },
  {
   "id": "vaillancourt2019",
@@ -1253,7 +1319,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Vitalité ethnolinguistique (démographie, statut, soutien institutionnel) des deux communautés après 40 ans d'aménagement linguistique ; indicateurs de statut économique (revenu, scolarité) des anglophones restés au Québec.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 47,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "dejocas1957",
@@ -1385,7 +1454,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Enquête nationale auprès des ménages 2011 (revenus 2010) : effets nets des attributs linguistiques comparés à 1970-2005 ; cadre de Vaillancourt (1980) ajoutant la langue comme troisième forme de capital humain à l'équation de Mincer.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 0,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "0.94"
  },
  {
   "id": "floch2012",
@@ -1407,7 +1479,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Recensements 1971-2006 : statut socioéconomique des anglophones du Québec ; effet de sélection de l'émigration (les partants plus scolarisés/mieux rémunérés) ; les anglophones restés au Québec ont un revenu et une scolarité inférieurs aux francophones à partir des années 2000.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 49,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "bourhis2012",
@@ -1693,7 +1768,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Bilan économique de la Révolution tranquille : rattrapage du revenu par habitant du Québec sur l'Ontario et disparition de l'écart de revenu francophones/anglophones ; rôle de la scolarisation et des politiques.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 17,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "0.97"
  },
  {
   "id": "grenier2016",
@@ -1715,7 +1793,10 @@
   "c3": 1,
   "c4": 1,
   "notes": "Recensements 2001-2006 : valeur de l'usage de l'anglais et du français au travail à Montréal par groupe linguistique ; l'anglais comme lingua franca conserve une valeur marchande supérieure malgré la francisation.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 27,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "lian1998",
@@ -1825,7 +1906,10 @@
   "c3": 1,
   "c4": 0,
   "notes": "Outil de mesure du statut socioprofessionnel : échelle de classes professionnelles (recensement 1951) fondée sur revenu et scolarité ; application à certaines caractéristiques de la société canadienne, dont la distribution des origines britannique et française.",
-  "url": null
+  "url": null,
+  "citations_google_scholar": 336,
+  "citations_google_scholar_date": "2026-09-03",
+  "citations_google_scholar_similarite": "1.1"
  },
  {
   "id": "blishen1967",

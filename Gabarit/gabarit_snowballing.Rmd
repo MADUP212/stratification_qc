@@ -45,11 +45,20 @@ n_top  <- 30
 
 normalize0to1 <- function(x) (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
 
+# Citations : Google Scholar si relevé ; sinon compte Consensus/Semantic Scholar ramené à l'échelle Google Scholar
+# par le ratio médian observé sur les publications qui ont les deux ; sinon médiane.
+if (!"citations_google_scholar" %in% names(grille)) grille$citations_google_scholar <- NA_real_
+ok    <- !is.na(grille$citations_google_scholar) & !is.na(grille$number_citations) & grille$number_citations > 0
+ratio <- if (sum(ok) >= 5) median(grille$citations_google_scholar[ok] / grille$number_citations[ok]) else 1
 grille <- grille %>%
   mutate(
-    citations_imputees  = as.integer(is.na(number_citations)),
-    citations_utilisees = ifelse(is.na(number_citations), median(number_citations, na.rm = TRUE), number_citations),
-    cit_norm  = normalize0to1(log1p(citations_utilisees)),
+    citations_score = ifelse(!is.na(citations_google_scholar), citations_google_scholar,
+                             ifelse(!is.na(number_citations), round(number_citations * ratio), NA_real_)),
+    source_citations = ifelse(!is.na(citations_google_scholar), "Google Scholar",
+                              ifelse(!is.na(number_citations), "Consensus calibr\u00e9", "imput\u00e9")),
+    citations_score = ifelse(is.na(citations_score), median(citations_score, na.rm = TRUE), citations_score),
+    citations_imputees  = as.integer(source_citations == "imput\u00e9"),
+    cit_norm  = normalize0to1(log1p(citations_score)),
     year_norm = normalize0to1(year),
     pert_norm = normalize0to1(recurrence),
     indice    = round(w_cit * cit_norm + w_year * year_norm + w_pert * pert_norm, 2)
@@ -168,7 +177,7 @@ plot(g, layout = lay, rescale = TRUE,
 
 ## Limites
 
-Les comptes de citations proviennent du moteur Consensus (données Semantic Scholar) plutôt que de Google Scholar, qui n'était pas accessible depuis l'environnement d'exécution ; ils sont systématiquement plus faibles et doivent être mis à jour avant publication. Les rapports gouvernementaux et les ouvrages non indexés se sont vu attribuer la médiane du corpus, ce qui est signalé dans la grille. Les bibliographies ont été reconstituées à partir des références affichées par les moteurs bibliographiques et de la connaissance des textes plutôt qu'à partir des fichiers PDF, de sorte que les comptes de récurrence constituent des bornes inférieures à valider lors de la lecture. Enfin, la méthode par boule de neige tend à surreprésenter les auteurs les plus prolifiques d'un champ, ici l'économie du langage montréalaise, ce que la troisième ronde, ancrée dans la sociologie de la stratification, visait à corriger.
+Les comptes de citations Google Scholar ont été relevés le 3 septembre 2026 pour `r sum(!is.na(grille$citations_google_scholar))` publications, dont l'essentiel du classement, à l'aide du script `Scripts/recuperer_citations_scholar.py` (bibliothèque *scholarly*). Pour les autres, le compte du moteur Consensus (données Semantic Scholar), systématiquement plus faible, a été ramené à l'échelle de Google Scholar par le ratio médian observé sur les publications qui disposent des deux comptes (`r round(ratio, 2)`) ; les rapports et ouvrages introuvables dans les deux sources se sont vu attribuer la médiane, ce qui est signalé dans la grille. Le rapport de la Commission royale d'enquête sur le bilinguisme et le biculturalisme est dispersé dans Google Scholar en de nombreuses notices, de sorte que son compte est sous-estimé. Les bibliographies ont été reconstituées à partir des références affichées par les moteurs bibliographiques et de la connaissance des textes plutôt qu'à partir des fichiers PDF, de sorte que les comptes de récurrence constituent des bornes inférieures à valider lors de la lecture. Enfin, la méthode par boule de neige tend à surreprésenter les auteurs les plus prolifiques d'un champ, ici l'économie du langage montréalaise, ce que la troisième ronde, ancrée dans la sociologie de la stratification, visait à corriger.
 
 # Les trente lectures retenues
 
@@ -177,9 +186,10 @@ Le tableau 1 reprend, pour chacune des trente lectures de la figure 1, les trois
 
 ```{r tableau}
 top30 %>%
-  transmute(Rang = row_number(), Publication = citationAuteurAnnee, Citations = number_citations,
+  transmute(Rang = row_number(), Publication = citationAuteurAnnee, Citations = citations_score,
+            Source = c("Google Scholar" = "GS", "Consensus calibr\u00e9" = "Cons. cal.", "imput\u00e9" = "imput\u00e9")[source_citations],
             Recurrence = recurrence, Indice = indice) %>%
-  kable(col.names = c("Rang", "Publication", "Citations", "R\u00e9currence", "Indice"), caption = "Composantes de l'indice de pertinence des trente lectures (les citations manquantes sont imputées par la médiane du corpus).")
+  kable(col.names = c("Rang", "Publication", "Citations", "Source", "R\u00e9currence", "Indice"), caption = "Composantes de l'indice de pertinence des trente lectures (GS : Google Scholar ; Cons. cal. : compte Consensus ramené à l'échelle Google Scholar ; imputé : médiane).")
 ```
 
 # Bibliographie {-}
