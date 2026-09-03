@@ -175,8 +175,6 @@ Les comptes de citations proviennent du moteur Consensus (données Semantic Scho
 Le tableau 1 reprend, pour chacune des trente lectures de la figure 1, les trois composantes de l'indice de pertinence.
 
 
-Le tableau suivant reprend les trois composantes de l'indice pour chacune des trente lectures.
-
 ```{r tableau}
 top30 %>%
   transmute(Rang = row_number(), Publication = citationAuteurAnnee, Citations = number_citations,
