@@ -75,6 +75,26 @@ n'offre pas d'API officielle. Voie recommandée :
 3. lancer `python3 Scripts/maj_citations_scholar.py`, puis `Scripts/score_snowballing.py`,
    `Scripts/reseau_citations.py` et `Scripts/export_zotero.py` (ou tricoter le Rmd).
 
+### Serveur MCP « Google-Scholar-MCP-Server » (JackKuo666)
+
+Ce serveur (<https://github.com/JackKuo666/Google-Scholar-MCP-Server>) est un serveur FastMCP en Python qui
+interroge Google Scholar avec la bibliothèque `scholarly` (outils `search_google_scholar_key_words`,
+`search_google_scholar_advanced`, `get_author_info`). Il tourne en stdio, c'est-à-dire sur le poste de l'usager
+(Claude Desktop, Cursor…). Il **ne peut pas s'exécuter dans l'environnement distant de cette session** : toutes
+les adresses Google y sont bloquées par la politique réseau (test du 2026-09-03), et `scholarly` ne s'y installe
+pas (compilation de `bibtexparser` refusée). Deux voies depuis votre poste :
+
+1. **Lot local (recommandé)** : `pip install scholarly` puis
+   `python3 Scripts/recuperer_citations_scholar.py --top30` (ou sans option pour les 103 références ;
+   `--seulement-manquants`, `--reprendre`, `--pause 8`). Le script utilise le même mécanisme que le serveur MCP,
+   apparie chaque titre au meilleur résultat Scholar (similarité ≥ 0,6, année à ± 1 an) et remplit
+   `Data/citations_google_scholar.csv` (colonnes `titre_scholar` et `similarite` pour vérification). Ensuite :
+   `python3 Scripts/maj_citations_scholar.py && python3 Scripts/score_snowballing.py && python3 Scripts/reseau_citations.py`.
+2. **Connecteur claude.ai** : lancer le serveur en HTTP avec `Scripts/serveur_scholar_http.py` depuis le dossier
+   cloné, l'exposer par un tunnel (ngrok, cloudflared) et l'ajouter dans claude.ai > Paramètres > Connecteurs >
+   connecteur personnalisé ; une fois activé dans la conversation, la session distante peut interroger Scholar
+   par votre poste.
+
 ### Connecteur Scholar Gateway (ajouté le 2026-09-03)
 
 Le connecteur *Scholar Gateway* (Wiley) a été connecté à la session. Il ne fournit **pas** les comptes de
