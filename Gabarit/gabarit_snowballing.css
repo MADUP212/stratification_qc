@@ -27,3 +27,11 @@ tr { page-break-inside: avoid; }
 .bibliographie p { padding-left: 1.25cm; text-indent: -1.25cm; }
 a { color: #000; text-decoration: none; }
 code, pre { font-family: inherit; font-size: inherit; background: none; }
+
+/* Numérotation des figures et des tableaux (la sortie LaTeX numérote d'elle-même) */
+body { counter-reset: figure tableau; }
+.figure { counter-increment: figure; }
+.figure .caption::before { content: "Figure " counter(figure) ". "; font-weight: bold; }
+table { counter-increment: tableau; }
+table caption::before { content: "Tableau " counter(tableau) ". "; font-weight: bold; }
+table caption { caption-side: top; text-align: left; padding: 0 0 0.3em 0; }

@@ -122,17 +122,7 @@ Une publication est retenue si elle compare explicitement les francophones et le
 
 ## Indice de pertinence
 
-Suivant la méthode CLESSN, chaque publication reçoit un indice de pertinence compris entre 0 et 1 qui combine trois indicateurs normalisés par la méthode min-max : le nombre de citations (transformé en logarithme pour atténuer l'asymétrie entre les classiques et les articles récents), l'année de publication (1 pour la plus récente, 0 pour la plus ancienne) et la pertinence, mesurée par la récurrence de la publication dans les bibliographies dépouillées du corpus. Les trois indicateurs reçoivent un poids égal (un tiers chacun), comme dans le script de référence de la CLESSN. Le graphique de la section suivante présente les trente publications incluses qui obtiennent l'indice le plus élevé ; le code qui le produit figure dans ce document et dans le script `CodeR/graphique_snowballing.R`.
-
-## Réseau de citations
-
-Pour visualiser la structure du champ, on construit enfin le réseau de citations entre les trente lectures retenues : chaque publication est un nœud, chaque flèche relie une publication à celles qu'elle cite parmi les trente, la taille du point est proportionnelle au nombre de citations reçues des autres membres du groupe, et la disposition par forces (algorithme de Fruchterman et Reingold) rapproche les publications qui se citent mutuellement. Ce graphique permet de repérer d'un coup d'œil les textes fondateurs vers lesquels convergent les flèches (le Livre III de la Commission royale d'enquête sur le bilinguisme et le biculturalisme, l'étude de Raynauld, Marion et Béland, la thèse de Vaillancourt et le rapport de Boulet), les textes de synthèse qui citent beaucoup sans être encore cités (les rapports récents) et les lignées disciplinaires qui ne se citent guère entre elles (économie du langage et sociologie de la mobilité).
-
-## Limites
-
-Les comptes de citations proviennent du moteur Consensus (données Semantic Scholar) plutôt que de Google Scholar, qui n'était pas accessible depuis l'environnement d'exécution ; ils sont systématiquement plus faibles et doivent être mis à jour avant publication. Les rapports gouvernementaux et les ouvrages non indexés se sont vu attribuer la médiane du corpus, ce qui est signalé dans la grille. Les bibliographies ont été reconstituées à partir des références affichées par les moteurs bibliographiques et de la connaissance des textes plutôt qu'à partir des fichiers PDF, de sorte que les comptes de récurrence constituent des bornes inférieures à valider lors de la lecture. Enfin, la méthode par boule de neige tend à surreprésenter les auteurs les plus prolifiques d'un champ, ici l'économie du langage montréalaise, ce que la troisième ronde, ancrée dans la sociologie de la stratification, visait à corriger.
-
-# Les trente lectures les plus pertinentes et leur réseau de citations
+Suivant la méthode CLESSN, chaque publication reçoit un indice de pertinence compris entre 0 et 1 qui combine trois indicateurs normalisés par la méthode min-max : le nombre de citations (transformé en logarithme pour atténuer l'asymétrie entre les classiques et les articles récents), l'année de publication (1 pour la plus récente, 0 pour la plus ancienne) et la pertinence, mesurée par la récurrence de la publication dans les bibliographies dépouillées du corpus. Les trois indicateurs reçoivent un poids égal (un tiers chacun), comme dans le script de référence de la CLESSN. La figure 1 présente les trente publications incluses qui obtiennent l'indice le plus élevé ; le code qui la produit figure dans ce document et dans le script `CodeR/graphique_snowballing.R`.
 
 ```{r graphique, fig.width=9, fig.height=10.5, out.width="100%", fig.pos="H", fig.cap="Liste des trente lectures les plus pertinentes selon l'indice de pertinence (moyenne à poids égaux des citations, de l'année et de la récurrence dans les bibliographies du corpus)."}
 ggplot(top30, aes(x = reorder(etiquette, indice), y = indice)) +
@@ -145,6 +135,12 @@ ggplot(top30, aes(x = reorder(etiquette, indice), y = indice)) +
         axis.title.x = element_text(size = 11, face = "bold", vjust = -1),
         axis.title.y = element_blank(), axis.text.x = element_text(size = 10, face = "bold"))
 ```
+
+Les lectures de tête combinent les trois propriétés recherchées : des classiques très cités (Porter, 1965 ; Carliner, 1981 ; Lieberson, 1970), des textes que tout le corpus cite (Commission royale d'enquête sur le bilinguisme et le biculturalisme, 1969 ; Vaillancourt, 1980 ; Boulet, 1980) et des synthèses récentes (Albouy, 2008 ; Vaillancourt et al., 2007 ; Christofides et Swidinsky, 2010).
+
+## Réseau de citations
+
+Pour visualiser la structure du champ, on construit enfin le réseau de citations entre les trente lectures retenues : chaque publication est un nœud, chaque flèche relie une publication à celles qu'elle cite parmi les trente, la taille du point est proportionnelle au nombre de citations reçues des autres membres du groupe, et la disposition par forces (algorithme de Fruchterman et Reingold) rapproche les publications qui se citent mutuellement. Ce graphique permet de repérer d'un coup d'œil les textes fondateurs vers lesquels convergent les flèches (le Livre III de la Commission royale d'enquête sur le bilinguisme et le biculturalisme, l'étude de Raynauld, Marion et Béland, la thèse de Vaillancourt et le rapport de Boulet), les textes de synthèse qui citent beaucoup sans être encore cités (les rapports récents) et les lignées disciplinaires qui ne se citent guère entre elles (économie du langage et sociologie de la mobilité). La figure 2 présente ce réseau.
 
 ```{r reseau, fig.width=10, fig.height=10, out.width="100%", fig.pos="H", fig.cap="Réseau de citations entre les trente lectures les plus pertinentes (disposition par forces : les publications qui se citent sont rapprochées ; flèche : « cite » ; taille du point et nombre entre parenthèses : citations reçues des autres lectures du groupe)."}
 library(igraph)
@@ -169,6 +165,15 @@ plot(g, layout = lay, rescale = TRUE,
      vertex.label.color = "black", vertex.label.cex = 0.62, vertex.label.family = "serif",
      vertex.label.dist = 0.5 + V(g)$size / 6, vertex.label.degree = -pi / 2)
 ```
+
+## Limites
+
+Les comptes de citations proviennent du moteur Consensus (données Semantic Scholar) plutôt que de Google Scholar, qui n'était pas accessible depuis l'environnement d'exécution ; ils sont systématiquement plus faibles et doivent être mis à jour avant publication. Les rapports gouvernementaux et les ouvrages non indexés se sont vu attribuer la médiane du corpus, ce qui est signalé dans la grille. Les bibliographies ont été reconstituées à partir des références affichées par les moteurs bibliographiques et de la connaissance des textes plutôt qu'à partir des fichiers PDF, de sorte que les comptes de récurrence constituent des bornes inférieures à valider lors de la lecture. Enfin, la méthode par boule de neige tend à surreprésenter les auteurs les plus prolifiques d'un champ, ici l'économie du langage montréalaise, ce que la troisième ronde, ancrée dans la sociologie de la stratification, visait à corriger.
+
+# Les trente lectures retenues
+
+Le tableau 1 reprend, pour chacune des trente lectures de la figure 1, les trois composantes de l'indice de pertinence.
+
 
 Le tableau suivant reprend les trois composantes de l'indice pour chacune des trente lectures.
 
