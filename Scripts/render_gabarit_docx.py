@@ -272,4 +272,14 @@ for kind, content in blocks:
             r = p.add_run(c); set_font(r)
 
 doc.save(OUT)
+# correctif de schéma : python-docx omet l'attribut w:percent de <w:zoom> dans settings.xml
+import zipfile, shutil
+tmp = OUT + ".tmp"
+with zipfile.ZipFile(OUT) as zin, zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as zout:
+    for item in zin.infolist():
+        data = zin.read(item.filename)
+        if item.filename == "word/settings.xml":
+            data = re.sub(r"<w:zoom(?![^>]*w:percent)([^>]*)/>", r'<w:zoom w:percent="100"\1/>', data.decode("utf-8")).encode("utf-8")
+        zout.writestr(item, data)
+shutil.move(tmp, OUT)
 print("docx écrit :", OUT, "| mots du corps :", body_words, "| blocs :", len(blocks))
